@@ -8,11 +8,11 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - IoT
   - Automotive
-  - Vehicle Data
-  - Fleet Management
   - AWS
+  - Fleet Management
+  - IoT
+  - Vehicle Data
 url: >-
   https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/apis.yml
 created: '2026-03-16'
@@ -28,8 +28,8 @@ apis:
     humanURL: https://aws.amazon.com/iot-fleetwise/
     baseURL: https://iotfleetwise.amazonaws.com
     tags:
-      - IoT
       - Automotive
+      - IoT
       - Vehicle Data
     properties:
       - type: Documentation
