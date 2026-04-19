@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-register-account-request-structure.json",
+  "name": "RegisterAccountRequest",
+  "description": "RegisterAccountRequest schema",
+  "type": "object",
+  "properties": {
+    "timestreamResources": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TimestreamResources"
+        },
+        {
+          "deprecated": true,
+          "description": "Amazon Timestream metadata is now passed in the CreateCampaign API."
+        }
+      ]
+    },
+    "iamResources": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IamResources"
+        },
+        {
+          "deprecated": true,
+          "description": "The IAM resource that allows Amazon Web Services IoT FleetWise to send data to Amazon Timestream.iamResources is no longer used or needed as input"
+        }
+      ]
+    }
+  }
+}

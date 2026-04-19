@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-list-vehicles-in-fleet-response-schema.json",
+  "title": "ListVehiclesInFleetResponse",
+  "description": "ListVehiclesInFleetResponse schema",
+  "type": "object",
+  "properties": {
+    "vehicles": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/vehicles"
+        },
+        {
+          "description": " A list of vehicles associated with the fleet. "
+        }
+      ]
+    },
+    "nextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/nextToken"
+        },
+        {
+          "description": " The token to retrieve the next set of results, or <code>null</code> if there are no more results. "
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-create-vehicle-errors-schema.json",
+  "title": "createVehicleErrors",
+  "description": "createVehicleErrors schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "vehicleName": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/vehicleName"
+          },
+          {
+            "description": "The ID of the vehicle with the error."
+          }
+        ]
+      },
+      "code": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/string"
+          },
+          {
+            "description": "An HTTP error code."
+          }
+        ]
+      },
+      "message": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/string"
+          },
+          {
+            "description": "A description of the HTTP error."
+          }
+        ]
+      }
+    },
+    "description": "An HTTP error resulting from creating a vehicle."
+  }
+}

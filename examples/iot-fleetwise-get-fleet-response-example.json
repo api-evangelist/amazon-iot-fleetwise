@@ -1,0 +1,8 @@
+{
+  "id": "id-abc123",
+  "arn": "arn:aws:iot:us-east-1:123456789012:thing/example",
+  "description": "example-value",
+  "signalCatalogArn": "arn:aws:iot:us-east-1:123456789012:thing/example",
+  "creationTime": "2025-03-15T14:30:00Z",
+  "lastModificationTime": "2025-03-15T14:30:00Z"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "example-resource",
+  "description": "example-value",
+  "nodesToAdd": "example-value",
+  "nodesToRemove": "example-value",
+  "status": "ACTIVE"
+}

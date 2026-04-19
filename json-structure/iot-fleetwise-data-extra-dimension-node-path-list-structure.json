@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-data-extra-dimension-node-path-list-structure.json",
+  "name": "DataExtraDimensionNodePathList",
+  "description": "DataExtraDimensionNodePathList schema",
+  "type": "array",
+  "items": {
+    "type": "string",
+    "pattern": "[a-zA-Z0-9_.]+",
+    "minLength": 1,
+    "maxLength": 150
+  }
+}

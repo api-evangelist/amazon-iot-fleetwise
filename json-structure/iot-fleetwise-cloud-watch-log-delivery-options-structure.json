@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-cloud-watch-log-delivery-options-structure.json",
+  "name": "CloudWatchLogDeliveryOptions",
+  "description": "The log delivery option to send data to Amazon CloudWatch Logs.",
+  "type": "object",
+  "properties": {
+    "logType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LogType"
+        },
+        {
+          "description": "The type of log to send data to Amazon CloudWatch Logs."
+        }
+      ]
+    },
+    "logGroupName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CloudWatchLogGroupName"
+        },
+        {
+          "description": "The Amazon CloudWatch Logs group the operation sends data to."
+        }
+      ]
+    }
+  },
+  "required": [
+    "logType"
+  ]
+}

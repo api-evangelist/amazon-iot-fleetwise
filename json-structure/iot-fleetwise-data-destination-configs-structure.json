@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-data-destination-configs-structure.json",
+  "name": "DataDestinationConfigs",
+  "description": "DataDestinationConfigs schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "s3Config": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/S3Config"
+          },
+          {
+            "description": "The Amazon S3 bucket where the Amazon Web Services IoT FleetWise campaign sends data."
+          }
+        ]
+      },
+      "timestreamConfig": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/TimestreamConfig"
+          },
+          {
+            "description": "The Amazon Timestream table where the campaign sends data."
+          }
+        ]
+      }
+    },
+    "description": "The destination where the Amazon Web Services IoT FleetWise campaign sends data. You can send data to be stored in Amazon S3 or Amazon Timestream."
+  }
+}

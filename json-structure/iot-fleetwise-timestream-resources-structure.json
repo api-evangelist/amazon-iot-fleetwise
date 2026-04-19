@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-timestream-resources-structure.json",
+  "name": "TimestreamResources",
+  "description": "The registered Amazon Timestream resources that Amazon Web Services IoT FleetWise edge agent software can transfer your vehicle data to.",
+  "type": "object",
+  "properties": {
+    "timestreamDatabaseName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TimestreamDatabaseName"
+        },
+        {
+          "description": "The name of the registered Amazon Timestream database."
+        }
+      ]
+    },
+    "timestreamTableName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TimestreamTableName"
+        },
+        {
+          "description": "The name of the registered Amazon Timestream database table."
+        }
+      ]
+    }
+  },
+  "required": [
+    "timestreamDatabaseName",
+    "timestreamTableName"
+  ]
+}

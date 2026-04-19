@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-log-type-schema.json",
+  "title": "LogType",
+  "description": "LogType schema",
+  "type": "string",
+  "enum": [
+    "OFF",
+    "ERROR"
+  ]
+}

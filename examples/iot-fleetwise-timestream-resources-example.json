@@ -1,0 +1,4 @@
+{
+  "timestreamDatabaseName": "example-resource",
+  "timestreamTableName": "example-resource"
+}

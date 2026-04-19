@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-vehicle-status-list-schema.json",
+  "title": "VehicleStatusList",
+  "description": "VehicleStatusList schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "campaignName": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/string"
+          },
+          {
+            "description": "The name of a campaign."
+          }
+        ]
+      },
+      "vehicleName": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/vehicleName"
+          },
+          {
+            "description": "The unique ID of the vehicle."
+          }
+        ]
+      },
+      "status": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/VehicleState"
+          },
+          {
+            "description": "<p>The state of a vehicle, which can be one of the following:</p> <ul> <li> <p> <code>CREATED</code> - Amazon Web Services IoT FleetWise sucessfully created the vehicle. </p> </li> <li> <p> <code>READY</code> - The vehicle is ready to receive a campaign deployment. </p> </li> <li> <p> <code>HEALTHY</code> - A campaign deployment was delivered to the vehicle. </p> </li> <li> <p> <code>SUSPENDED</code> - A campaign associated with the vehicle was suspended and data collection was paused. </p> </li> <li> <p> <code>DELETING</code> - Amazon Web Services IoT FleetWise is removing a campaign from the vehicle. </p> </li> </ul>"
+          }
+        ]
+      }
+    },
+    "description": "Information about the state of a vehicle and how it relates to the status of a campaign."
+  }
+}

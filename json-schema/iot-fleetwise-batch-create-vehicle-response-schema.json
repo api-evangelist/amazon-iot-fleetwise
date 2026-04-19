@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-batch-create-vehicle-response-schema.json",
+  "title": "BatchCreateVehicleResponse",
+  "description": "BatchCreateVehicleResponse schema",
+  "type": "object",
+  "properties": {
+    "vehicles": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/createVehicleResponses"
+        },
+        {
+          "description": " A list of information about a batch of created vehicles. For more information, see the API data type."
+        }
+      ]
+    },
+    "errors": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/createVehicleErrors"
+        },
+        {
+          "description": "A list of information about creation errors, or an empty list if there aren't any errors. "
+        }
+      ]
+    }
+  }
+}

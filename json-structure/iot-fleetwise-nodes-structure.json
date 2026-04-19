@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-nodes-structure.json",
+  "name": "Nodes",
+  "description": "Nodes schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "branch": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/Branch"
+          },
+          {
+            "description": "<p>Information about a node specified as a branch.</p> <note> <p>A group of signals that are defined in a hierarchical structure.</p> </note>"
+          }
+        ]
+      },
+      "sensor": {
+        "$ref": "#/components/schemas/Sensor"
+      },
+      "actuator": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/Actuator"
+          },
+          {
+            "description": "<p>Information about a node specified as an actuator.</p> <note> <p>An actuator is a digital representation of a vehicle device.</p> </note>"
+          }
+        ]
+      },
+      "attribute": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/Attribute"
+          },
+          {
+            "description": "<p>Information about a node specified as an attribute.</p> <note> <p>An attribute represents static information about a vehicle.</p> </note>"
+          }
+        ]
+      }
+    },
+    "description": "A general abstraction of a signal. A node can be specified as an actuator, attribute, branch, or sensor."
+  }
+}

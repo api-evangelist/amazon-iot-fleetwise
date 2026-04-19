@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-network-file-definition-structure.json",
+  "name": "NetworkFileDefinition",
+  "description": "Specifications for defining a vehicle network.",
+  "type": "object",
+  "properties": {
+    "canDbc": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CanDbcDefinition"
+        },
+        {
+          "description": "Information, including CAN DBC files, about the configurations used to create a decoder manifest."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-campaign-status-schema.json",
+  "title": "CampaignStatus",
+  "description": "CampaignStatus schema",
+  "type": "string",
+  "enum": [
+    "CREATING",
+    "WAITING_FOR_APPROVAL",
+    "RUNNING",
+    "SUSPENDED"
+  ]
+}

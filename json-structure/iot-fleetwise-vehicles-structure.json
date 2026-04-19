@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-vehicles-structure.json",
+  "name": "vehicles",
+  "description": "vehicles schema",
+  "type": "array",
+  "items": {
+    "type": "string",
+    "pattern": "[a-zA-Z\\d\\-_:]+",
+    "minLength": 1,
+    "maxLength": 100
+  }
+}

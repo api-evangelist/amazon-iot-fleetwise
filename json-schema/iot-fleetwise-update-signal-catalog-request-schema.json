@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-update-signal-catalog-request-schema.json",
+  "title": "UpdateSignalCatalogRequest",
+  "description": "UpdateSignalCatalogRequest schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/resourceName"
+        },
+        {
+          "description": " The name of the signal catalog to update. "
+        }
+      ]
+    },
+    "description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/description"
+        },
+        {
+          "description": " A brief description of the signal catalog to update."
+        }
+      ]
+    },
+    "nodesToAdd": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Nodes"
+        },
+        {
+          "description": " A list of information about nodes to add to the signal catalog. "
+        }
+      ]
+    },
+    "nodesToUpdate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Nodes"
+        },
+        {
+          "description": " A list of information about nodes to update in the signal catalog. "
+        }
+      ]
+    },
+    "nodesToRemove": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NodePaths"
+        },
+        {
+          "description": " A list of <code>fullyQualifiedName</code> of nodes to remove from the signal catalog. "
+        }
+      ]
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

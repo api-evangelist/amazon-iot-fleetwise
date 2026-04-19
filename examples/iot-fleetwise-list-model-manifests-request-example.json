@@ -1,0 +1,5 @@
+{
+  "signalCatalogArn": "arn:aws:iot:us-east-1:123456789012:thing/example",
+  "nextToken": "example-value",
+  "maxResults": "example-value"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-get-fleet-request-schema.json",
+  "title": "GetFleetRequest",
+  "description": "GetFleetRequest schema",
+  "type": "object",
+  "properties": {
+    "fleetId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/fleetId"
+        },
+        {
+          "description": " The ID of the fleet to retrieve information about. "
+        }
+      ]
+    }
+  },
+  "required": [
+    "fleetId"
+  ]
+}

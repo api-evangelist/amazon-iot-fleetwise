@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-signal-information-structure.json",
+  "name": "SignalInformation",
+  "description": "Information about a signal.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/wildcardSignalName"
+        },
+        {
+          "description": "The name of the signal."
+        }
+      ]
+    },
+    "maxSampleCount": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/maxSampleCount"
+        },
+        {
+          "description": "The maximum number of samples to collect."
+        }
+      ]
+    },
+    "minimumSamplingIntervalMs": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/uint32"
+        },
+        {
+          "description": "<p>The minimum duration of time (in milliseconds) between two triggering events to collect data.</p> <note> <p>If a signal changes often, you might want to collect data at a slower rate.</p> </note>"
+        }
+      ]
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-update-model-manifest-request-schema.json",
+  "title": "UpdateModelManifestRequest",
+  "description": "UpdateModelManifestRequest schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/resourceName"
+        },
+        {
+          "description": " The name of the vehicle model to update. "
+        }
+      ]
+    },
+    "description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/description"
+        },
+        {
+          "description": " A brief description of the vehicle model. "
+        }
+      ]
+    },
+    "nodesToAdd": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NodePaths"
+        },
+        {
+          "description": " A list of <code>fullyQualifiedName</code> of nodes, which are a general abstraction of signals, to add to the vehicle model. "
+        }
+      ]
+    },
+    "nodesToRemove": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NodePaths"
+        },
+        {
+          "description": " A list of <code>fullyQualifiedName</code> of nodes, which are a general abstraction of signals, to remove from the vehicle model. "
+        }
+      ]
+    },
+    "status": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ManifestStatus"
+        },
+        {
+          "description": " The state of the vehicle model. If the status is <code>ACTIVE</code>, the vehicle model can't be edited. If the status is <code>DRAFT</code>, you can edit the vehicle model. "
+        }
+      ]
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

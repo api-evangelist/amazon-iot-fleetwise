@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-update-vehicle-errors-structure.json",
+  "name": "updateVehicleErrors",
+  "description": "updateVehicleErrors schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "vehicleName": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/vehicleName"
+          },
+          {
+            "description": "The ID of the vehicle with the error."
+          }
+        ]
+      },
+      "code": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/number"
+          },
+          {
+            "description": "The relevant HTTP error code (400+)."
+          }
+        ]
+      },
+      "message": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/string"
+          },
+          {
+            "description": "A message associated with the error."
+          }
+        ]
+      }
+    },
+    "description": "An HTTP error resulting from updating the description for a vehicle."
+  }
+}

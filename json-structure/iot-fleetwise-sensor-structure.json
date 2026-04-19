@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-sensor-structure.json",
+  "name": "Sensor",
+  "description": "<p>An input component that reports the environmental condition of a vehicle.</p> <note> <p>You can collect data about fluid levels, temperatures, vibrations, or battery voltage from sensors.</p> </note>",
+  "type": "object",
+  "properties": {
+    "fullyQualifiedName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/string"
+        },
+        {
+          "description": "The fully qualified name of the sensor. For example, the fully qualified name of a sensor might be <code>Vehicle.Body.Engine.Battery</code>."
+        }
+      ]
+    },
+    "dataType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NodeDataType"
+        },
+        {
+          "description": "The specified data type of the sensor. "
+        }
+      ]
+    },
+    "description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/description"
+        },
+        {
+          "description": "A brief description of a sensor."
+        }
+      ]
+    },
+    "unit": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/string"
+        },
+        {
+          "description": "The scientific unit of measurement for data collected by the sensor."
+        }
+      ]
+    },
+    "allowedValues": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/listOfStrings"
+        },
+        {
+          "description": "A list of possible values a sensor can take."
+        }
+      ]
+    },
+    "min": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/double"
+        },
+        {
+          "description": "The specified possible minimum value of the sensor."
+        }
+      ]
+    },
+    "max": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/double"
+        },
+        {
+          "description": "The specified possible maximum value of the sensor."
+        }
+      ]
+    },
+    "deprecationMessage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/message"
+        },
+        {
+          "description": "The deprecation message for the node or the branch that was moved or deleted."
+        }
+      ]
+    },
+    "comment": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/message"
+        },
+        {
+          "description": "A comment in addition to the description."
+        }
+      ]
+    }
+  },
+  "required": [
+    "fullyQualifiedName",
+    "dataType"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-delete-campaign-response-schema.json",
+  "title": "DeleteCampaignResponse",
+  "description": "DeleteCampaignResponse schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/campaignName"
+        },
+        {
+          "description": "The name of the deleted campaign."
+        }
+      ]
+    },
+    "arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/arn"
+        },
+        {
+          "description": "<p> The Amazon Resource Name (ARN) of the deleted campaign.</p> <note> <p>The ARN isn\u2019t returned if a campaign doesn\u2019t exist.</p> </note>"
+        }
+      ]
+    }
+  }
+}

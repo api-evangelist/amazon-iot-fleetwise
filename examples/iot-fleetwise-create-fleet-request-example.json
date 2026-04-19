@@ -1,0 +1,6 @@
+{
+  "fleetId": "id-abc123",
+  "description": "example-value",
+  "signalCatalogArn": "arn:aws:iot:us-east-1:123456789012:thing/example",
+  "tags": "example-value"
+}

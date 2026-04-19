@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-put-logging-options-request-schema.json",
+  "title": "PutLoggingOptionsRequest",
+  "description": "PutLoggingOptionsRequest schema",
+  "type": "object",
+  "properties": {
+    "cloudWatchLogDelivery": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CloudWatchLogDeliveryOptions"
+        },
+        {
+          "description": "Creates or updates the log delivery option to Amazon CloudWatch Logs."
+        }
+      ]
+    }
+  },
+  "required": [
+    "cloudWatchLogDelivery"
+  ]
+}

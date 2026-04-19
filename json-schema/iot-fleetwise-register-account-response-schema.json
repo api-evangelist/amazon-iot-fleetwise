@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-register-account-response-schema.json",
+  "title": "RegisterAccountResponse",
+  "description": "RegisterAccountResponse schema",
+  "type": "object",
+  "properties": {
+    "registerAccountStatus": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RegistrationStatus"
+        },
+        {
+          "description": " The status of registering your Amazon Web Services account, IAM role, and Timestream resources. "
+        }
+      ]
+    },
+    "timestreamResources": {
+      "type": "object",
+      "required": [
+        "timestreamDatabaseName",
+        "timestreamTableName"
+      ],
+      "properties": {
+        "timestreamDatabaseName": {
+          "allOf": [
+            {
+              "$ref": "#/components/schemas/TimestreamDatabaseName"
+            },
+            {
+              "description": "The name of the registered Amazon Timestream database."
+            }
+          ]
+        },
+        "timestreamTableName": {
+          "allOf": [
+            {
+              "$ref": "#/components/schemas/TimestreamTableName"
+            },
+            {
+              "description": "The name of the registered Amazon Timestream database table."
+            }
+          ]
+        }
+      },
+      "description": "The registered Amazon Timestream resources that Amazon Web Services IoT FleetWise edge agent software can transfer your vehicle data to."
+    },
+    "iamResources": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IamResources"
+        },
+        {
+          "description": " The registered IAM resource that allows Amazon Web Services IoT FleetWise to send data to Amazon Timestream. "
+        }
+      ]
+    },
+    "creationTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/timestamp"
+        },
+        {
+          "description": " The time the account was registered, in seconds since epoch (January 1, 1970 at midnight UTC time). "
+        }
+      ]
+    },
+    "lastModificationTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/timestamp"
+        },
+        {
+          "description": " The time this registration was last updated, in seconds since epoch (January 1, 1970 at midnight UTC time). "
+        }
+      ]
+    }
+  },
+  "required": [
+    "registerAccountStatus",
+    "iamResources",
+    "creationTime",
+    "lastModificationTime"
+  ]
+}

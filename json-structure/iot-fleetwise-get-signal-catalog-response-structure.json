@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-get-signal-catalog-response-structure.json",
+  "name": "GetSignalCatalogResponse",
+  "description": "GetSignalCatalogResponse schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/resourceName"
+        },
+        {
+          "description": " The name of the signal catalog. "
+        }
+      ]
+    },
+    "arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/arn"
+        },
+        {
+          "description": " The Amazon Resource Name (ARN) of the signal catalog. "
+        }
+      ]
+    },
+    "description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/description"
+        },
+        {
+          "description": " A brief description of the signal catalog. "
+        }
+      ]
+    },
+    "nodeCounts": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NodeCounts"
+        },
+        {
+          "description": " The total number of network nodes specified in a signal catalog. "
+        }
+      ]
+    },
+    "creationTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/timestamp"
+        },
+        {
+          "description": " The time the signal catalog was created in seconds since epoch (January 1, 1970 at midnight UTC time). "
+        }
+      ]
+    },
+    "lastModificationTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/timestamp"
+        },
+        {
+          "description": "The last time the signal catalog was modified."
+        }
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "arn",
+    "creationTime",
+    "lastModificationTime"
+  ]
+}

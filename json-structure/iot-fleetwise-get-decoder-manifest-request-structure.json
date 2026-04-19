@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-get-decoder-manifest-request-structure.json",
+  "name": "GetDecoderManifestRequest",
+  "description": "GetDecoderManifestRequest schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/resourceName"
+        },
+        {
+          "description": " The name of the decoder manifest to retrieve information about. "
+        }
+      ]
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

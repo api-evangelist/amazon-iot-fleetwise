@@ -1,0 +1,11 @@
+{
+  "pidResponseLength": "id-abc123",
+  "serviceMode": "example-value",
+  "pid": "id-abc123",
+  "scaling": "example-value",
+  "offset": "example-value",
+  "startByte": "example-value",
+  "byteLength": "example-value",
+  "bitRightShift": "example-value",
+  "bitMaskLength": "example-value"
+}

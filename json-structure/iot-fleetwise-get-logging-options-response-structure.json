@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-get-logging-options-response-structure.json",
+  "name": "GetLoggingOptionsResponse",
+  "description": "GetLoggingOptionsResponse schema",
+  "type": "object",
+  "properties": {
+    "cloudWatchLogDelivery": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CloudWatchLogDeliveryOptions"
+        },
+        {
+          "description": "Returns information about log delivery to Amazon CloudWatch Logs."
+        }
+      ]
+    }
+  },
+  "required": [
+    "cloudWatchLogDelivery"
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "example-resource",
+  "maxSampleCount": "example-value",
+  "minimumSamplingIntervalMs": "example-value"
+}

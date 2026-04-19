@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-update-mode-schema.json",
+  "title": "UpdateMode",
+  "description": "UpdateMode schema",
+  "type": "string",
+  "enum": [
+    "Overwrite",
+    "Merge"
+  ]
+}

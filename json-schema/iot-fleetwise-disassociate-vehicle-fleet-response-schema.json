@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-disassociate-vehicle-fleet-response-schema.json",
+  "title": "DisassociateVehicleFleetResponse",
+  "description": "DisassociateVehicleFleetResponse schema",
+  "type": "object",
+  "properties": {}
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-network-files-list-structure.json",
+  "name": "NetworkFilesList",
+  "description": "NetworkFilesList schema",
+  "type": "array",
+  "items": {
+    "type": "string"
+  }
+}

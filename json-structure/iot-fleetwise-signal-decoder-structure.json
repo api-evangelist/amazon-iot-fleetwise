@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-signal-decoder-structure.json",
+  "name": "SignalDecoder",
+  "description": "Information about a signal decoder.",
+  "type": "object",
+  "properties": {
+    "fullyQualifiedName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FullyQualifiedName"
+        },
+        {
+          "description": "The fully qualified name of a signal decoder as defined in a vehicle model."
+        }
+      ]
+    },
+    "type": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SignalDecoderType"
+        },
+        {
+          "description": "The network protocol for the vehicle. For example, <code>CAN_SIGNAL</code> specifies a protocol that defines how data is communicated between electronic control units (ECUs). <code>OBD_SIGNAL</code> specifies a protocol that defines how self-diagnostic data is communicated between ECUs."
+        }
+      ]
+    },
+    "interfaceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InterfaceId"
+        },
+        {
+          "description": "The ID of a network interface that specifies what network protocol a vehicle follows."
+        }
+      ]
+    },
+    "canSignal": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CanSignal"
+        },
+        {
+          "description": "Information about signal decoder using the Controller Area Network (CAN) protocol."
+        }
+      ]
+    },
+    "obdSignal": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ObdSignal"
+        },
+        {
+          "description": "Information about signal decoder using the On-board diagnostic (OBD) II protocol."
+        }
+      ]
+    }
+  },
+  "required": [
+    "fullyQualifiedName",
+    "type",
+    "interfaceId"
+  ]
+}

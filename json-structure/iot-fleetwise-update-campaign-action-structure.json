@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-update-campaign-action-structure.json",
+  "name": "UpdateCampaignAction",
+  "description": "UpdateCampaignAction schema",
+  "type": "string",
+  "enum": [
+    "APPROVE",
+    "SUSPEND",
+    "RESUME",
+    "UPDATE"
+  ]
+}

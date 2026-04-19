@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-get-fleet-response-schema.json",
+  "title": "GetFleetResponse",
+  "description": "GetFleetResponse schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/fleetId"
+        },
+        {
+          "description": " The ID of the fleet."
+        }
+      ]
+    },
+    "arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/arn"
+        },
+        {
+          "description": " The Amazon Resource Name (ARN) of the fleet. "
+        }
+      ]
+    },
+    "description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/description"
+        },
+        {
+          "description": " A brief description of the fleet. "
+        }
+      ]
+    },
+    "signalCatalogArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/arn"
+        },
+        {
+          "description": " The ARN of a signal catalog associated with the fleet. "
+        }
+      ]
+    },
+    "creationTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/timestamp"
+        },
+        {
+          "description": " The time the fleet was created in seconds since epoch (January 1, 1970 at midnight UTC time). "
+        }
+      ]
+    },
+    "lastModificationTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/timestamp"
+        },
+        {
+          "description": " The time the fleet was last updated, in seconds since epoch (January 1, 1970 at midnight UTC time). "
+        }
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "arn",
+    "signalCatalogArn",
+    "creationTime",
+    "lastModificationTime"
+  ]
+}

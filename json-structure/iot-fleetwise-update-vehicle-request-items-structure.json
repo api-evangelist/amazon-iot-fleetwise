@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-update-vehicle-request-items-structure.json",
+  "name": "updateVehicleRequestItems",
+  "description": "updateVehicleRequestItems schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "vehicleName"
+    ],
+    "properties": {
+      "vehicleName": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/vehicleName"
+          },
+          {
+            "description": "The unique ID of the vehicle to update."
+          }
+        ]
+      },
+      "modelManifestArn": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/arn"
+          },
+          {
+            "description": "The ARN of the vehicle model (model manifest) associated with the vehicle to update."
+          }
+        ]
+      },
+      "decoderManifestArn": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/arn"
+          },
+          {
+            "description": "The ARN of the signal decoder manifest associated with the vehicle to update."
+          }
+        ]
+      },
+      "attributes": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/attributesMap"
+          },
+          {
+            "description": "<p>Static information about a vehicle in a key-value pair. For example:</p> <p> <code>\"engineType\"</code> : <code>\"1.3 L R2\"</code> </p>"
+          }
+        ]
+      },
+      "attributeUpdateMode": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/UpdateMode"
+          },
+          {
+            "description": "<p>The method the specified attributes will update the existing attributes on the vehicle. Use<code>Overwite</code> to replace the vehicle attributes with the specified attributes. Or use <code>Merge</code> to combine all attributes.</p> <p>This is required if attributes are present in the input.</p>"
+          }
+        ]
+      }
+    },
+    "description": "Information about the vehicle to update."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-create-fleet-request-structure.json",
+  "name": "CreateFleetRequest",
+  "description": "CreateFleetRequest schema",
+  "type": "object",
+  "properties": {
+    "fleetId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/fleetId"
+        },
+        {
+          "description": " The unique ID of the fleet to create. "
+        }
+      ]
+    },
+    "description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/description"
+        },
+        {
+          "description": " A brief description of the fleet to create. "
+        }
+      ]
+    },
+    "signalCatalogArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/arn"
+        },
+        {
+          "description": " The Amazon Resource Name (ARN) of a signal catalog. "
+        }
+      ]
+    },
+    "tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TagList"
+        },
+        {
+          "description": "Metadata that can be used to manage the fleet."
+        }
+      ]
+    }
+  },
+  "required": [
+    "fleetId",
+    "signalCatalogArn"
+  ]
+}

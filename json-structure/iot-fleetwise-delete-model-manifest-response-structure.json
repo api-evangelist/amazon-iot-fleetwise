@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-delete-model-manifest-response-structure.json",
+  "name": "DeleteModelManifestResponse",
+  "description": "DeleteModelManifestResponse schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/resourceName"
+        },
+        {
+          "description": "The name of the deleted model manifest."
+        }
+      ]
+    },
+    "arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/arn"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the deleted model manifest."
+        }
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "arn"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-create-fleet-response-schema.json",
+  "title": "CreateFleetResponse",
+  "description": "CreateFleetResponse schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/fleetId"
+        },
+        {
+          "description": " The ID of the created fleet. "
+        }
+      ]
+    },
+    "arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/arn"
+        },
+        {
+          "description": " The ARN of the created fleet. "
+        }
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "arn"
+  ]
+}

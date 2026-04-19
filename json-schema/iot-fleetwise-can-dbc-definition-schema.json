@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-can-dbc-definition-schema.json",
+  "title": "CanDbcDefinition",
+  "description": "Configurations used to create a decoder manifest.",
+  "type": "object",
+  "properties": {
+    "networkInterface": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InterfaceId"
+        },
+        {
+          "description": "Contains information about a network interface."
+        }
+      ]
+    },
+    "canDbcFiles": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NetworkFilesList"
+        },
+        {
+          "description": "A list of DBC files. You can upload only one DBC file for each network interface and specify up to five (inclusive) files in the list."
+        }
+      ]
+    },
+    "signalsMap": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ModelSignalsMap"
+        },
+        {
+          "description": "Pairs every signal specified in your vehicle model with a signal decoder."
+        }
+      ]
+    }
+  },
+  "required": [
+    "networkInterface",
+    "canDbcFiles"
+  ]
+}

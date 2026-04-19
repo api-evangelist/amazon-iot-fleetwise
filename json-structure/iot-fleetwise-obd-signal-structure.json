@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-obd-signal-structure.json",
+  "name": "ObdSignal",
+  "description": "Information about signal messages using the on-board diagnostics (OBD) II protocol in a vehicle.",
+  "type": "object",
+  "properties": {
+    "pidResponseLength": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/positiveInteger"
+        },
+        {
+          "description": "The length of the requested data."
+        }
+      ]
+    },
+    "serviceMode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/nonNegativeInteger"
+        },
+        {
+          "description": "The mode of operation (diagnostic service) in a message."
+        }
+      ]
+    },
+    "pid": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/nonNegativeInteger"
+        },
+        {
+          "description": "The diagnostic code used to request data from a vehicle for this signal."
+        }
+      ]
+    },
+    "scaling": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/double"
+        },
+        {
+          "description": "A multiplier used to decode the message."
+        }
+      ]
+    },
+    "offset": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/double"
+        },
+        {
+          "description": "The offset used to calculate the signal value. Combined with scaling, the calculation is <code>value = raw_value * scaling + offset</code>."
+        }
+      ]
+    },
+    "startByte": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/nonNegativeInteger"
+        },
+        {
+          "description": "Indicates the beginning of the message."
+        }
+      ]
+    },
+    "byteLength": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ObdByteLength"
+        },
+        {
+          "description": "The length of a message."
+        }
+      ]
+    },
+    "bitRightShift": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/nonNegativeInteger"
+        },
+        {
+          "description": "The number of positions to shift bits in the message."
+        }
+      ]
+    },
+    "bitMaskLength": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ObdBitmaskLength"
+        },
+        {
+          "description": "The number of bits to mask in a message."
+        }
+      ]
+    }
+  },
+  "required": [
+    "pidResponseLength",
+    "serviceMode",
+    "pid",
+    "scaling",
+    "offset",
+    "startByte",
+    "byteLength"
+  ]
+}

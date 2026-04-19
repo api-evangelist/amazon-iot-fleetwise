@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-manifest-status-structure.json",
+  "name": "ManifestStatus",
+  "description": "ManifestStatus schema",
+  "type": "string",
+  "enum": [
+    "ACTIVE",
+    "DRAFT"
+  ]
+}

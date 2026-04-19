@@ -1,0 +1,699 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "amzn": "https://amazonaws.com/schema/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "Actuator": "amzn:Actuator",
+    "AssociateVehicleFleetRequest": "amzn:AssociateVehicleFleetRequest",
+    "AssociateVehicleFleetResponse": "amzn:AssociateVehicleFleetResponse",
+    "Attribute": "amzn:Attribute",
+    "BatchCreateVehicleRequest": "amzn:BatchCreateVehicleRequest",
+    "BatchCreateVehicleResponse": "amzn:BatchCreateVehicleResponse",
+    "BatchUpdateVehicleRequest": "amzn:BatchUpdateVehicleRequest",
+    "BatchUpdateVehicleResponse": "amzn:BatchUpdateVehicleResponse",
+    "Branch": "amzn:Branch",
+    "CampaignSummary": "amzn:CampaignSummary",
+    "CanDbcDefinition": "amzn:CanDbcDefinition",
+    "CanInterface": "amzn:CanInterface",
+    "CanSignal": "amzn:CanSignal",
+    "CloudWatchLogDeliveryOptions": "amzn:CloudWatchLogDeliveryOptions",
+    "CollectionScheme": "amzn:CollectionScheme",
+    "ConditionBasedCollectionScheme": "amzn:ConditionBasedCollectionScheme",
+    "CreateCampaignRequest": "amzn:CreateCampaignRequest",
+    "CreateCampaignResponse": "amzn:CreateCampaignResponse",
+    "CreateDecoderManifestRequest": "amzn:CreateDecoderManifestRequest",
+    "CreateDecoderManifestResponse": "amzn:CreateDecoderManifestResponse",
+    "CreateFleetRequest": "amzn:CreateFleetRequest",
+    "CreateFleetResponse": "amzn:CreateFleetResponse",
+    "CreateModelManifestRequest": "amzn:CreateModelManifestRequest",
+    "CreateModelManifestResponse": "amzn:CreateModelManifestResponse",
+    "CreateSignalCatalogRequest": "amzn:CreateSignalCatalogRequest",
+    "CreateSignalCatalogResponse": "amzn:CreateSignalCatalogResponse",
+    "CreateVehicleError": "amzn:CreateVehicleError",
+    "CreateVehicleRequest": "amzn:CreateVehicleRequest",
+    "CreateVehicleRequestItem": "amzn:CreateVehicleRequestItem",
+    "CreateVehicleResponse": "amzn:CreateVehicleResponse",
+    "CreateVehicleResponseItem": "amzn:CreateVehicleResponseItem",
+    "DataDestinationConfig": "amzn:DataDestinationConfig",
+    "DecoderManifestSummary": "amzn:DecoderManifestSummary",
+    "DeleteCampaignRequest": "amzn:DeleteCampaignRequest",
+    "DeleteCampaignResponse": "amzn:DeleteCampaignResponse",
+    "DeleteDecoderManifestRequest": "amzn:DeleteDecoderManifestRequest",
+    "DeleteDecoderManifestResponse": "amzn:DeleteDecoderManifestResponse",
+    "DeleteFleetRequest": "amzn:DeleteFleetRequest",
+    "DeleteFleetResponse": "amzn:DeleteFleetResponse",
+    "DeleteModelManifestRequest": "amzn:DeleteModelManifestRequest",
+    "DeleteModelManifestResponse": "amzn:DeleteModelManifestResponse",
+    "DeleteSignalCatalogRequest": "amzn:DeleteSignalCatalogRequest",
+    "DeleteSignalCatalogResponse": "amzn:DeleteSignalCatalogResponse",
+    "DeleteVehicleRequest": "amzn:DeleteVehicleRequest",
+    "DeleteVehicleResponse": "amzn:DeleteVehicleResponse",
+    "DisassociateVehicleFleetRequest": "amzn:DisassociateVehicleFleetRequest",
+    "DisassociateVehicleFleetResponse": "amzn:DisassociateVehicleFleetResponse",
+    "FleetSummary": "amzn:FleetSummary",
+    "FormattedVss": "amzn:FormattedVss",
+    "GetCampaignRequest": "amzn:GetCampaignRequest",
+    "GetCampaignResponse": "amzn:GetCampaignResponse",
+    "GetDecoderManifestRequest": "amzn:GetDecoderManifestRequest",
+    "GetDecoderManifestResponse": "amzn:GetDecoderManifestResponse",
+    "GetFleetRequest": "amzn:GetFleetRequest",
+    "GetFleetResponse": "amzn:GetFleetResponse",
+    "GetLoggingOptionsRequest": "amzn:GetLoggingOptionsRequest",
+    "GetLoggingOptionsResponse": "amzn:GetLoggingOptionsResponse",
+    "GetModelManifestRequest": "amzn:GetModelManifestRequest",
+    "GetModelManifestResponse": "amzn:GetModelManifestResponse",
+    "GetRegisterAccountStatusRequest": "amzn:GetRegisterAccountStatusRequest",
+    "GetRegisterAccountStatusResponse": "amzn:GetRegisterAccountStatusResponse",
+    "GetSignalCatalogRequest": "amzn:GetSignalCatalogRequest",
+    "GetSignalCatalogResponse": "amzn:GetSignalCatalogResponse",
+    "GetVehicleRequest": "amzn:GetVehicleRequest",
+    "GetVehicleResponse": "amzn:GetVehicleResponse",
+    "GetVehicleStatusRequest": "amzn:GetVehicleStatusRequest",
+    "GetVehicleStatusResponse": "amzn:GetVehicleStatusResponse",
+    "IamRegistrationResponse": "amzn:IamRegistrationResponse",
+    "IamResources": "amzn:IamResources",
+    "ImportDecoderManifestRequest": "amzn:ImportDecoderManifestRequest",
+    "ImportDecoderManifestResponse": "amzn:ImportDecoderManifestResponse",
+    "ImportSignalCatalogRequest": "amzn:ImportSignalCatalogRequest",
+    "ImportSignalCatalogResponse": "amzn:ImportSignalCatalogResponse",
+    "ListCampaignsRequest": "amzn:ListCampaignsRequest",
+    "ListCampaignsResponse": "amzn:ListCampaignsResponse",
+    "ListDecoderManifestNetworkInterfacesRequest": "amzn:ListDecoderManifestNetworkInterfacesRequest",
+    "ListDecoderManifestNetworkInterfacesResponse": "amzn:ListDecoderManifestNetworkInterfacesResponse",
+    "ListDecoderManifestSignalsRequest": "amzn:ListDecoderManifestSignalsRequest",
+    "ListDecoderManifestSignalsResponse": "amzn:ListDecoderManifestSignalsResponse",
+    "ListDecoderManifestsRequest": "amzn:ListDecoderManifestsRequest",
+    "ListDecoderManifestsResponse": "amzn:ListDecoderManifestsResponse",
+    "ListFleetsForVehicleRequest": "amzn:ListFleetsForVehicleRequest",
+    "ListFleetsForVehicleResponse": "amzn:ListFleetsForVehicleResponse",
+    "ListFleetsRequest": "amzn:ListFleetsRequest",
+    "ListFleetsResponse": "amzn:ListFleetsResponse",
+    "ListModelManifestNodesRequest": "amzn:ListModelManifestNodesRequest",
+    "ListModelManifestNodesResponse": "amzn:ListModelManifestNodesResponse",
+    "ListModelManifestsRequest": "amzn:ListModelManifestsRequest",
+    "ListModelManifestsResponse": "amzn:ListModelManifestsResponse",
+    "ListSignalCatalogNodesRequest": "amzn:ListSignalCatalogNodesRequest",
+    "ListSignalCatalogNodesResponse": "amzn:ListSignalCatalogNodesResponse",
+    "ListSignalCatalogsRequest": "amzn:ListSignalCatalogsRequest",
+    "ListSignalCatalogsResponse": "amzn:ListSignalCatalogsResponse",
+    "ListTagsForResourceRequest": "amzn:ListTagsForResourceRequest",
+    "ListTagsForResourceResponse": "amzn:ListTagsForResourceResponse",
+    "ListVehiclesInFleetRequest": "amzn:ListVehiclesInFleetRequest",
+    "ListVehiclesInFleetResponse": "amzn:ListVehiclesInFleetResponse",
+    "ListVehiclesRequest": "amzn:ListVehiclesRequest",
+    "ListVehiclesResponse": "amzn:ListVehiclesResponse",
+    "ModelManifestSummary": "amzn:ModelManifestSummary",
+    "Key": {
+      "@id": "amzn:Key",
+      "@type": "xsd:string"
+    },
+    "ResourceARN": {
+      "@id": "amzn:ResourceARN",
+      "@type": "xsd:string"
+    },
+    "TagKeys": {
+      "@id": "amzn:TagKeys",
+      "@type": "xsd:string"
+    },
+    "Tags": {
+      "@id": "amzn:Tags",
+      "@type": "xsd:string"
+    },
+    "Value": {
+      "@id": "amzn:Value",
+      "@type": "xsd:string"
+    },
+    "accountStatus": {
+      "@id": "amzn:accountStatus",
+      "@type": "xsd:string"
+    },
+    "action": {
+      "@id": "amzn:action",
+      "@type": "xsd:string"
+    },
+    "actuator": {
+      "@id": "amzn:actuator",
+      "@type": "xsd:string"
+    },
+    "allowedValues": {
+      "@id": "amzn:allowedValues",
+      "@type": "xsd:string"
+    },
+    "arn": {
+      "@id": "amzn:arn",
+      "@type": "xsd:string"
+    },
+    "assignedValue": {
+      "@id": "amzn:assignedValue",
+      "@type": "xsd:string"
+    },
+    "associationBehavior": {
+      "@id": "amzn:associationBehavior",
+      "@type": "xsd:string"
+    },
+    "attribute": {
+      "@id": "amzn:attribute",
+      "@type": "xsd:string"
+    },
+    "attributeUpdateMode": {
+      "@id": "amzn:attributeUpdateMode",
+      "@type": "xsd:string"
+    },
+    "attributes": {
+      "@id": "amzn:attributes",
+      "@type": "xsd:string"
+    },
+    "bitMaskLength": {
+      "@id": "amzn:bitMaskLength",
+      "@type": "xsd:string"
+    },
+    "bitRightShift": {
+      "@id": "amzn:bitRightShift",
+      "@type": "xsd:string"
+    },
+    "branch": {
+      "@id": "amzn:branch",
+      "@type": "xsd:string"
+    },
+    "bucketArn": {
+      "@id": "amzn:bucketArn",
+      "@type": "xsd:string"
+    },
+    "byteLength": {
+      "@id": "amzn:byteLength",
+      "@type": "xsd:string"
+    },
+    "campaignName": {
+      "@id": "amzn:campaignName",
+      "@type": "xsd:string"
+    },
+    "campaignSummaries": {
+      "@id": "amzn:campaignSummaries",
+      "@type": "xsd:string"
+    },
+    "campaigns": {
+      "@id": "amzn:campaigns",
+      "@type": "xsd:string"
+    },
+    "canDbc": {
+      "@id": "amzn:canDbc",
+      "@type": "xsd:string"
+    },
+    "canDbcFiles": {
+      "@id": "amzn:canDbcFiles",
+      "@type": "xsd:string"
+    },
+    "canInterface": {
+      "@id": "amzn:canInterface",
+      "@type": "xsd:string"
+    },
+    "canSignal": {
+      "@id": "amzn:canSignal",
+      "@type": "xsd:string"
+    },
+    "cloudWatchLogDelivery": {
+      "@id": "amzn:cloudWatchLogDelivery",
+      "@type": "xsd:string"
+    },
+    "code": {
+      "@id": "amzn:code",
+      "@type": "xsd:string"
+    },
+    "collectionScheme": {
+      "@id": "amzn:collectionScheme",
+      "@type": "xsd:string"
+    },
+    "comment": {
+      "@id": "amzn:comment",
+      "@type": "xsd:string"
+    },
+    "compression": {
+      "@id": "amzn:compression",
+      "@type": "xsd:string"
+    },
+    "conditionBasedCollectionScheme": {
+      "@id": "amzn:conditionBasedCollectionScheme",
+      "@type": "xsd:string"
+    },
+    "conditionLanguageVersion": {
+      "@id": "amzn:conditionLanguageVersion",
+      "@type": "xsd:string"
+    },
+    "creationTime": {
+      "@id": "amzn:creationTime",
+      "@type": "xsd:string"
+    },
+    "customerAccountId": {
+      "@id": "amzn:customerAccountId",
+      "@type": "xsd:string"
+    },
+    "dataDestinationConfigs": {
+      "@id": "amzn:dataDestinationConfigs",
+      "@type": "xsd:string"
+    },
+    "dataExtraDimensions": {
+      "@id": "amzn:dataExtraDimensions",
+      "@type": "xsd:string"
+    },
+    "dataFormat": {
+      "@id": "amzn:dataFormat",
+      "@type": "xsd:string"
+    },
+    "dataType": {
+      "@id": "amzn:dataType",
+      "@type": "xsd:string"
+    },
+    "decoderManifestArn": {
+      "@id": "amzn:decoderManifestArn",
+      "@type": "xsd:string"
+    },
+    "defaultValue": {
+      "@id": "amzn:defaultValue",
+      "@type": "xsd:string"
+    },
+    "deprecationMessage": {
+      "@id": "amzn:deprecationMessage",
+      "@type": "xsd:string"
+    },
+    "description": "schema:description",
+    "diagnosticsMode": {
+      "@id": "amzn:diagnosticsMode",
+      "@type": "xsd:string"
+    },
+    "dtcRequestIntervalSeconds": {
+      "@id": "amzn:dtcRequestIntervalSeconds",
+      "@type": "xsd:string"
+    },
+    "errorMessage": {
+      "@id": "amzn:errorMessage",
+      "@type": "xsd:string"
+    },
+    "errors": {
+      "@id": "amzn:errors",
+      "@type": "xsd:string"
+    },
+    "executionRoleArn": {
+      "@id": "amzn:executionRoleArn",
+      "@type": "xsd:string"
+    },
+    "expiryTime": {
+      "@id": "amzn:expiryTime",
+      "@type": "xsd:string"
+    },
+    "expression": {
+      "@id": "amzn:expression",
+      "@type": "xsd:string"
+    },
+    "factor": {
+      "@id": "amzn:factor",
+      "@type": "xsd:string"
+    },
+    "fleetId": {
+      "@id": "amzn:fleetId",
+      "@type": "xsd:string"
+    },
+    "fleetSummaries": {
+      "@id": "amzn:fleetSummaries",
+      "@type": "xsd:string"
+    },
+    "fleets": {
+      "@id": "amzn:fleets",
+      "@type": "xsd:string"
+    },
+    "fullyQualifiedName": {
+      "@id": "amzn:fullyQualifiedName",
+      "@type": "xsd:string"
+    },
+    "hasTransmissionEcu": {
+      "@id": "amzn:hasTransmissionEcu",
+      "@type": "xsd:string"
+    },
+    "iamRegistrationResponse": {
+      "@id": "amzn:iamRegistrationResponse",
+      "@type": "xsd:string"
+    },
+    "iamResources": {
+      "@id": "amzn:iamResources",
+      "@type": "xsd:string"
+    },
+    "id": {
+      "@id": "amzn:id",
+      "@type": "xsd:string"
+    },
+    "interfaceId": {
+      "@id": "amzn:interfaceId",
+      "@type": "xsd:string"
+    },
+    "isBigEndian": {
+      "@id": "amzn:isBigEndian",
+      "@type": "xsd:string"
+    },
+    "isSigned": {
+      "@id": "amzn:isSigned",
+      "@type": "xsd:string"
+    },
+    "lastModificationTime": {
+      "@id": "amzn:lastModificationTime",
+      "@type": "xsd:string"
+    },
+    "length": {
+      "@id": "amzn:length",
+      "@type": "xsd:string"
+    },
+    "logGroupName": {
+      "@id": "amzn:logGroupName",
+      "@type": "xsd:string"
+    },
+    "logType": {
+      "@id": "amzn:logType",
+      "@type": "xsd:string"
+    },
+    "max": {
+      "@id": "amzn:max",
+      "@type": "xsd:string"
+    },
+    "maxResults": {
+      "@id": "amzn:maxResults",
+      "@type": "xsd:string"
+    },
+    "maxSampleCount": {
+      "@id": "amzn:maxSampleCount",
+      "@type": "xsd:string"
+    },
+    "message": {
+      "@id": "amzn:message",
+      "@type": "xsd:string"
+    },
+    "messageId": {
+      "@id": "amzn:messageId",
+      "@type": "xsd:string"
+    },
+    "min": {
+      "@id": "amzn:min",
+      "@type": "xsd:string"
+    },
+    "minimumSamplingIntervalMs": {
+      "@id": "amzn:minimumSamplingIntervalMs",
+      "@type": "xsd:string"
+    },
+    "minimumTriggerIntervalMs": {
+      "@id": "amzn:minimumTriggerIntervalMs",
+      "@type": "xsd:string"
+    },
+    "modelManifestArn": {
+      "@id": "amzn:modelManifestArn",
+      "@type": "xsd:string"
+    },
+    "name": "schema:name",
+    "networkFileDefinitions": {
+      "@id": "amzn:networkFileDefinitions",
+      "@type": "xsd:string"
+    },
+    "networkInterface": {
+      "@id": "amzn:networkInterface",
+      "@type": "xsd:string"
+    },
+    "networkInterfaces": {
+      "@id": "amzn:networkInterfaces",
+      "@type": "xsd:string"
+    },
+    "networkInterfacesToAdd": {
+      "@id": "amzn:networkInterfacesToAdd",
+      "@type": "xsd:string"
+    },
+    "networkInterfacesToRemove": {
+      "@id": "amzn:networkInterfacesToRemove",
+      "@type": "xsd:string"
+    },
+    "networkInterfacesToUpdate": {
+      "@id": "amzn:networkInterfacesToUpdate",
+      "@type": "xsd:string"
+    },
+    "nextToken": {
+      "@id": "amzn:nextToken",
+      "@type": "xsd:string"
+    },
+    "nodeCounts": {
+      "@id": "amzn:nodeCounts",
+      "@type": "xsd:string"
+    },
+    "nodes": {
+      "@id": "amzn:nodes",
+      "@type": "xsd:string"
+    },
+    "nodesToAdd": {
+      "@id": "amzn:nodesToAdd",
+      "@type": "xsd:string"
+    },
+    "nodesToRemove": {
+      "@id": "amzn:nodesToRemove",
+      "@type": "xsd:string"
+    },
+    "nodesToUpdate": {
+      "@id": "amzn:nodesToUpdate",
+      "@type": "xsd:string"
+    },
+    "obdInterface": {
+      "@id": "amzn:obdInterface",
+      "@type": "xsd:string"
+    },
+    "obdSignal": {
+      "@id": "amzn:obdSignal",
+      "@type": "xsd:string"
+    },
+    "obdStandard": {
+      "@id": "amzn:obdStandard",
+      "@type": "xsd:string"
+    },
+    "offset": {
+      "@id": "amzn:offset",
+      "@type": "xsd:string"
+    },
+    "periodMs": {
+      "@id": "amzn:periodMs",
+      "@type": "xsd:string"
+    },
+    "pid": {
+      "@id": "amzn:pid",
+      "@type": "xsd:string"
+    },
+    "pidRequestIntervalSeconds": {
+      "@id": "amzn:pidRequestIntervalSeconds",
+      "@type": "xsd:string"
+    },
+    "pidResponseLength": {
+      "@id": "amzn:pidResponseLength",
+      "@type": "xsd:string"
+    },
+    "postTriggerCollectionDuration": {
+      "@id": "amzn:postTriggerCollectionDuration",
+      "@type": "xsd:string"
+    },
+    "prefix": {
+      "@id": "amzn:prefix",
+      "@type": "xsd:string"
+    },
+    "priority": {
+      "@id": "amzn:priority",
+      "@type": "xsd:string"
+    },
+    "protocolName": {
+      "@id": "amzn:protocolName",
+      "@type": "xsd:string"
+    },
+    "protocolVersion": {
+      "@id": "amzn:protocolVersion",
+      "@type": "xsd:string"
+    },
+    "registerAccountStatus": {
+      "@id": "amzn:registerAccountStatus",
+      "@type": "xsd:string"
+    },
+    "registrationStatus": {
+      "@id": "amzn:registrationStatus",
+      "@type": "xsd:string"
+    },
+    "requestMessageId": {
+      "@id": "amzn:requestMessageId",
+      "@type": "xsd:string"
+    },
+    "roleArn": {
+      "@id": "amzn:roleArn",
+      "@type": "xsd:string"
+    },
+    "s3Config": {
+      "@id": "amzn:s3Config",
+      "@type": "xsd:string"
+    },
+    "scaling": {
+      "@id": "amzn:scaling",
+      "@type": "xsd:string"
+    },
+    "sensor": {
+      "@id": "amzn:sensor",
+      "@type": "xsd:string"
+    },
+    "serviceMode": {
+      "@id": "amzn:serviceMode",
+      "@type": "xsd:string"
+    },
+    "signalCatalogArn": {
+      "@id": "amzn:signalCatalogArn",
+      "@type": "xsd:string"
+    },
+    "signalDecoders": {
+      "@id": "amzn:signalDecoders",
+      "@type": "xsd:string"
+    },
+    "signalDecodersToAdd": {
+      "@id": "amzn:signalDecodersToAdd",
+      "@type": "xsd:string"
+    },
+    "signalDecodersToRemove": {
+      "@id": "amzn:signalDecodersToRemove",
+      "@type": "xsd:string"
+    },
+    "signalDecodersToUpdate": {
+      "@id": "amzn:signalDecodersToUpdate",
+      "@type": "xsd:string"
+    },
+    "signalsMap": {
+      "@id": "amzn:signalsMap",
+      "@type": "xsd:string"
+    },
+    "signalsToCollect": {
+      "@id": "amzn:signalsToCollect",
+      "@type": "xsd:string"
+    },
+    "spoolingMode": {
+      "@id": "amzn:spoolingMode",
+      "@type": "xsd:string"
+    },
+    "startBit": {
+      "@id": "amzn:startBit",
+      "@type": "xsd:string"
+    },
+    "startByte": {
+      "@id": "amzn:startByte",
+      "@type": "xsd:string"
+    },
+    "startTime": {
+      "@id": "amzn:startTime",
+      "@type": "xsd:string"
+    },
+    "status": {
+      "@id": "amzn:status",
+      "@type": "xsd:string"
+    },
+    "storageCompressionFormat": {
+      "@id": "amzn:storageCompressionFormat",
+      "@type": "xsd:string"
+    },
+    "summaries": {
+      "@id": "amzn:summaries",
+      "@type": "xsd:string"
+    },
+    "tags": {
+      "@id": "amzn:tags",
+      "@type": "xsd:string"
+    },
+    "targetArn": {
+      "@id": "amzn:targetArn",
+      "@type": "xsd:string"
+    },
+    "thingArn": {
+      "@id": "amzn:thingArn",
+      "@type": "xsd:string"
+    },
+    "timeBasedCollectionScheme": {
+      "@id": "amzn:timeBasedCollectionScheme",
+      "@type": "xsd:string"
+    },
+    "timestreamConfig": {
+      "@id": "amzn:timestreamConfig",
+      "@type": "xsd:string"
+    },
+    "timestreamDatabaseArn": {
+      "@id": "amzn:timestreamDatabaseArn",
+      "@type": "xsd:string"
+    },
+    "timestreamDatabaseName": {
+      "@id": "amzn:timestreamDatabaseName",
+      "@type": "xsd:string"
+    },
+    "timestreamRegistrationResponse": {
+      "@id": "amzn:timestreamRegistrationResponse",
+      "@type": "xsd:string"
+    },
+    "timestreamResources": {
+      "@id": "amzn:timestreamResources",
+      "@type": "xsd:string"
+    },
+    "timestreamTableArn": {
+      "@id": "amzn:timestreamTableArn",
+      "@type": "xsd:string"
+    },
+    "timestreamTableName": {
+      "@id": "amzn:timestreamTableName",
+      "@type": "xsd:string"
+    },
+    "totalActuators": {
+      "@id": "amzn:totalActuators",
+      "@type": "xsd:string"
+    },
+    "totalAttributes": {
+      "@id": "amzn:totalAttributes",
+      "@type": "xsd:string"
+    },
+    "totalBranches": {
+      "@id": "amzn:totalBranches",
+      "@type": "xsd:string"
+    },
+    "totalNodes": {
+      "@id": "amzn:totalNodes",
+      "@type": "xsd:string"
+    },
+    "totalSensors": {
+      "@id": "amzn:totalSensors",
+      "@type": "xsd:string"
+    },
+    "triggerMode": {
+      "@id": "amzn:triggerMode",
+      "@type": "xsd:string"
+    },
+    "type": {
+      "@id": "amzn:type",
+      "@type": "xsd:string"
+    },
+    "unit": {
+      "@id": "amzn:unit",
+      "@type": "xsd:string"
+    },
+    "useExtendedIds": {
+      "@id": "amzn:useExtendedIds",
+      "@type": "xsd:string"
+    },
+    "vehicleName": {
+      "@id": "amzn:vehicleName",
+      "@type": "xsd:string"
+    },
+    "vehicleSummaries": {
+      "@id": "amzn:vehicleSummaries",
+      "@type": "xsd:string"
+    },
+    "vehicles": {
+      "@id": "amzn:vehicles",
+      "@type": "xsd:string"
+    },
+    "vss": {
+      "@id": "amzn:vss",
+      "@type": "xsd:string"
+    },
+    "vssJson": {
+      "@id": "amzn:vssJson",
+      "@type": "xsd:string"
+    }
+  }
+}

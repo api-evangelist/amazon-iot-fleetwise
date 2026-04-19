@@ -1,0 +1,67 @@
+vocabulary: "1.0.0"
+info:
+  provider: Amazon IoT FleetWise
+  description: Vocabulary for Amazon IoT FleetWise covering all API resources and operations.
+  created: "2026-04-19"
+  modified: "2026-04-19"
+operational:
+  apis:
+    - namespace: iot-fleetwise
+      version: "2024-01-01"
+      baseUrl: https://iotfleetwise.amazonaws.com
+      status: active
+  resources:
+    - name: resources
+      api: iot-fleetwise
+      actions: [list, create, delete, get, update]
+  actions:
+    - name: list
+      methods: [GET]
+      pattern: read
+    - name: create
+      methods: [POST]
+      pattern: write
+    - name: get
+      methods: [GET]
+      pattern: read
+    - name: update
+      methods: [PUT, PATCH]
+      pattern: write
+    - name: delete
+      methods: [DELETE]
+      pattern: destructive
+  authentication:
+    schemes:
+      - type: AWS Signature Version 4
+        placement: header
+capability:
+  workflows:
+    - name: Vehicle Fleet Management
+      file: capabilities/vehicle-fleet-management.yaml
+      apis: [iot-fleetwise]
+      toolCount: 8
+      personas: [Automotive Engineer, IoT Developer]
+  personas:
+    - id: primary-persona
+      name: Automotive Engineer
+      description: Manages Amazon IoT FleetWise resources and operations
+  domains:
+    - name: IoT
+      description: Collect, transform, and transfer vehicle data to the cloud.
+  namespaces:
+    - name: iot-fleetwise
+      type: consumed
+    - name: vehicle-fleet-management-api
+      type: rest
+      port: 8080
+    - name: vehicle-fleet-management-mcp
+      type: mcp
+      port: 9090
+  binds:
+    - AWS_ACCESS_KEY_ID
+    - AWS_SECRET_ACCESS_KEY
+crossReference:
+  - resource: resources
+    operations: [listvehicles, createvehicle, listfleets, createfleet]
+    workflows: [Vehicle Fleet Management]
+    personas: [Automotive Engineer, IoT Developer]

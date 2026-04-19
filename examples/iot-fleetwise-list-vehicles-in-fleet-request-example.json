@@ -1,0 +1,5 @@
+{
+  "fleetId": "id-abc123",
+  "nextToken": "example-value",
+  "maxResults": "example-value"
+}

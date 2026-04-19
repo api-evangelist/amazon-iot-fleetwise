@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-vehicle-state-schema.json",
+  "title": "VehicleState",
+  "description": "VehicleState schema",
+  "type": "string",
+  "enum": [
+    "CREATED",
+    "READY",
+    "HEALTHY",
+    "SUSPENDED",
+    "DELETING"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "fullyQualifiedName": "example-resource",
+  "type": "example-value",
+  "interfaceId": "id-abc123",
+  "canSignal": "example-value",
+  "obdSignal": "example-value"
+}

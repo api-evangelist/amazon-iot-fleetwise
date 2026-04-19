@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-signal-decoder-type-structure.json",
+  "name": "SignalDecoderType",
+  "description": "SignalDecoderType schema",
+  "type": "string",
+  "enum": [
+    "CAN_SIGNAL",
+    "OBD_SIGNAL"
+  ]
+}

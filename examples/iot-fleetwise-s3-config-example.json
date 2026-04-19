@@ -1,0 +1,6 @@
+{
+  "bucketArn": "arn:aws:iot:us-east-1:123456789012:thing/example",
+  "dataFormat": "example-value",
+  "storageCompressionFormat": "example-value",
+  "prefix": "example-value"
+}

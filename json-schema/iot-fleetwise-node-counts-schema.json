@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-node-counts-schema.json",
+  "title": "NodeCounts",
+  "description": "Information about the number of nodes and node types in a vehicle network.",
+  "type": "object",
+  "properties": {
+    "totalNodes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/number"
+        },
+        {
+          "description": "The total number of nodes in a vehicle network."
+        }
+      ]
+    },
+    "totalBranches": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/number"
+        },
+        {
+          "description": "The total number of nodes in a vehicle network that represent branches."
+        }
+      ]
+    },
+    "totalSensors": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/number"
+        },
+        {
+          "description": "The total number of nodes in a vehicle network that represent sensors."
+        }
+      ]
+    },
+    "totalAttributes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/number"
+        },
+        {
+          "description": "The total number of nodes in a vehicle network that represent attributes."
+        }
+      ]
+    },
+    "totalActuators": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/number"
+        },
+        {
+          "description": "The total number of nodes in a vehicle network that represent actuators."
+        }
+      ]
+    }
+  }
+}

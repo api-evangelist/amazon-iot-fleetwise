@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-get-campaign-request-structure.json",
+  "name": "GetCampaignRequest",
+  "description": "GetCampaignRequest schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/campaignName"
+        },
+        {
+          "description": " The name of the campaign to retrieve information about. "
+        }
+      ]
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

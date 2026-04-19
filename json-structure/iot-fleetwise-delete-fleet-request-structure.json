@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-delete-fleet-request-structure.json",
+  "name": "DeleteFleetRequest",
+  "description": "DeleteFleetRequest schema",
+  "type": "object",
+  "properties": {
+    "fleetId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/fleetId"
+        },
+        {
+          "description": " The ID of the fleet to delete. "
+        }
+      ]
+    }
+  },
+  "required": [
+    "fleetId"
+  ]
+}

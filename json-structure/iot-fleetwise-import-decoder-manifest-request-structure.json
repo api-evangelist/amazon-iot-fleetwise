@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-import-decoder-manifest-request-structure.json",
+  "name": "ImportDecoderManifestRequest",
+  "description": "ImportDecoderManifestRequest schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/resourceName"
+        },
+        {
+          "description": " The name of the decoder manifest to import. "
+        }
+      ]
+    },
+    "networkFileDefinitions": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NetworkFileDefinitions"
+        },
+        {
+          "description": " The file to load into an Amazon Web Services account. "
+        }
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "networkFileDefinitions"
+  ]
+}

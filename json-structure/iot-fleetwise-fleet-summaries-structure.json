@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-fleet-summaries-structure.json",
+  "name": "fleetSummaries",
+  "description": "fleetSummaries schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "arn",
+      "signalCatalogArn",
+      "creationTime"
+    ],
+    "properties": {
+      "id": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/fleetId"
+          },
+          {
+            "description": "The unique ID of the fleet."
+          }
+        ]
+      },
+      "arn": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/arn"
+          },
+          {
+            "description": "The Amazon Resource Name (ARN) of the fleet."
+          }
+        ]
+      },
+      "description": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/description"
+          },
+          {
+            "description": "A brief description of the fleet."
+          }
+        ]
+      },
+      "signalCatalogArn": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/arn"
+          },
+          {
+            "description": "The ARN of the signal catalog associated with the fleet."
+          }
+        ]
+      },
+      "creationTime": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/timestamp"
+          },
+          {
+            "description": "The time the fleet was created, in seconds since epoch (January 1, 1970 at midnight UTC time)."
+          }
+        ]
+      },
+      "lastModificationTime": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/timestamp"
+          },
+          {
+            "description": "The time the fleet was last updated in seconds since epoch (January 1, 1970 at midnight UTC time)."
+          }
+        ]
+      }
+    },
+    "description": "<p>Information about a fleet.</p> <p>You can use the API operation to return this information about multiple fleets.</p>"
+  }
+}

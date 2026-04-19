@@ -1,0 +1,4 @@
+{
+  "ResourceARN": "arn:aws:iot:us-east-1:123456789012:thing/example",
+  "TagKeys": "example-value"
+}

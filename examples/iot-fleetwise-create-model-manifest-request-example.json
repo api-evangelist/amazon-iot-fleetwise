@@ -1,0 +1,7 @@
+{
+  "name": "example-resource",
+  "description": "example-value",
+  "nodes": "example-value",
+  "signalCatalogArn": "arn:aws:iot:us-east-1:123456789012:thing/example",
+  "tags": "example-value"
+}

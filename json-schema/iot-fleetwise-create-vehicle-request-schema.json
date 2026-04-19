@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-create-vehicle-request-schema.json",
+  "title": "CreateVehicleRequest",
+  "description": "CreateVehicleRequest schema",
+  "type": "object",
+  "properties": {
+    "vehicleName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/vehicleName"
+        },
+        {
+          "description": " The unique ID of the vehicle to create. "
+        }
+      ]
+    },
+    "modelManifestArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/arn"
+        },
+        {
+          "description": " The Amazon Resource Name ARN of a vehicle model. "
+        }
+      ]
+    },
+    "decoderManifestArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/arn"
+        },
+        {
+          "description": " The ARN of a decoder manifest. "
+        }
+      ]
+    },
+    "attributes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/attributesMap"
+        },
+        {
+          "description": "<p>Static information about a vehicle in a key-value pair. For example: <code>\"engineType\"</code> : <code>\"1.3 L R2\"</code> </p> <p>A campaign must include the keys (attribute names) in <code>dataExtraDimensions</code> for them to display in Amazon Timestream.</p>"
+        }
+      ]
+    },
+    "associationBehavior": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/VehicleAssociationBehavior"
+        },
+        {
+          "description": "<p> An option to create a new Amazon Web Services IoT thing when creating a vehicle, or to validate an existing Amazon Web Services IoT thing as a vehicle. </p> <p>Default: <code/> </p>"
+        }
+      ]
+    },
+    "tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TagList"
+        },
+        {
+          "description": "Metadata that can be used to manage the vehicle."
+        }
+      ]
+    }
+  },
+  "required": [
+    "vehicleName",
+    "modelManifestArn",
+    "decoderManifestArn"
+  ]
+}

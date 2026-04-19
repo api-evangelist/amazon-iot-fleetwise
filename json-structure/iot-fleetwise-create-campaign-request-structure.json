@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-create-campaign-request-structure.json",
+  "name": "CreateCampaignRequest",
+  "description": "CreateCampaignRequest schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/campaignName"
+        },
+        {
+          "description": " The name of the campaign to create. "
+        }
+      ]
+    },
+    "description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/description"
+        },
+        {
+          "description": "An optional description of the campaign to help identify its purpose."
+        }
+      ]
+    },
+    "signalCatalogArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/arn"
+        },
+        {
+          "description": "(Optional) The Amazon Resource Name (ARN) of the signal catalog to associate with the campaign. "
+        }
+      ]
+    },
+    "targetArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/arn"
+        },
+        {
+          "description": " The ARN of the vehicle or fleet to deploy a campaign to. "
+        }
+      ]
+    },
+    "startTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/timestamp"
+        },
+        {
+          "description": "<p>(Optional) The time, in milliseconds, to deliver a campaign after it was approved. If it's not specified, <code>0</code> is used.</p> <p>Default: <code>0</code> </p>"
+        }
+      ]
+    },
+    "expiryTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/timestamp"
+        },
+        {
+          "description": "<p> (Optional) The time the campaign expires, in seconds since epoch (January 1, 1970 at midnight UTC time). Vehicle data isn't collected after the campaign expires. </p> <p>Default: 253402214400 (December 31, 9999, 00:00:00 UTC)</p>"
+        }
+      ]
+    },
+    "postTriggerCollectionDuration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/uint32"
+        },
+        {
+          "description": "<p> (Optional) How long (in milliseconds) to collect raw data after a triggering event initiates the collection. If it's not specified, <code>0</code> is used.</p> <p>Default: <code>0</code> </p>"
+        }
+      ]
+    },
+    "diagnosticsMode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DiagnosticsMode"
+        },
+        {
+          "description": "<p> (Optional) Option for a vehicle to send diagnostic trouble codes to Amazon Web Services IoT FleetWise. If you want to send diagnostic trouble codes, use <code>SEND_ACTIVE_DTCS</code>. If it's not specified, <code>OFF</code> is used.</p> <p>Default: <code>OFF</code> </p>"
+        }
+      ]
+    },
+    "spoolingMode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SpoolingMode"
+        },
+        {
+          "description": "<p>(Optional) Whether to store collected data after a vehicle lost a connection with the cloud. After a connection is re-established, the data is automatically forwarded to Amazon Web Services IoT FleetWise. If you want to store collected data when a vehicle loses connection with the cloud, use <code>TO_DISK</code>. If it's not specified, <code>OFF</code> is used.</p> <p>Default: <code>OFF</code> </p>"
+        }
+      ]
+    },
+    "compression": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Compression"
+        },
+        {
+          "description": "<p> (Optional) Whether to compress signals before transmitting data to Amazon Web Services IoT FleetWise. If you don't want to compress the signals, use <code>OFF</code>. If it's not specified, <code>SNAPPY</code> is used. </p> <p>Default: <code>SNAPPY</code> </p>"
+        }
+      ]
+    },
+    "priority": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/priority"
+        },
+        {
+          "description": "<p>(Optional) A number indicating the priority of one campaign over another campaign for a certain vehicle or fleet. A campaign with the lowest value is deployed to vehicles before any other campaigns. If it's not specified, <code>0</code> is used. </p> <p>Default: <code>0</code> </p>"
+        }
+      ]
+    },
+    "signalsToCollect": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SignalInformationList"
+        },
+        {
+          "description": "(Optional) A list of information about signals to collect. "
+        }
+      ]
+    },
+    "collectionScheme": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CollectionScheme"
+        },
+        {
+          "description": " The data collection scheme associated with the campaign. You can specify a scheme that collects data based on time or an event."
+        }
+      ]
+    },
+    "dataExtraDimensions": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DataExtraDimensionNodePathList"
+        },
+        {
+          "description": "<p> (Optional) A list of vehicle attributes to associate with a campaign. </p> <p>Enrich the data with specified vehicle attributes. For example, add <code>make</code> and <code>model</code> to the campaign, and Amazon Web Services IoT FleetWise will associate the data with those attributes as dimensions in Amazon Timestream. You can then query the data against <code>make</code> and <code>model</code>.</p> <p>Default: An empty array</p>"
+        }
+      ]
+    },
+    "tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TagList"
+        },
+        {
+          "description": "Metadata that can be used to manage the campaign."
+        }
+      ]
+    },
+    "dataDestinationConfigs": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DataDestinationConfigs"
+        },
+        {
+          "description": "<p>The destination where the campaign sends data. You can choose to send data to be stored in Amazon S3 or Amazon Timestream.</p> <p>Amazon S3 optimizes the cost of data storage and provides additional mechanisms to use vehicle data, such as data lakes, centralized data storage, data processing pipelines, and analytics. </p> <p>You can use Amazon Timestream to access and analyze time series data, and Timestream to query vehicle data so that you can identify trends and patterns.</p>"
+        }
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "signalCatalogArn",
+    "targetArn",
+    "collectionScheme"
+  ]
+}

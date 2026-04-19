@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-vehicle-summary-structure.json",
+  "name": "VehicleSummary",
+  "description": "<p>Information about a vehicle.</p> <p>To return this information about vehicles in your account, you can use the API operation.</p>",
+  "type": "object",
+  "properties": {
+    "vehicleName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/vehicleName"
+        },
+        {
+          "description": "The unique ID of the vehicle."
+        }
+      ]
+    },
+    "arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/arn"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the vehicle."
+        }
+      ]
+    },
+    "modelManifestArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/arn"
+        },
+        {
+          "description": "The ARN of a vehicle model (model manifest) associated with the vehicle."
+        }
+      ]
+    },
+    "decoderManifestArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/arn"
+        },
+        {
+          "description": "The ARN of a decoder manifest associated with the vehicle."
+        }
+      ]
+    },
+    "creationTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/timestamp"
+        },
+        {
+          "description": "The time the vehicle was created in seconds since epoch (January 1, 1970 at midnight UTC time)."
+        }
+      ]
+    },
+    "lastModificationTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/timestamp"
+        },
+        {
+          "description": "The time the vehicle was last updated in seconds since epoch (January 1, 1970 at midnight UTC time). "
+        }
+      ]
+    }
+  },
+  "required": [
+    "vehicleName",
+    "arn",
+    "modelManifestArn",
+    "decoderManifestArn",
+    "creationTime",
+    "lastModificationTime"
+  ]
+}

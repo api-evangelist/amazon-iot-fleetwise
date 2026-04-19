@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-create-decoder-manifest-request-schema.json",
+  "title": "CreateDecoderManifestRequest",
+  "description": "CreateDecoderManifestRequest schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/resourceName"
+        },
+        {
+          "description": " The unique name of the decoder manifest to create."
+        }
+      ]
+    },
+    "description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/description"
+        },
+        {
+          "description": " A brief description of the decoder manifest. "
+        }
+      ]
+    },
+    "modelManifestArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/arn"
+        },
+        {
+          "description": " The Amazon Resource Name (ARN) of the vehicle model (model manifest). "
+        }
+      ]
+    },
+    "signalDecoders": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SignalDecoders"
+        },
+        {
+          "description": " A list of information about signal decoders. "
+        }
+      ]
+    },
+    "networkInterfaces": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NetworkInterfaces"
+        },
+        {
+          "description": " A list of information about available network interfaces. "
+        }
+      ]
+    },
+    "tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TagList"
+        },
+        {
+          "description": "Metadata that can be used to manage the decoder manifest."
+        }
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "modelManifestArn"
+  ]
+}

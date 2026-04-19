@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-timestream-config-schema.json",
+  "title": "TimestreamConfig",
+  "description": "The Amazon Timestream table where the Amazon Web Services IoT FleetWise campaign sends data. Timestream stores and organizes data to optimize query processing time and to reduce storage costs. For more information, see <a href=\"https://docs.aws.amazon.com/timestream/latest/developerguide/data-modeling.html\">Data modeling</a> in the <i>Amazon Timestream Developer Guide</i>.",
+  "type": "object",
+  "properties": {
+    "timestreamTableArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TimestreamTableArn"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the Amazon Timestream table."
+        }
+      ]
+    },
+    "executionRoleArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IAMRoleArn"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the task execution role that grants Amazon Web Services IoT FleetWise permission to deliver data to the Amazon Timestream table."
+        }
+      ]
+    }
+  },
+  "required": [
+    "timestreamTableArn",
+    "executionRoleArn"
+  ]
+}

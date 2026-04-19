@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-attribute-schema.json",
+  "title": "Attribute",
+  "description": "A signal that represents static information about the vehicle, such as engine type or manufacturing date.",
+  "type": "object",
+  "properties": {
+    "fullyQualifiedName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/string"
+        },
+        {
+          "description": "The fully qualified name of the attribute. For example, the fully qualified name of an attribute might be <code>Vehicle.Body.Engine.Type</code>."
+        }
+      ]
+    },
+    "dataType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NodeDataType"
+        },
+        {
+          "description": "The specified data type of the attribute. "
+        }
+      ]
+    },
+    "description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/description"
+        },
+        {
+          "description": "A brief description of the attribute."
+        }
+      ]
+    },
+    "unit": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/string"
+        },
+        {
+          "description": "The scientific unit for the attribute."
+        }
+      ]
+    },
+    "allowedValues": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/listOfStrings"
+        },
+        {
+          "description": "A list of possible values an attribute can be assigned."
+        }
+      ]
+    },
+    "min": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/double"
+        },
+        {
+          "description": "The specified possible minimum value of the attribute."
+        }
+      ]
+    },
+    "max": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/double"
+        },
+        {
+          "description": "The specified possible maximum value of the attribute."
+        }
+      ]
+    },
+    "assignedValue": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/string"
+        },
+        {
+          "deprecated": true,
+          "description": "A specified value for the attribute.assignedValue is no longer in use"
+        }
+      ]
+    },
+    "defaultValue": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/string"
+        },
+        {
+          "description": "The default value of the attribute."
+        }
+      ]
+    },
+    "deprecationMessage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/message"
+        },
+        {
+          "description": "The deprecation message for the node or the branch that was moved or deleted."
+        }
+      ]
+    },
+    "comment": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/message"
+        },
+        {
+          "description": "A comment in addition to the description."
+        }
+      ]
+    }
+  },
+  "required": [
+    "fullyQualifiedName",
+    "dataType"
+  ]
+}

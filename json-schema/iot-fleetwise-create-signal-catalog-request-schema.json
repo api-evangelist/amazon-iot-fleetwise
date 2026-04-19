@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-create-signal-catalog-request-schema.json",
+  "title": "CreateSignalCatalogRequest",
+  "description": "CreateSignalCatalogRequest schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/resourceName"
+        },
+        {
+          "description": " The name of the signal catalog to create. "
+        }
+      ]
+    },
+    "description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/description"
+        },
+        {
+          "description": "A brief description of the signal catalog."
+        }
+      ]
+    },
+    "nodes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Nodes"
+        },
+        {
+          "description": " A list of information about nodes, which are a general abstraction of signals. For more information, see the API data type."
+        }
+      ]
+    },
+    "tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TagList"
+        },
+        {
+          "description": "Metadata that can be used to manage the signal catalog."
+        }
+      ]
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

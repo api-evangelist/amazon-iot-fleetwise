@@ -1,0 +1,12 @@
+{
+  "fullyQualifiedName": "example-resource",
+  "dataType": "example-value",
+  "description": "example-value",
+  "unit": "example-value",
+  "allowedValues": "example-value",
+  "min": "example-value",
+  "max": "example-value",
+  "assignedValue": "example-value",
+  "deprecationMessage": "example-value",
+  "comment": "example-value"
+}

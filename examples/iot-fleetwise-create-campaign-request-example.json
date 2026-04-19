@@ -1,0 +1,18 @@
+{
+  "name": "example-resource",
+  "description": "example-value",
+  "signalCatalogArn": "arn:aws:iot:us-east-1:123456789012:thing/example",
+  "targetArn": "arn:aws:iot:us-east-1:123456789012:thing/example",
+  "startTime": "2025-03-15T14:30:00Z",
+  "expiryTime": "2025-03-15T14:30:00Z",
+  "postTriggerCollectionDuration": "example-value",
+  "diagnosticsMode": "example-value",
+  "spoolingMode": "example-value",
+  "compression": "example-value",
+  "priority": "example-value",
+  "signalsToCollect": "example-value",
+  "collectionScheme": "example-value",
+  "dataExtraDimensions": "example-value",
+  "tags": "example-value",
+  "dataDestinationConfigs": "example-value"
+}

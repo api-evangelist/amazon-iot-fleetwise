@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-get-register-account-status-request-structure.json",
+  "name": "GetRegisterAccountStatusRequest",
+  "description": "GetRegisterAccountStatusRequest schema",
+  "type": "object",
+  "properties": {}
+}

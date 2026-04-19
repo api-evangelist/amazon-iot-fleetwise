@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-create-model-manifest-request-schema.json",
+  "title": "CreateModelManifestRequest",
+  "description": "CreateModelManifestRequest schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/resourceName"
+        },
+        {
+          "description": " The name of the vehicle model to create."
+        }
+      ]
+    },
+    "description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/description"
+        },
+        {
+          "description": " A brief description of the vehicle model. "
+        }
+      ]
+    },
+    "nodes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/listOfStrings"
+        },
+        {
+          "description": " A list of nodes, which are a general abstraction of signals. "
+        }
+      ]
+    },
+    "signalCatalogArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/arn"
+        },
+        {
+          "description": " The Amazon Resource Name (ARN) of a signal catalog. "
+        }
+      ]
+    },
+    "tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TagList"
+        },
+        {
+          "description": "Metadata that can be used to manage the vehicle model."
+        }
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "nodes",
+    "signalCatalogArn"
+  ]
+}

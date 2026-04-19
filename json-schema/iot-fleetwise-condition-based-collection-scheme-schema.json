@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-condition-based-collection-scheme-schema.json",
+  "title": "ConditionBasedCollectionScheme",
+  "description": "Information about a collection scheme that uses a simple logical expression to recognize what data to collect.",
+  "type": "object",
+  "properties": {
+    "expression": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/eventExpression"
+        },
+        {
+          "description": "The logical expression used to recognize what data to collect. For example, <code>$variable.Vehicle.OutsideAirTemperature &gt;= 105.0</code>."
+        }
+      ]
+    },
+    "minimumTriggerIntervalMs": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/uint32"
+        },
+        {
+          "description": "<p>The minimum duration of time between two triggering events to collect data, in milliseconds.</p> <note> <p>If a signal changes often, you might want to collect data at a slower rate.</p> </note>"
+        }
+      ]
+    },
+    "triggerMode": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TriggerMode"
+        },
+        {
+          "description": "Whether to collect data for all triggering events (<code>ALWAYS</code>). Specify (<code>RISING_EDGE</code>), or specify only when the condition first evaluates to false. For example, triggering on \"AirbagDeployed\"; Users aren't interested on triggering when the airbag is already exploded; they only care about the change from not deployed =&gt; deployed."
+        }
+      ]
+    },
+    "conditionLanguageVersion": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/languageVersion"
+        },
+        {
+          "description": "Specifies the version of the conditional expression language."
+        }
+      ]
+    }
+  },
+  "required": [
+    "expression"
+  ]
+}

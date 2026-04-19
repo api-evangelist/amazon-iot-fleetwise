@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-batch-update-vehicle-request-schema.json",
+  "title": "BatchUpdateVehicleRequest",
+  "description": "BatchUpdateVehicleRequest schema",
+  "type": "object",
+  "properties": {
+    "vehicles": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/updateVehicleRequestItems"
+        },
+        {
+          "description": " A list of information about the vehicles to update. For more information, see the API data type."
+        }
+      ]
+    }
+  },
+  "required": [
+    "vehicles"
+  ]
+}

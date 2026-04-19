@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-actuator-structure.json",
+  "name": "Actuator",
+  "description": "<p>A signal that represents a vehicle device such as the engine, heater, and door locks. Data from an actuator reports the state of a certain vehicle device.</p> <note> <p> Updating actuator data can change the state of a device. For example, you can turn on or off the heater by updating its actuator data.</p> </note>",
+  "type": "object",
+  "properties": {
+    "fullyQualifiedName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/string"
+        },
+        {
+          "description": "The fully qualified name of the actuator. For example, the fully qualified name of an actuator might be <code>Vehicle.Front.Left.Door.Lock</code>."
+        }
+      ]
+    },
+    "dataType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NodeDataType"
+        },
+        {
+          "description": "The specified data type of the actuator. "
+        }
+      ]
+    },
+    "description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/description"
+        },
+        {
+          "description": "A brief description of the actuator."
+        }
+      ]
+    },
+    "unit": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/string"
+        },
+        {
+          "description": "The scientific unit for the actuator."
+        }
+      ]
+    },
+    "allowedValues": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/listOfStrings"
+        },
+        {
+          "description": "A list of possible values an actuator can take."
+        }
+      ]
+    },
+    "min": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/double"
+        },
+        {
+          "description": "The specified possible minimum value of an actuator."
+        }
+      ]
+    },
+    "max": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/double"
+        },
+        {
+          "description": "The specified possible maximum value of an actuator."
+        }
+      ]
+    },
+    "assignedValue": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/string"
+        },
+        {
+          "deprecated": true,
+          "description": "A specified value for the actuator.assignedValue is no longer in use"
+        }
+      ]
+    },
+    "deprecationMessage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/message"
+        },
+        {
+          "description": "The deprecation message for the node or the branch that was moved or deleted."
+        }
+      ]
+    },
+    "comment": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/message"
+        },
+        {
+          "description": "A comment in addition to the description."
+        }
+      ]
+    }
+  },
+  "required": [
+    "fullyQualifiedName",
+    "dataType"
+  ]
+}

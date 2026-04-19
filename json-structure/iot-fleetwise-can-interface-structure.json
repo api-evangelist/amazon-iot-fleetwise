@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-can-interface-structure.json",
+  "name": "CanInterface",
+  "description": "A single controller area network (CAN) device interface.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CanInterfaceName"
+        },
+        {
+          "description": "The unique name of the interface."
+        }
+      ]
+    },
+    "protocolName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ProtocolName"
+        },
+        {
+          "description": "The name of the communication protocol for the interface."
+        }
+      ]
+    },
+    "protocolVersion": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ProtocolVersion"
+        },
+        {
+          "description": "The version of the communication protocol for the interface."
+        }
+      ]
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "example-resource",
+  "requestMessageId": "id-abc123",
+  "obdStandard": "example-value",
+  "pidRequestIntervalSeconds": "id-abc123",
+  "dtcRequestIntervalSeconds": "example-value",
+  "useExtendedIds": "id-abc123",
+  "hasTransmissionEcu": "example-value"
+}

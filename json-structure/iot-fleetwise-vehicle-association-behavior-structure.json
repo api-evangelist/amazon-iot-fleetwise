@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-vehicle-association-behavior-structure.json",
+  "name": "VehicleAssociationBehavior",
+  "description": "VehicleAssociationBehavior schema",
+  "type": "string",
+  "enum": [
+    "CreateIotThing",
+    "ValidateIotThingExists"
+  ]
+}

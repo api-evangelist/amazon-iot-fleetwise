@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-list-fleets-response-structure.json",
+  "name": "ListFleetsResponse",
+  "description": "ListFleetsResponse schema",
+  "type": "object",
+  "properties": {
+    "fleetSummaries": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/fleetSummaries"
+        },
+        {
+          "description": " A list of information for each fleet. "
+        }
+      ]
+    },
+    "nextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/nextToken"
+        },
+        {
+          "description": " The token to retrieve the next set of results, or <code>null</code> if there are no more results. "
+        }
+      ]
+    }
+  }
+}

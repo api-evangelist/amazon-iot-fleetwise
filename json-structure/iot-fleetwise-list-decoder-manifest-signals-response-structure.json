@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-list-decoder-manifest-signals-response-structure.json",
+  "name": "ListDecoderManifestSignalsResponse",
+  "description": "ListDecoderManifestSignalsResponse schema",
+  "type": "object",
+  "properties": {
+    "signalDecoders": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SignalDecoders"
+        },
+        {
+          "description": " Information about a list of signals to decode. "
+        }
+      ]
+    },
+    "nextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/nextToken"
+        },
+        {
+          "description": " The token to retrieve the next set of results, or <code>null</code> if there are no more results. "
+        }
+      ]
+    }
+  }
+}

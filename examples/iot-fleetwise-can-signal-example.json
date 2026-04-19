@@ -1,0 +1,10 @@
+{
+  "messageId": "id-abc123",
+  "isBigEndian": "example-value",
+  "isSigned": "example-value",
+  "startBit": "example-value",
+  "offset": "example-value",
+  "factor": "example-value",
+  "length": "example-value",
+  "name": "example-resource"
+}

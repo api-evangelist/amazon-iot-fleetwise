@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-batch-update-vehicle-response-structure.json",
+  "name": "BatchUpdateVehicleResponse",
+  "description": "BatchUpdateVehicleResponse schema",
+  "type": "object",
+  "properties": {
+    "vehicles": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/updateVehicleResponseItems"
+        },
+        {
+          "description": "<p> A list of information about the batch of updated vehicles. </p> <note> <p>This list contains only unique IDs for the vehicles that were updated.</p> </note>"
+        }
+      ]
+    },
+    "errors": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/updateVehicleErrors"
+        },
+        {
+          "description": "A list of information about errors returned while updating a batch of vehicles, or, if there aren't any errors, an empty list."
+        }
+      ]
+    }
+  }
+}

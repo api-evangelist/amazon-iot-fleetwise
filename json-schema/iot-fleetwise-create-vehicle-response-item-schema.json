@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-create-vehicle-response-item-schema.json",
+  "title": "CreateVehicleResponseItem",
+  "description": "Information about a created vehicle.",
+  "type": "object",
+  "properties": {
+    "vehicleName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/vehicleName"
+        },
+        {
+          "description": "The unique ID of the vehicle to create."
+        }
+      ]
+    },
+    "arn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/arn"
+        },
+        {
+          "description": "The ARN of the created vehicle."
+        }
+      ]
+    },
+    "thingArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/arn"
+        },
+        {
+          "description": "The ARN of a created or validated Amazon Web Services IoT thing."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-registration-status-schema.json",
+  "title": "RegistrationStatus",
+  "description": "RegistrationStatus schema",
+  "type": "string",
+  "enum": [
+    "REGISTRATION_PENDING",
+    "REGISTRATION_SUCCESS",
+    "REGISTRATION_FAILURE"
+  ]
+}

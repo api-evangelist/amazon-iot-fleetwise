@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-obd-interface-structure.json",
+  "name": "ObdInterface",
+  "description": "A network interface that specifies the On-board diagnostic (OBD) II network protocol.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ObdInterfaceName"
+        },
+        {
+          "description": "The name of the interface."
+        }
+      ]
+    },
+    "requestMessageId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/nonNegativeInteger"
+        },
+        {
+          "description": "The ID of the message requesting vehicle data."
+        }
+      ]
+    },
+    "obdStandard": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ObdStandard"
+        },
+        {
+          "description": "The standard OBD II PID."
+        }
+      ]
+    },
+    "pidRequestIntervalSeconds": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/nonNegativeInteger"
+        },
+        {
+          "description": "The maximum number message requests per second."
+        }
+      ]
+    },
+    "dtcRequestIntervalSeconds": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/nonNegativeInteger"
+        },
+        {
+          "description": "The maximum number message requests per diagnostic trouble code per second."
+        }
+      ]
+    },
+    "useExtendedIds": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/boolean"
+        },
+        {
+          "description": "Whether to use extended IDs in the message."
+        }
+      ]
+    },
+    "hasTransmissionEcu": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/boolean"
+        },
+        {
+          "description": "Whether the vehicle has a transmission control module (TCM)."
+        }
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "requestMessageId"
+  ]
+}

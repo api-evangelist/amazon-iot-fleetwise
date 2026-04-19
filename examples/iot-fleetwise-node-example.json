@@ -1,0 +1,16 @@
+{
+  "branch": "example-value",
+  "sensor": {
+    "fullyQualifiedName": "example-resource",
+    "dataType": "example-value",
+    "description": "example-value",
+    "unit": "example-value",
+    "allowedValues": "example-value",
+    "min": "example-value",
+    "max": "example-value",
+    "deprecationMessage": "example-value",
+    "comment": "example-value"
+  },
+  "actuator": "example-value",
+  "attribute": "example-value"
+}

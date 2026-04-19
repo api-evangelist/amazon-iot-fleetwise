@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-node-structure.json",
+  "name": "Node",
+  "description": "A general abstraction of a signal. A node can be specified as an actuator, attribute, branch, or sensor.",
+  "type": "object",
+  "properties": {
+    "branch": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Branch"
+        },
+        {
+          "description": "<p>Information about a node specified as a branch.</p> <note> <p>A group of signals that are defined in a hierarchical structure.</p> </note>"
+        }
+      ]
+    },
+    "sensor": {
+      "type": "object",
+      "required": [
+        "fullyQualifiedName",
+        "dataType"
+      ],
+      "properties": {
+        "fullyQualifiedName": {
+          "allOf": [
+            {
+              "$ref": "#/components/schemas/string"
+            },
+            {
+              "description": "The fully qualified name of the sensor. For example, the fully qualified name of a sensor might be <code>Vehicle.Body.Engine.Battery</code>."
+            }
+          ]
+        },
+        "dataType": {
+          "allOf": [
+            {
+              "$ref": "#/components/schemas/NodeDataType"
+            },
+            {
+              "description": "The specified data type of the sensor. "
+            }
+          ]
+        },
+        "description": {
+          "allOf": [
+            {
+              "$ref": "#/components/schemas/description"
+            },
+            {
+              "description": "A brief description of a sensor."
+            }
+          ]
+        },
+        "unit": {
+          "allOf": [
+            {
+              "$ref": "#/components/schemas/string"
+            },
+            {
+              "description": "The scientific unit of measurement for data collected by the sensor."
+            }
+          ]
+        },
+        "allowedValues": {
+          "allOf": [
+            {
+              "$ref": "#/components/schemas/listOfStrings"
+            },
+            {
+              "description": "A list of possible values a sensor can take."
+            }
+          ]
+        },
+        "min": {
+          "allOf": [
+            {
+              "$ref": "#/components/schemas/double"
+            },
+            {
+              "description": "The specified possible minimum value of the sensor."
+            }
+          ]
+        },
+        "max": {
+          "allOf": [
+            {
+              "$ref": "#/components/schemas/double"
+            },
+            {
+              "description": "The specified possible maximum value of the sensor."
+            }
+          ]
+        },
+        "deprecationMessage": {
+          "allOf": [
+            {
+              "$ref": "#/components/schemas/message"
+            },
+            {
+              "description": "The deprecation message for the node or the branch that was moved or deleted."
+            }
+          ]
+        },
+        "comment": {
+          "allOf": [
+            {
+              "$ref": "#/components/schemas/message"
+            },
+            {
+              "description": "A comment in addition to the description."
+            }
+          ]
+        }
+      },
+      "description": "<p>An input component that reports the environmental condition of a vehicle.</p> <note> <p>You can collect data about fluid levels, temperatures, vibrations, or battery voltage from sensors.</p> </note>"
+    },
+    "actuator": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Actuator"
+        },
+        {
+          "description": "<p>Information about a node specified as an actuator.</p> <note> <p>An actuator is a digital representation of a vehicle device.</p> </note>"
+        }
+      ]
+    },
+    "attribute": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Attribute"
+        },
+        {
+          "description": "<p>Information about a node specified as an attribute.</p> <note> <p>An attribute represents static information about a vehicle.</p> </note>"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "expression": "example-value",
+  "minimumTriggerIntervalMs": "example-value",
+  "triggerMode": "example-value",
+  "conditionLanguageVersion": "example-value"
+}

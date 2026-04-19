@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-collection-scheme-schema.json",
+  "title": "CollectionScheme",
+  "description": "Specifies what data to collect and how often or when to collect it.",
+  "type": "object",
+  "properties": {
+    "timeBasedCollectionScheme": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TimeBasedCollectionScheme"
+        },
+        {
+          "description": "Information about a collection scheme that uses a time period to decide how often to collect data."
+        }
+      ]
+    },
+    "conditionBasedCollectionScheme": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ConditionBasedCollectionScheme"
+        },
+        {
+          "description": "Information about a collection scheme that uses a simple logical expression to recognize what data to collect."
+        }
+      ]
+    }
+  }
+}

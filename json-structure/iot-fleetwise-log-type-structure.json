@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-log-type-structure.json",
+  "name": "LogType",
+  "description": "LogType schema",
+  "type": "string",
+  "enum": [
+    "OFF",
+    "ERROR"
+  ]
+}

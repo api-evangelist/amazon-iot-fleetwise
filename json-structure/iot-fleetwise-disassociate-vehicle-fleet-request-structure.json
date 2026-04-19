@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-structure/iot-fleetwise-disassociate-vehicle-fleet-request-structure.json",
+  "name": "DisassociateVehicleFleetRequest",
+  "description": "DisassociateVehicleFleetRequest schema",
+  "type": "object",
+  "properties": {
+    "vehicleName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/vehicleName"
+        },
+        {
+          "description": " The unique ID of the vehicle to disassociate from the fleet."
+        }
+      ]
+    },
+    "fleetId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/fleetId"
+        },
+        {
+          "description": " The unique ID of a fleet. "
+        }
+      ]
+    }
+  },
+  "required": [
+    "vehicleName",
+    "fleetId"
+  ]
+}

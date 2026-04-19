@@ -1,0 +1,7 @@
+{
+  "vehicleName": "example-resource",
+  "modelManifestArn": "arn:aws:iot:us-east-1:123456789012:thing/example",
+  "decoderManifestArn": "arn:aws:iot:us-east-1:123456789012:thing/example",
+  "attributes": "example-value",
+  "attributeUpdateMode": "example-value"
+}

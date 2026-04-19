@@ -1,0 +1,10 @@
+{
+  "registerAccountStatus": "ACTIVE",
+  "timestreamResources": {
+    "timestreamDatabaseName": "example-resource",
+    "timestreamTableName": "example-resource"
+  },
+  "iamResources": "example-value",
+  "creationTime": "2025-03-15T14:30:00Z",
+  "lastModificationTime": "2025-03-15T14:30:00Z"
+}

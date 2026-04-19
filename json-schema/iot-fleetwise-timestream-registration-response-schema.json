@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-timestream-registration-response-schema.json",
+  "title": "TimestreamRegistrationResponse",
+  "description": "Information about the registered Amazon Timestream resources or errors, if any.",
+  "type": "object",
+  "properties": {
+    "timestreamDatabaseName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TimestreamDatabaseName"
+        },
+        {
+          "description": "The name of the Timestream database."
+        }
+      ]
+    },
+    "timestreamTableName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TimestreamTableName"
+        },
+        {
+          "description": "The name of the Timestream database table."
+        }
+      ]
+    },
+    "timestreamDatabaseArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/arn"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the Timestream database."
+        }
+      ]
+    },
+    "timestreamTableArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/arn"
+        },
+        {
+          "description": "The ARN of the Timestream database table."
+        }
+      ]
+    },
+    "registrationStatus": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RegistrationStatus"
+        },
+        {
+          "description": "The status of registering your Amazon Timestream resources. The status can be one of <code>REGISTRATION_SUCCESS</code>, <code>REGISTRATION_PENDING</code>, <code>REGISTRATION_FAILURE</code>."
+        }
+      ]
+    },
+    "errorMessage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/errorMessage"
+        },
+        {
+          "description": "A message associated with a registration error."
+        }
+      ]
+    }
+  },
+  "required": [
+    "timestreamDatabaseName",
+    "timestreamTableName",
+    "registrationStatus"
+  ]
+}

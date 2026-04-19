@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-list-of-strings-schema.json",
+  "title": "listOfStrings",
+  "description": "listOfStrings schema",
+  "type": "array",
+  "items": {
+    "type": "string"
+  }
+}

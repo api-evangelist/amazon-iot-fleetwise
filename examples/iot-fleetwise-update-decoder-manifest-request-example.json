@@ -1,0 +1,11 @@
+{
+  "name": "example-resource",
+  "description": "example-value",
+  "signalDecodersToAdd": "example-value",
+  "signalDecodersToUpdate": "example-value",
+  "signalDecodersToRemove": "example-value",
+  "networkInterfacesToAdd": "example-value",
+  "networkInterfacesToUpdate": "example-value",
+  "networkInterfacesToRemove": "example-value",
+  "status": "ACTIVE"
+}

@@ -1,0 +1,10 @@
+{
+  "arn": "arn:aws:iot:us-east-1:123456789012:thing/example",
+  "name": "example-resource",
+  "description": "example-value",
+  "signalCatalogArn": "arn:aws:iot:us-east-1:123456789012:thing/example",
+  "targetArn": "arn:aws:iot:us-east-1:123456789012:thing/example",
+  "status": "ACTIVE",
+  "creationTime": "2025-03-15T14:30:00Z",
+  "lastModificationTime": "2025-03-15T14:30:00Z"
+}

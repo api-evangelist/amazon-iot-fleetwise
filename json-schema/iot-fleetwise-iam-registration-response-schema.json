@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-iot-fleetwise/refs/heads/main/json-schema/iot-fleetwise-iam-registration-response-schema.json",
+  "title": "IamRegistrationResponse",
+  "description": "Information about registering an Identity and Access Management (IAM) resource so Amazon Web Services IoT FleetWise edge agent software can transfer your vehicle data to Amazon Timestream.",
+  "type": "object",
+  "properties": {
+    "roleArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/arn"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the IAM role to register."
+        }
+      ]
+    },
+    "registrationStatus": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RegistrationStatus"
+        },
+        {
+          "description": "The status of registering your IAM resource. The status can be one of <code>REGISTRATION_SUCCESS</code>, <code>REGISTRATION_PENDING</code>, <code>REGISTRATION_FAILURE</code>."
+        }
+      ]
+    },
+    "errorMessage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/errorMessage"
+        },
+        {
+          "description": "A message associated with a registration error."
+        }
+      ]
+    }
+  },
+  "required": [
+    "roleArn",
+    "registrationStatus"
+  ]
+}
