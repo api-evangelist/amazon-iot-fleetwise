@@ -41,6 +41,14 @@ apis:
   - type: X-NaftikoCapability
     url: capabilities/amazon-iot-fleetwise.yaml
 common:
+- type: TrustCenter
+  url: security/amazon-iot-fleetwise-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/amazon-iot-fleetwise-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/amazon-iot-fleetwise-domain-security.yml
+- type: Authentication
+  url: authentication/amazon-iot-fleetwise-authentication.yml
 - type: Portal
   url: https://aws.amazon.com/iot-fleetwise/
 - type: Website
