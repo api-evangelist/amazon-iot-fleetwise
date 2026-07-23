@@ -1,0 +1,360 @@
+openapi: 3.0.0
+info:
+  version: '2021-06-17'
+  x-release: v4
+  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.GetRegisterAccountStatus API'
+  description: <p>Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale. With Amazon Web Services IoT FleetWise, you can standardize all of your vehicle data models, independent of the in-vehicle communication architecture, and define data collection rules to transfer only high-value data to the cloud. </p> <p>For more information, see <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/">What is Amazon Web Services IoT FleetWise?</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>
+  x-logo:
+    url: https://twitter.com/awscloud/profile_image?size=original
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: iotfleetwise
+  x-aws-signingName: iotfleetwise
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/iotfleetwise-2021-06-17.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://iotfleetwise.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The AWS IoT FleetWise multi-region endpoint
+- url: https://iotfleetwise.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The AWS IoT FleetWise multi-region endpoint
+- url: http://iotfleetwise.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The AWS IoT FleetWise endpoint for China (Beijing) and China (Ningxia)
+- url: https://iotfleetwise.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The AWS IoT FleetWise endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=IoTAutobahnControlPlane.GetRegisterAccountStatus'
+paths:
+  /#X-Amz-Target=IoTAutobahnControlPlane.GetRegisterAccountStatus:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: GetRegisterAccountStatus
+      description: <p> Retrieves information about the status of registering your Amazon Web Services account, IAM, and Amazon Timestream resources so that Amazon Web Services IoT FleetWise can transfer your vehicle data to the Amazon Web Services Cloud. </p> <p>For more information, including step-by-step procedures, see <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/setting-up.html">Setting up Amazon Web Services IoT FleetWise</a>. </p> <note> <p>This API operation doesn't require input parameters.</p> </note>
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetRegisterAccountStatusResponse'
+        '480':
+          description: ResourceNotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceNotFoundException'
+        '481':
+          description: InternalServerException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerException'
+        '482':
+          description: ThrottlingException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ThrottlingException'
+        '483':
+          description: ValidationException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationException'
+        '484':
+          description: AccessDeniedException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccessDeniedException'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GetRegisterAccountStatusRequest'
+      parameters:
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - IoTAutobahnControlPlane.GetRegisterAccountStatus
+      summary: Amazon IoT FleetWise Get Register Account Status
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+      tags:
+      - '#X Amz Target=IoTAutobahnControlPlane.GetRegisterAccountStatus'
+components:
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+  schemas:
+    GetRegisterAccountStatusResponse:
+      type: object
+      required:
+      - customerAccountId
+      - accountStatus
+      - iamRegistrationResponse
+      - creationTime
+      - lastModificationTime
+      properties:
+        customerAccountId:
+          allOf:
+          - $ref: '#/components/schemas/customerAccountId'
+          - description: ' The unique ID of the Amazon Web Services account, provided at account creation. '
+        accountStatus:
+          allOf:
+          - $ref: '#/components/schemas/RegistrationStatus'
+          - description: <p> The status of registering your account and resources. The status can be one of:</p> <ul> <li> <p> <code>REGISTRATION_SUCCESS</code> - The Amazon Web Services resource is successfully registered.</p> </li> <li> <p> <code>REGISTRATION_PENDING</code> - Amazon Web Services IoT FleetWise is processing the registration request. This process takes approximately five minutes to complete.</p> </li> <li> <p> <code>REGISTRATION_FAILURE</code> - Amazon Web Services IoT FleetWise can't register the AWS resource. Try again later.</p> </li> </ul>
+        timestreamRegistrationResponse:
+          allOf:
+          - $ref: '#/components/schemas/TimestreamRegistrationResponse'
+          - description: ' Information about the registered Amazon Timestream resources or errors, if any.'
+        iamRegistrationResponse:
+          allOf:
+          - $ref: '#/components/schemas/IamRegistrationResponse'
+          - description: ' Information about the registered IAM resources or errors, if any. '
+        creationTime:
+          allOf:
+          - $ref: '#/components/schemas/timestamp'
+          - description: ' The time the account was registered, in seconds since epoch (January 1, 1970 at midnight UTC time). '
+        lastModificationTime:
+          allOf:
+          - $ref: '#/components/schemas/timestamp'
+          - description: ' The time this registration was last updated, in seconds since epoch (January 1, 1970 at midnight UTC time). '
+    InternalServerException: {}
+    GetRegisterAccountStatusRequest:
+      type: object
+      title: GetRegisterAccountStatusRequest
+      properties: {}
+    ThrottlingException: {}
+    timestamp:
+      type: string
+      format: date-time
+    customerAccountId:
+      type: string
+    TimestreamDatabaseName:
+      type: string
+      pattern: '[a-zA-Z0-9_.-]+'
+      minLength: 3
+      maxLength: 255
+    arn:
+      type: string
+    ResourceNotFoundException: {}
+    TimestreamTableName:
+      type: string
+      pattern: '[a-zA-Z0-9_.-]+'
+      minLength: 3
+      maxLength: 255
+    errorMessage:
+      type: string
+    RegistrationStatus:
+      type: string
+      enum:
+      - REGISTRATION_PENDING
+      - REGISTRATION_SUCCESS
+      - REGISTRATION_FAILURE
+    AccessDeniedException: {}
+    ValidationException: {}
+    IamRegistrationResponse:
+      type: object
+      required:
+      - roleArn
+      - registrationStatus
+      properties:
+        roleArn:
+          allOf:
+          - $ref: '#/components/schemas/arn'
+          - description: The Amazon Resource Name (ARN) of the IAM role to register.
+        registrationStatus:
+          allOf:
+          - $ref: '#/components/schemas/RegistrationStatus'
+          - description: The status of registering your IAM resource. The status can be one of <code>REGISTRATION_SUCCESS</code>, <code>REGISTRATION_PENDING</code>, <code>REGISTRATION_FAILURE</code>.
+        errorMessage:
+          allOf:
+          - $ref: '#/components/schemas/errorMessage'
+          - description: A message associated with a registration error.
+      description: Information about registering an Identity and Access Management (IAM) resource so Amazon Web Services IoT FleetWise edge agent software can transfer your vehicle data to Amazon Timestream.
+    TimestreamRegistrationResponse:
+      type: object
+      required:
+      - timestreamDatabaseName
+      - timestreamTableName
+      - registrationStatus
+      properties:
+        timestreamDatabaseName:
+          allOf:
+          - $ref: '#/components/schemas/TimestreamDatabaseName'
+          - description: The name of the Timestream database.
+        timestreamTableName:
+          allOf:
+          - $ref: '#/components/schemas/TimestreamTableName'
+          - description: The name of the Timestream database table.
+        timestreamDatabaseArn:
+          allOf:
+          - $ref: '#/components/schemas/arn'
+          - description: The Amazon Resource Name (ARN) of the Timestream database.
+        timestreamTableArn:
+          allOf:
+          - $ref: '#/components/schemas/arn'
+          - description: The ARN of the Timestream database table.
+        registrationStatus:
+          allOf:
+          - $ref: '#/components/schemas/RegistrationStatus'
+          - description: The status of registering your Amazon Timestream resources. The status can be one of <code>REGISTRATION_SUCCESS</code>, <code>REGISTRATION_PENDING</code>, <code>REGISTRATION_FAILURE</code>.
+        errorMessage:
+          allOf:
+          - $ref: '#/components/schemas/errorMessage'
+          - description: A message associated with a registration error.
+      description: Information about the registered Amazon Timestream resources or errors, if any.
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/iotfleetwise/
+x-hasEquivalentPaths: true

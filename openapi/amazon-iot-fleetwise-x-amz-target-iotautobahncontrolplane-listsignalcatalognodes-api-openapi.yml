@@ -1,0 +1,546 @@
+openapi: 3.0.0
+info:
+  version: '2021-06-17'
+  x-release: v4
+  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.ListSignalCatalogNodes API'
+  description: <p>Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale. With Amazon Web Services IoT FleetWise, you can standardize all of your vehicle data models, independent of the in-vehicle communication architecture, and define data collection rules to transfer only high-value data to the cloud. </p> <p>For more information, see <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/">What is Amazon Web Services IoT FleetWise?</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>
+  x-logo:
+    url: https://twitter.com/awscloud/profile_image?size=original
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: iotfleetwise
+  x-aws-signingName: iotfleetwise
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/iotfleetwise-2021-06-17.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://iotfleetwise.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The AWS IoT FleetWise multi-region endpoint
+- url: https://iotfleetwise.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The AWS IoT FleetWise multi-region endpoint
+- url: http://iotfleetwise.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The AWS IoT FleetWise endpoint for China (Beijing) and China (Ningxia)
+- url: https://iotfleetwise.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The AWS IoT FleetWise endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=IoTAutobahnControlPlane.ListSignalCatalogNodes'
+paths:
+  /#X-Amz-Target=IoTAutobahnControlPlane.ListSignalCatalogNodes:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: ListSignalCatalogNodes
+      description: <p> Lists of information about the signals (nodes) specified in a signal catalog. </p> <note> <p>This API operation uses pagination. Specify the <code>nextToken</code> parameter in the request to return more results.</p> </note>
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ListSignalCatalogNodesResponse'
+        '480':
+          description: InternalServerException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerException'
+        '481':
+          description: ResourceNotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceNotFoundException'
+        '482':
+          description: LimitExceededException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LimitExceededException'
+        '483':
+          description: ThrottlingException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ThrottlingException'
+        '484':
+          description: ValidationException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationException'
+        '485':
+          description: AccessDeniedException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccessDeniedException'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ListSignalCatalogNodesRequest'
+      parameters:
+      - name: maxResults
+        in: query
+        schema:
+          type: string
+        description: Pagination limit
+        required: false
+      - name: nextToken
+        in: query
+        schema:
+          type: string
+        description: Pagination token
+        required: false
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - IoTAutobahnControlPlane.ListSignalCatalogNodes
+      summary: Amazon IoT FleetWise List Signal Catalog Nodes
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+      tags:
+      - '#X Amz Target=IoTAutobahnControlPlane.ListSignalCatalogNodes'
+components:
+  schemas:
+    NodeDataType:
+      type: string
+      enum:
+      - INT8
+      - UINT8
+      - INT16
+      - UINT16
+      - INT32
+      - UINT32
+      - INT64
+      - UINT64
+      - BOOLEAN
+      - FLOAT
+      - DOUBLE
+      - STRING
+      - UNIX_TIMESTAMP
+      - INT8_ARRAY
+      - UINT8_ARRAY
+      - INT16_ARRAY
+      - UINT16_ARRAY
+      - INT32_ARRAY
+      - UINT32_ARRAY
+      - INT64_ARRAY
+      - UINT64_ARRAY
+      - BOOLEAN_ARRAY
+      - FLOAT_ARRAY
+      - DOUBLE_ARRAY
+      - STRING_ARRAY
+      - UNIX_TIMESTAMP_ARRAY
+      - UNKNOWN
+    listOfStrings:
+      type: array
+      items:
+        $ref: '#/components/schemas/string'
+    InternalServerException: {}
+    ThrottlingException: {}
+    ListSignalCatalogNodesResponse:
+      type: object
+      properties:
+        nodes:
+          allOf:
+          - $ref: '#/components/schemas/Nodes'
+          - description: ' A list of information about nodes. '
+        nextToken:
+          allOf:
+          - $ref: '#/components/schemas/nextToken'
+          - description: ' The token to retrieve the next set of results, or <code>null</code> if there are no more results. '
+    maxResults:
+      type: integer
+      minimum: 1
+      maximum: 100
+    LimitExceededException: {}
+    double:
+      type: number
+      format: double
+    message:
+      type: string
+      pattern: '[^\u0000-\u001F\u007F]+'
+      minLength: 1
+      maxLength: 2048
+    nextToken:
+      type: string
+      minLength: 1
+      maxLength: 4096
+    Actuator:
+      type: object
+      required:
+      - fullyQualifiedName
+      - dataType
+      properties:
+        fullyQualifiedName:
+          allOf:
+          - $ref: '#/components/schemas/string'
+          - description: The fully qualified name of the actuator. For example, the fully qualified name of an actuator might be <code>Vehicle.Front.Left.Door.Lock</code>.
+        dataType:
+          allOf:
+          - $ref: '#/components/schemas/NodeDataType'
+          - description: 'The specified data type of the actuator. '
+        description:
+          allOf:
+          - $ref: '#/components/schemas/description'
+          - description: A brief description of the actuator.
+        unit:
+          allOf:
+          - $ref: '#/components/schemas/string'
+          - description: The scientific unit for the actuator.
+        allowedValues:
+          allOf:
+          - $ref: '#/components/schemas/listOfStrings'
+          - description: A list of possible values an actuator can take.
+        min:
+          allOf:
+          - $ref: '#/components/schemas/double'
+          - description: The specified possible minimum value of an actuator.
+        max:
+          allOf:
+          - $ref: '#/components/schemas/double'
+          - description: The specified possible maximum value of an actuator.
+        assignedValue:
+          allOf:
+          - $ref: '#/components/schemas/string'
+          - deprecated: true
+            description: A specified value for the actuator.assignedValue is no longer in use
+        deprecationMessage:
+          allOf:
+          - $ref: '#/components/schemas/message'
+          - description: The deprecation message for the node or the branch that was moved or deleted.
+        comment:
+          allOf:
+          - $ref: '#/components/schemas/message'
+          - description: A comment in addition to the description.
+      description: <p>A signal that represents a vehicle device such as the engine, heater, and door locks. Data from an actuator reports the state of a certain vehicle device.</p> <note> <p> Updating actuator data can change the state of a device. For example, you can turn on or off the heater by updating its actuator data.</p> </note>
+    Nodes:
+      type: array
+      items:
+        $ref: '#/components/schemas/Node'
+      minItems: 0
+      maxItems: 500
+    Branch:
+      type: object
+      required:
+      - fullyQualifiedName
+      properties:
+        fullyQualifiedName:
+          allOf:
+          - $ref: '#/components/schemas/string'
+          - description: The fully qualified name of the branch. For example, the fully qualified name of a branch might be <code>Vehicle.Body.Engine</code>.
+        description:
+          allOf:
+          - $ref: '#/components/schemas/description'
+          - description: A brief description of the branch.
+        deprecationMessage:
+          allOf:
+          - $ref: '#/components/schemas/message'
+          - description: The deprecation message for the node or the branch that was moved or deleted.
+        comment:
+          allOf:
+          - $ref: '#/components/schemas/message'
+          - description: A comment in addition to the description.
+      description: A group of signals that are defined in a hierarchical structure.
+    Sensor:
+      type: object
+      required:
+      - fullyQualifiedName
+      - dataType
+      properties:
+        fullyQualifiedName:
+          allOf:
+          - $ref: '#/components/schemas/string'
+          - description: The fully qualified name of the sensor. For example, the fully qualified name of a sensor might be <code>Vehicle.Body.Engine.Battery</code>.
+        dataType:
+          allOf:
+          - $ref: '#/components/schemas/NodeDataType'
+          - description: 'The specified data type of the sensor. '
+        description:
+          allOf:
+          - $ref: '#/components/schemas/description'
+          - description: A brief description of a sensor.
+        unit:
+          allOf:
+          - $ref: '#/components/schemas/string'
+          - description: The scientific unit of measurement for data collected by the sensor.
+        allowedValues:
+          allOf:
+          - $ref: '#/components/schemas/listOfStrings'
+          - description: A list of possible values a sensor can take.
+        min:
+          allOf:
+          - $ref: '#/components/schemas/double'
+          - description: The specified possible minimum value of the sensor.
+        max:
+          allOf:
+          - $ref: '#/components/schemas/double'
+          - description: The specified possible maximum value of the sensor.
+        deprecationMessage:
+          allOf:
+          - $ref: '#/components/schemas/message'
+          - description: The deprecation message for the node or the branch that was moved or deleted.
+        comment:
+          allOf:
+          - $ref: '#/components/schemas/message'
+          - description: A comment in addition to the description.
+      description: <p>An input component that reports the environmental condition of a vehicle.</p> <note> <p>You can collect data about fluid levels, temperatures, vibrations, or battery voltage from sensors.</p> </note>
+    description:
+      type: string
+      pattern: '[^\u0000-\u001F\u007F]+'
+      minLength: 1
+      maxLength: 2048
+    ListSignalCatalogNodesRequest:
+      type: object
+      required:
+      - name
+      title: ListSignalCatalogNodesRequest
+      properties:
+        name:
+          allOf:
+          - $ref: '#/components/schemas/resourceName'
+          - description: ' The name of the signal catalog to list information about. '
+        nextToken:
+          allOf:
+          - $ref: '#/components/schemas/nextToken'
+          - description: <p>A pagination token for the next set of results.</p> <p>If the results of a search are large, only a portion of the results are returned, and a <code>nextToken</code> pagination token is returned in the response. To retrieve the next set of results, reissue the search request and include the returned token. When all results have been returned, the response does not contain a pagination token value. </p>
+        maxResults:
+          allOf:
+          - $ref: '#/components/schemas/maxResults'
+          - description: ' The maximum number of items to return, between 1 and 100, inclusive. '
+    ResourceNotFoundException: {}
+    AccessDeniedException: {}
+    resourceName:
+      type: string
+      pattern: '[a-zA-Z\d\-_:]+'
+      minLength: 1
+      maxLength: 100
+    Attribute:
+      type: object
+      required:
+      - fullyQualifiedName
+      - dataType
+      properties:
+        fullyQualifiedName:
+          allOf:
+          - $ref: '#/components/schemas/string'
+          - description: The fully qualified name of the attribute. For example, the fully qualified name of an attribute might be <code>Vehicle.Body.Engine.Type</code>.
+        dataType:
+          allOf:
+          - $ref: '#/components/schemas/NodeDataType'
+          - description: 'The specified data type of the attribute. '
+        description:
+          allOf:
+          - $ref: '#/components/schemas/description'
+          - description: A brief description of the attribute.
+        unit:
+          allOf:
+          - $ref: '#/components/schemas/string'
+          - description: The scientific unit for the attribute.
+        allowedValues:
+          allOf:
+          - $ref: '#/components/schemas/listOfStrings'
+          - description: A list of possible values an attribute can be assigned.
+        min:
+          allOf:
+          - $ref: '#/components/schemas/double'
+          - description: The specified possible minimum value of the attribute.
+        max:
+          allOf:
+          - $ref: '#/components/schemas/double'
+          - description: The specified possible maximum value of the attribute.
+        assignedValue:
+          allOf:
+          - $ref: '#/components/schemas/string'
+          - deprecated: true
+            description: A specified value for the attribute.assignedValue is no longer in use
+        defaultValue:
+          allOf:
+          - $ref: '#/components/schemas/string'
+          - description: The default value of the attribute.
+        deprecationMessage:
+          allOf:
+          - $ref: '#/components/schemas/message'
+          - description: The deprecation message for the node or the branch that was moved or deleted.
+        comment:
+          allOf:
+          - $ref: '#/components/schemas/message'
+          - description: A comment in addition to the description.
+      description: A signal that represents static information about the vehicle, such as engine type or manufacturing date.
+    ValidationException: {}
+    string:
+      type: string
+    Node:
+      type: object
+      properties:
+        branch:
+          allOf:
+          - $ref: '#/components/schemas/Branch'
+          - description: <p>Information about a node specified as a branch.</p> <note> <p>A group of signals that are defined in a hierarchical structure.</p> </note>
+        sensor:
+          $ref: '#/components/schemas/Sensor'
+        actuator:
+          allOf:
+          - $ref: '#/components/schemas/Actuator'
+          - description: <p>Information about a node specified as an actuator.</p> <note> <p>An actuator is a digital representation of a vehicle device.</p> </note>
+        attribute:
+          allOf:
+          - $ref: '#/components/schemas/Attribute'
+          - description: <p>Information about a node specified as an attribute.</p> <note> <p>An attribute represents static information about a vehicle.</p> </note>
+      description: A general abstraction of a signal. A node can be specified as an actuator, attribute, branch, or sensor.
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/iotfleetwise/
+x-hasEquivalentPaths: true

@@ -1,0 +1,417 @@
+openapi: 3.0.0
+info:
+  version: '2021-06-17'
+  x-release: v4
+  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.ListDecoderManifestNetworkInterfaces API'
+  description: <p>Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale. With Amazon Web Services IoT FleetWise, you can standardize all of your vehicle data models, independent of the in-vehicle communication architecture, and define data collection rules to transfer only high-value data to the cloud. </p> <p>For more information, see <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/">What is Amazon Web Services IoT FleetWise?</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>
+  x-logo:
+    url: https://twitter.com/awscloud/profile_image?size=original
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: iotfleetwise
+  x-aws-signingName: iotfleetwise
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/iotfleetwise-2021-06-17.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://iotfleetwise.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The AWS IoT FleetWise multi-region endpoint
+- url: https://iotfleetwise.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The AWS IoT FleetWise multi-region endpoint
+- url: http://iotfleetwise.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The AWS IoT FleetWise endpoint for China (Beijing) and China (Ningxia)
+- url: https://iotfleetwise.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The AWS IoT FleetWise endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=IoTAutobahnControlPlane.ListDecoderManifestNetworkInterfaces'
+paths:
+  /#X-Amz-Target=IoTAutobahnControlPlane.ListDecoderManifestNetworkInterfaces:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: ListDecoderManifestNetworkInterfaces
+      description: <p> Lists the network interfaces specified in a decoder manifest. </p> <note> <p>This API operation uses pagination. Specify the <code>nextToken</code> parameter in the request to return more results.</p> </note>
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ListDecoderManifestNetworkInterfacesResponse'
+        '480':
+          description: ResourceNotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceNotFoundException'
+        '481':
+          description: InternalServerException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerException'
+        '482':
+          description: ThrottlingException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ThrottlingException'
+        '483':
+          description: ValidationException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationException'
+        '484':
+          description: AccessDeniedException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccessDeniedException'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ListDecoderManifestNetworkInterfacesRequest'
+      parameters:
+      - name: maxResults
+        in: query
+        schema:
+          type: string
+        description: Pagination limit
+        required: false
+      - name: nextToken
+        in: query
+        schema:
+          type: string
+        description: Pagination token
+        required: false
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - IoTAutobahnControlPlane.ListDecoderManifestNetworkInterfaces
+      summary: Amazon IoT FleetWise List Decoder Manifest Network Interfaces
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+      tags:
+      - '#X Amz Target=IoTAutobahnControlPlane.ListDecoderManifestNetworkInterfaces'
+components:
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+  schemas:
+    CanInterface:
+      type: object
+      required:
+      - name
+      properties:
+        name:
+          allOf:
+          - $ref: '#/components/schemas/CanInterfaceName'
+          - description: The unique name of the interface.
+        protocolName:
+          allOf:
+          - $ref: '#/components/schemas/ProtocolName'
+          - description: The name of the communication protocol for the interface.
+        protocolVersion:
+          allOf:
+          - $ref: '#/components/schemas/ProtocolVersion'
+          - description: The version of the communication protocol for the interface.
+      description: A single controller area network (CAN) device interface.
+    InterfaceId:
+      type: string
+      minLength: 1
+      maxLength: 50
+    InternalServerException: {}
+    ThrottlingException: {}
+    ObdInterfaceName:
+      type: string
+      minLength: 1
+      maxLength: 100
+    maxResults:
+      type: integer
+      minimum: 1
+      maximum: 100
+    ObdStandard:
+      type: string
+      minLength: 1
+      maxLength: 50
+    ObdInterface:
+      type: object
+      required:
+      - name
+      - requestMessageId
+      properties:
+        name:
+          allOf:
+          - $ref: '#/components/schemas/ObdInterfaceName'
+          - description: The name of the interface.
+        requestMessageId:
+          allOf:
+          - $ref: '#/components/schemas/nonNegativeInteger'
+          - description: The ID of the message requesting vehicle data.
+        obdStandard:
+          allOf:
+          - $ref: '#/components/schemas/ObdStandard'
+          - description: The standard OBD II PID.
+        pidRequestIntervalSeconds:
+          allOf:
+          - $ref: '#/components/schemas/nonNegativeInteger'
+          - description: The maximum number message requests per second.
+        dtcRequestIntervalSeconds:
+          allOf:
+          - $ref: '#/components/schemas/nonNegativeInteger'
+          - description: The maximum number message requests per diagnostic trouble code per second.
+        useExtendedIds:
+          allOf:
+          - $ref: '#/components/schemas/boolean'
+          - description: Whether to use extended IDs in the message.
+        hasTransmissionEcu:
+          allOf:
+          - $ref: '#/components/schemas/boolean'
+          - description: Whether the vehicle has a transmission control module (TCM).
+      description: A network interface that specifies the On-board diagnostic (OBD) II network protocol.
+    nonNegativeInteger:
+      type: integer
+      minimum: 0
+    nextToken:
+      type: string
+      minLength: 1
+      maxLength: 4096
+    NetworkInterfaceType:
+      type: string
+      enum:
+      - CAN_INTERFACE
+      - OBD_INTERFACE
+    NetworkInterface:
+      type: object
+      required:
+      - interfaceId
+      - type
+      properties:
+        interfaceId:
+          allOf:
+          - $ref: '#/components/schemas/InterfaceId'
+          - description: The ID of the network interface.
+        type:
+          allOf:
+          - $ref: '#/components/schemas/NetworkInterfaceType'
+          - description: The network protocol for the vehicle. For example, <code>CAN_SIGNAL</code> specifies a protocol that defines how data is communicated between electronic control units (ECUs). <code>OBD_SIGNAL</code> specifies a protocol that defines how self-diagnostic data is communicated between ECUs.
+        canInterface:
+          allOf:
+          - $ref: '#/components/schemas/CanInterface'
+          - description: Information about a network interface specified by the Controller Area Network (CAN) protocol.
+        obdInterface:
+          allOf:
+          - $ref: '#/components/schemas/ObdInterface'
+          - description: Information about a network interface specified by the On-board diagnostic (OBD) II protocol.
+      description: <p>Represents a node and its specifications in an in-vehicle communication network. All signal decoders must be associated with a network node. </p> <p> To return this information about all the network interfaces specified in a decoder manifest, use the API operation.</p>
+    ListDecoderManifestNetworkInterfacesResponse:
+      type: object
+      properties:
+        networkInterfaces:
+          allOf:
+          - $ref: '#/components/schemas/NetworkInterfaces'
+          - description: ' A list of information about network interfaces. '
+        nextToken:
+          allOf:
+          - $ref: '#/components/schemas/nextToken'
+          - description: ' The token to retrieve the next set of results, or <code>null</code> if there are no more results. '
+    ListDecoderManifestNetworkInterfacesRequest:
+      type: object
+      required:
+      - name
+      title: ListDecoderManifestNetworkInterfacesRequest
+      properties:
+        name:
+          allOf:
+          - $ref: '#/components/schemas/resourceName'
+          - description: ' The name of the decoder manifest to list information about. '
+        nextToken:
+          allOf:
+          - $ref: '#/components/schemas/nextToken'
+          - description: <p>A pagination token for the next set of results.</p> <p>If the results of a search are large, only a portion of the results are returned, and a <code>nextToken</code> pagination token is returned in the response. To retrieve the next set of results, reissue the search request and include the returned token. When all results have been returned, the response does not contain a pagination token value. </p>
+        maxResults:
+          allOf:
+          - $ref: '#/components/schemas/maxResults'
+          - description: ' The maximum number of items to return, between 1 and 100, inclusive. '
+    NetworkInterfaces:
+      type: array
+      items:
+        $ref: '#/components/schemas/NetworkInterface'
+      minItems: 1
+      maxItems: 500
+    ResourceNotFoundException: {}
+    AccessDeniedException: {}
+    resourceName:
+      type: string
+      pattern: '[a-zA-Z\d\-_:]+'
+      minLength: 1
+      maxLength: 100
+    ProtocolVersion:
+      type: string
+      minLength: 1
+      maxLength: 50
+    CanInterfaceName:
+      type: string
+      minLength: 1
+      maxLength: 100
+    boolean:
+      type: boolean
+    ValidationException: {}
+    ProtocolName:
+      type: string
+      minLength: 1
+      maxLength: 50
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/iotfleetwise/
+x-hasEquivalentPaths: true

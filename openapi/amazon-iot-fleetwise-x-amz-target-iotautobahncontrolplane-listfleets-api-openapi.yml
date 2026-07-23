@@ -1,0 +1,342 @@
+openapi: 3.0.0
+info:
+  version: '2021-06-17'
+  x-release: v4
+  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.ListFleets API'
+  description: <p>Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale. With Amazon Web Services IoT FleetWise, you can standardize all of your vehicle data models, independent of the in-vehicle communication architecture, and define data collection rules to transfer only high-value data to the cloud. </p> <p>For more information, see <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/">What is Amazon Web Services IoT FleetWise?</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>
+  x-logo:
+    url: https://twitter.com/awscloud/profile_image?size=original
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: iotfleetwise
+  x-aws-signingName: iotfleetwise
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/iotfleetwise-2021-06-17.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://iotfleetwise.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The AWS IoT FleetWise multi-region endpoint
+- url: https://iotfleetwise.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The AWS IoT FleetWise multi-region endpoint
+- url: http://iotfleetwise.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The AWS IoT FleetWise endpoint for China (Beijing) and China (Ningxia)
+- url: https://iotfleetwise.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The AWS IoT FleetWise endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=IoTAutobahnControlPlane.ListFleets'
+paths:
+  /#X-Amz-Target=IoTAutobahnControlPlane.ListFleets:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: ListFleets
+      description: <p> Retrieves information for each created fleet in an Amazon Web Services account. </p> <note> <p>This API operation uses pagination. Specify the <code>nextToken</code> parameter in the request to return more results.</p> </note>
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ListFleetsResponse'
+        '480':
+          description: InternalServerException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerException'
+        '481':
+          description: ResourceNotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceNotFoundException'
+        '482':
+          description: ThrottlingException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ThrottlingException'
+        '483':
+          description: ValidationException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationException'
+        '484':
+          description: AccessDeniedException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccessDeniedException'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ListFleetsRequest'
+      parameters:
+      - name: maxResults
+        in: query
+        schema:
+          type: string
+        description: Pagination limit
+        required: false
+      - name: nextToken
+        in: query
+        schema:
+          type: string
+        description: Pagination token
+        required: false
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - IoTAutobahnControlPlane.ListFleets
+      summary: Amazon IoT FleetWise List Fleets
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+      tags:
+      - '#X Amz Target=IoTAutobahnControlPlane.ListFleets'
+components:
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+  schemas:
+    InternalServerException: {}
+    ThrottlingException: {}
+    maxResults:
+      type: integer
+      minimum: 1
+      maximum: 100
+    timestamp:
+      type: string
+      format: date-time
+    arn:
+      type: string
+    nextToken:
+      type: string
+      minLength: 1
+      maxLength: 4096
+    ListFleetsRequest:
+      type: object
+      title: ListFleetsRequest
+      properties:
+        nextToken:
+          allOf:
+          - $ref: '#/components/schemas/nextToken'
+          - description: <p>A pagination token for the next set of results.</p> <p>If the results of a search are large, only a portion of the results are returned, and a <code>nextToken</code> pagination token is returned in the response. To retrieve the next set of results, reissue the search request and include the returned token. When all results have been returned, the response does not contain a pagination token value. </p>
+        maxResults:
+          allOf:
+          - $ref: '#/components/schemas/maxResults'
+          - description: ' The maximum number of items to return, between 1 and 100, inclusive. '
+    description:
+      type: string
+      pattern: '[^\u0000-\u001F\u007F]+'
+      minLength: 1
+      maxLength: 2048
+    ResourceNotFoundException: {}
+    AccessDeniedException: {}
+    fleetSummaries:
+      type: array
+      items:
+        $ref: '#/components/schemas/FleetSummary'
+    ValidationException: {}
+    ListFleetsResponse:
+      type: object
+      properties:
+        fleetSummaries:
+          allOf:
+          - $ref: '#/components/schemas/fleetSummaries'
+          - description: ' A list of information for each fleet. '
+        nextToken:
+          allOf:
+          - $ref: '#/components/schemas/nextToken'
+          - description: ' The token to retrieve the next set of results, or <code>null</code> if there are no more results. '
+    fleetId:
+      type: string
+      pattern: '[a-zA-Z0-9:_-]+'
+      minLength: 1
+      maxLength: 100
+    FleetSummary:
+      type: object
+      required:
+      - id
+      - arn
+      - signalCatalogArn
+      - creationTime
+      properties:
+        id:
+          allOf:
+          - $ref: '#/components/schemas/fleetId'
+          - description: The unique ID of the fleet.
+        arn:
+          allOf:
+          - $ref: '#/components/schemas/arn'
+          - description: The Amazon Resource Name (ARN) of the fleet.
+        description:
+          allOf:
+          - $ref: '#/components/schemas/description'
+          - description: A brief description of the fleet.
+        signalCatalogArn:
+          allOf:
+          - $ref: '#/components/schemas/arn'
+          - description: The ARN of the signal catalog associated with the fleet.
+        creationTime:
+          allOf:
+          - $ref: '#/components/schemas/timestamp'
+          - description: The time the fleet was created, in seconds since epoch (January 1, 1970 at midnight UTC time).
+        lastModificationTime:
+          allOf:
+          - $ref: '#/components/schemas/timestamp'
+          - description: The time the fleet was last updated in seconds since epoch (January 1, 1970 at midnight UTC time).
+      description: <p>Information about a fleet.</p> <p>You can use the API operation to return this information about multiple fleets.</p>
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/iotfleetwise/
+x-hasEquivalentPaths: true

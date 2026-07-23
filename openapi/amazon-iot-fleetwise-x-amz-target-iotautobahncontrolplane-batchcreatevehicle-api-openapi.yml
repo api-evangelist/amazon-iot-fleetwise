@@ -1,0 +1,394 @@
+openapi: 3.0.0
+info:
+  version: '2021-06-17'
+  x-release: v4
+  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.BatchCreateVehicle API'
+  description: <p>Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale. With Amazon Web Services IoT FleetWise, you can standardize all of your vehicle data models, independent of the in-vehicle communication architecture, and define data collection rules to transfer only high-value data to the cloud. </p> <p>For more information, see <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/">What is Amazon Web Services IoT FleetWise?</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>
+  x-logo:
+    url: https://twitter.com/awscloud/profile_image?size=original
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: iotfleetwise
+  x-aws-signingName: iotfleetwise
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/iotfleetwise-2021-06-17.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://iotfleetwise.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The AWS IoT FleetWise multi-region endpoint
+- url: https://iotfleetwise.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The AWS IoT FleetWise multi-region endpoint
+- url: http://iotfleetwise.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The AWS IoT FleetWise endpoint for China (Beijing) and China (Ningxia)
+- url: https://iotfleetwise.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The AWS IoT FleetWise endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=IoTAutobahnControlPlane.BatchCreateVehicle'
+paths:
+  /#X-Amz-Target=IoTAutobahnControlPlane.BatchCreateVehicle:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: BatchCreateVehicle
+      description: <p> Creates a group, or batch, of vehicles. </p> <note> <p> You must specify a decoder manifest and a vehicle model (model manifest) for each vehicle. </p> </note> <p>For more information, see <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/create-vehicles-cli.html">Create multiple vehicles (AWS CLI)</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>. </p>
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BatchCreateVehicleResponse'
+        '480':
+          description: InternalServerException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerException'
+        '481':
+          description: LimitExceededException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LimitExceededException'
+        '482':
+          description: ThrottlingException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ThrottlingException'
+        '483':
+          description: ValidationException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationException'
+        '484':
+          description: AccessDeniedException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccessDeniedException'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BatchCreateVehicleRequest'
+      parameters:
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - IoTAutobahnControlPlane.BatchCreateVehicle
+      summary: Amazon IoT FleetWise Batch Create Vehicle
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+      tags:
+      - '#X Amz Target=IoTAutobahnControlPlane.BatchCreateVehicle'
+components:
+  schemas:
+    attributeValue:
+      type: string
+    createVehicleRequestItems:
+      type: array
+      items:
+        $ref: '#/components/schemas/CreateVehicleRequestItem'
+      minItems: 1
+    InternalServerException: {}
+    ThrottlingException: {}
+    TagValue:
+      type: string
+      minLength: 0
+      maxLength: 256
+    BatchCreateVehicleRequest:
+      type: object
+      required:
+      - vehicles
+      title: BatchCreateVehicleRequest
+      properties:
+        vehicles:
+          allOf:
+          - $ref: '#/components/schemas/createVehicleRequestItems'
+          - description: ' A list of information about each vehicle to create. For more information, see the API data type.'
+    Tag:
+      type: object
+      required:
+      - Key
+      - Value
+      properties:
+        Key:
+          allOf:
+          - $ref: '#/components/schemas/TagKey'
+          - description: The tag's key.
+        Value:
+          allOf:
+          - $ref: '#/components/schemas/TagValue'
+          - description: The tag's value.
+      description: A set of key/value pairs that are used to manage the resource.
+    LimitExceededException: {}
+    arn:
+      type: string
+    BatchCreateVehicleResponse:
+      type: object
+      properties:
+        vehicles:
+          allOf:
+          - $ref: '#/components/schemas/createVehicleResponses'
+          - description: ' A list of information about a batch of created vehicles. For more information, see the API data type.'
+        errors:
+          allOf:
+          - $ref: '#/components/schemas/createVehicleErrors'
+          - description: 'A list of information about creation errors, or an empty list if there aren''t any errors. '
+    CreateVehicleResponseItem:
+      type: object
+      properties:
+        vehicleName:
+          allOf:
+          - $ref: '#/components/schemas/vehicleName'
+          - description: The unique ID of the vehicle to create.
+        arn:
+          allOf:
+          - $ref: '#/components/schemas/arn'
+          - description: The ARN of the created vehicle.
+        thingArn:
+          allOf:
+          - $ref: '#/components/schemas/arn'
+          - description: The ARN of a created or validated Amazon Web Services IoT thing.
+      description: Information about a created vehicle.
+    createVehicleResponses:
+      type: array
+      items:
+        $ref: '#/components/schemas/CreateVehicleResponseItem'
+    CreateVehicleError:
+      type: object
+      properties:
+        vehicleName:
+          allOf:
+          - $ref: '#/components/schemas/vehicleName'
+          - description: The ID of the vehicle with the error.
+        code:
+          allOf:
+          - $ref: '#/components/schemas/string'
+          - description: An HTTP error code.
+        message:
+          allOf:
+          - $ref: '#/components/schemas/string'
+          - description: A description of the HTTP error.
+      description: An HTTP error resulting from creating a vehicle.
+    AccessDeniedException: {}
+    vehicleName:
+      type: string
+      pattern: '[a-zA-Z\d\-_:]+'
+      minLength: 1
+      maxLength: 100
+    ValidationException: {}
+    string:
+      type: string
+    TagKey:
+      type: string
+      minLength: 1
+      maxLength: 128
+    VehicleAssociationBehavior:
+      type: string
+      enum:
+      - CreateIotThing
+      - ValidateIotThingExists
+    CreateVehicleRequestItem:
+      type: object
+      required:
+      - vehicleName
+      - modelManifestArn
+      - decoderManifestArn
+      properties:
+        vehicleName:
+          allOf:
+          - $ref: '#/components/schemas/vehicleName'
+          - description: The unique ID of the vehicle to create.
+        modelManifestArn:
+          allOf:
+          - $ref: '#/components/schemas/arn'
+          - description: The ARN of the vehicle model (model manifest) to create the vehicle from.
+        decoderManifestArn:
+          allOf:
+          - $ref: '#/components/schemas/arn'
+          - description: 'The Amazon Resource Name (ARN) of a decoder manifest associated with the vehicle to create. '
+        attributes:
+          allOf:
+          - $ref: '#/components/schemas/attributesMap'
+          - description: 'Static information about a vehicle in a key-value pair. For example: <code>"engine Type"</code> : <code>"v6"</code> '
+        associationBehavior:
+          allOf:
+          - $ref: '#/components/schemas/VehicleAssociationBehavior'
+          - description: An option to create a new Amazon Web Services IoT thing when creating a vehicle, or to validate an existing thing as a vehicle.
+        tags:
+          allOf:
+          - $ref: '#/components/schemas/TagList'
+          - description: Metadata which can be used to manage the vehicle.
+      description: Information about the vehicle to create.
+    createVehicleErrors:
+      type: array
+      items:
+        $ref: '#/components/schemas/CreateVehicleError'
+    attributesMap:
+      type: object
+      additionalProperties:
+        $ref: '#/components/schemas/attributeValue'
+    TagList:
+      type: array
+      items:
+        $ref: '#/components/schemas/Tag'
+      minItems: 0
+      maxItems: 50
+  parameters:
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/iotfleetwise/
+x-hasEquivalentPaths: true

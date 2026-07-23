@@ -1,0 +1,600 @@
+openapi: 3.0.0
+info:
+  version: '2021-06-17'
+  x-release: v4
+  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.CreateCampaign API'
+  description: <p>Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale. With Amazon Web Services IoT FleetWise, you can standardize all of your vehicle data models, independent of the in-vehicle communication architecture, and define data collection rules to transfer only high-value data to the cloud. </p> <p>For more information, see <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/">What is Amazon Web Services IoT FleetWise?</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>
+  x-logo:
+    url: https://twitter.com/awscloud/profile_image?size=original
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: iotfleetwise
+  x-aws-signingName: iotfleetwise
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/iotfleetwise-2021-06-17.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://iotfleetwise.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The AWS IoT FleetWise multi-region endpoint
+- url: https://iotfleetwise.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The AWS IoT FleetWise multi-region endpoint
+- url: http://iotfleetwise.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The AWS IoT FleetWise endpoint for China (Beijing) and China (Ningxia)
+- url: https://iotfleetwise.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The AWS IoT FleetWise endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=IoTAutobahnControlPlane.CreateCampaign'
+paths:
+  /#X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: CreateCampaign
+      description: <p>Creates an orchestration of data collection rules. The Amazon Web Services IoT FleetWise Edge Agent software running in vehicles uses campaigns to decide how to collect and transfer data to the cloud. You create campaigns in the cloud. After you or your team approve campaigns, Amazon Web Services IoT FleetWise automatically deploys them to vehicles. </p> <p>For more information, see <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/campaigns.html">Collect and transfer data with campaigns</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateCampaignResponse'
+        '480':
+          description: ResourceNotFoundException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResourceNotFoundException'
+        '481':
+          description: InternalServerException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InternalServerException'
+        '482':
+          description: ConflictException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConflictException'
+        '483':
+          description: LimitExceededException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LimitExceededException'
+        '484':
+          description: ThrottlingException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ThrottlingException'
+        '485':
+          description: ValidationException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationException'
+        '486':
+          description: AccessDeniedException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccessDeniedException'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateCampaignRequest'
+      parameters:
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - IoTAutobahnControlPlane.CreateCampaign
+      summary: Amazon IoT FleetWise Create Campaign
+      x-microcks-operation:
+        delay: 0
+        dispatcher: FALLBACK
+      tags:
+      - '#X Amz Target=IoTAutobahnControlPlane.CreateCampaign'
+components:
+  parameters:
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+  schemas:
+    DataDestinationConfigs:
+      type: array
+      items:
+        $ref: '#/components/schemas/DataDestinationConfig'
+      minItems: 1
+      maxItems: 1
+    InternalServerException: {}
+    eventExpression:
+      type: string
+      minLength: 1
+      maxLength: 2048
+    ThrottlingException: {}
+    TagValue:
+      type: string
+      minLength: 0
+      maxLength: 256
+    CreateCampaignRequest:
+      type: object
+      required:
+      - name
+      - signalCatalogArn
+      - targetArn
+      - collectionScheme
+      title: CreateCampaignRequest
+      properties:
+        name:
+          allOf:
+          - $ref: '#/components/schemas/campaignName'
+          - description: ' The name of the campaign to create. '
+        description:
+          allOf:
+          - $ref: '#/components/schemas/description'
+          - description: An optional description of the campaign to help identify its purpose.
+        signalCatalogArn:
+          allOf:
+          - $ref: '#/components/schemas/arn'
+          - description: '(Optional) The Amazon Resource Name (ARN) of the signal catalog to associate with the campaign. '
+        targetArn:
+          allOf:
+          - $ref: '#/components/schemas/arn'
+          - description: ' The ARN of the vehicle or fleet to deploy a campaign to. '
+        startTime:
+          allOf:
+          - $ref: '#/components/schemas/timestamp'
+          - description: '<p>(Optional) The time, in milliseconds, to deliver a campaign after it was approved. If it''s not specified, <code>0</code> is used.</p> <p>Default: <code>0</code> </p>'
+        expiryTime:
+          allOf:
+          - $ref: '#/components/schemas/timestamp'
+          - description: '<p> (Optional) The time the campaign expires, in seconds since epoch (January 1, 1970 at midnight UTC time). Vehicle data isn''t collected after the campaign expires. </p> <p>Default: 253402214400 (December 31, 9999, 00:00:00 UTC)</p>'
+        postTriggerCollectionDuration:
+          allOf:
+          - $ref: '#/components/schemas/uint32'
+          - description: '<p> (Optional) How long (in milliseconds) to collect raw data after a triggering event initiates the collection. If it''s not specified, <code>0</code> is used.</p> <p>Default: <code>0</code> </p>'
+        diagnosticsMode:
+          allOf:
+          - $ref: '#/components/schemas/DiagnosticsMode'
+          - description: '<p> (Optional) Option for a vehicle to send diagnostic trouble codes to Amazon Web Services IoT FleetWise. If you want to send diagnostic trouble codes, use <code>SEND_ACTIVE_DTCS</code>. If it''s not specified, <code>OFF</code> is used.</p> <p>Default: <code>OFF</code> </p>'
+        spoolingMode:
+          allOf:
+          - $ref: '#/components/schemas/SpoolingMode'
+          - description: '<p>(Optional) Whether to store collected data after a vehicle lost a connection with the cloud. After a connection is re-established, the data is automatically forwarded to Amazon Web Services IoT FleetWise. If you want to store collected data when a vehicle loses connection with the cloud, use <code>TO_DISK</code>. If it''s not specified, <code>OFF</code> is used.</p> <p>Default: <code>OFF</code> </p>'
+        compression:
+          allOf:
+          - $ref: '#/components/schemas/Compression'
+          - description: '<p> (Optional) Whether to compress signals before transmitting data to Amazon Web Services IoT FleetWise. If you don''t want to compress the signals, use <code>OFF</code>. If it''s not specified, <code>SNAPPY</code> is used. </p> <p>Default: <code>SNAPPY</code> </p>'
+        priority:
+          allOf:
+          - $ref: '#/components/schemas/priority'
+          - description: '<p>(Optional) A number indicating the priority of one campaign over another campaign for a certain vehicle or fleet. A campaign with the lowest value is deployed to vehicles before any other campaigns. If it''s not specified, <code>0</code> is used. </p> <p>Default: <code>0</code> </p>'
+        signalsToCollect:
+          allOf:
+          - $ref: '#/components/schemas/SignalInformationList'
+          - description: '(Optional) A list of information about signals to collect. '
+        collectionScheme:
+          allOf:
+          - $ref: '#/components/schemas/CollectionScheme'
+          - description: ' The data collection scheme associated with the campaign. You can specify a scheme that collects data based on time or an event.'
+        dataExtraDimensions:
+          allOf:
+          - $ref: '#/components/schemas/DataExtraDimensionNodePathList'
+          - description: '<p> (Optional) A list of vehicle attributes to associate with a campaign. </p> <p>Enrich the data with specified vehicle attributes. For example, add <code>make</code> and <code>model</code> to the campaign, and Amazon Web Services IoT FleetWise will associate the data with those attributes as dimensions in Amazon Timestream. You can then query the data against <code>make</code> and <code>model</code>.</p> <p>Default: An empty array</p>'
+        tags:
+          allOf:
+          - $ref: '#/components/schemas/TagList'
+          - description: Metadata that can be used to manage the campaign.
+        dataDestinationConfigs:
+          allOf:
+          - $ref: '#/components/schemas/DataDestinationConfigs'
+          - description: <p>The destination where the campaign sends data. You can choose to send data to be stored in Amazon S3 or Amazon Timestream.</p> <p>Amazon S3 optimizes the cost of data storage and provides additional mechanisms to use vehicle data, such as data lakes, centralized data storage, data processing pipelines, and analytics. </p> <p>You can use Amazon Timestream to access and analyze time series data, and Timestream to query vehicle data so that you can identify trends and patterns.</p>
+    Compression:
+      type: string
+      enum:
+      - 'OFF'
+      - SNAPPY
+    Tag:
+      type: object
+      required:
+      - Key
+      - Value
+      properties:
+        Key:
+          allOf:
+          - $ref: '#/components/schemas/TagKey'
+          - description: The tag's key.
+        Value:
+          allOf:
+          - $ref: '#/components/schemas/TagValue'
+          - description: The tag's value.
+      description: A set of key/value pairs that are used to manage the resource.
+    CreateCampaignResponse:
+      type: object
+      properties:
+        name:
+          allOf:
+          - $ref: '#/components/schemas/campaignName'
+          - description: The name of the created campaign.
+        arn:
+          allOf:
+          - $ref: '#/components/schemas/arn'
+          - description: ' The ARN of the created campaign. '
+    StorageCompressionFormat:
+      type: string
+      enum:
+      - NONE
+      - GZIP
+    languageVersion:
+      type: integer
+      minimum: 1
+    DataExtraDimensionNodePathList:
+      type: array
+      items:
+        $ref: '#/components/schemas/NodePath'
+      minItems: 0
+      maxItems: 5
+    timestamp:
+      type: string
+      format: date-time
+    uint32:
+      type: integer
+      minimum: 0
+      maximum: 4294967295
+    ConflictException: {}
+    LimitExceededException: {}
+    arn:
+      type: string
+    collectionPeriodMs:
+      type: integer
+      minimum: 10000
+      maximum: 60000
+    priority:
+      type: integer
+      minimum: 0
+    CollectionScheme:
+      type: object
+      properties:
+        timeBasedCollectionScheme:
+          allOf:
+          - $ref: '#/components/schemas/TimeBasedCollectionScheme'
+          - description: Information about a collection scheme that uses a time period to decide how often to collect data.
+        conditionBasedCollectionScheme:
+          allOf:
+          - $ref: '#/components/schemas/ConditionBasedCollectionScheme'
+          - description: Information about a collection scheme that uses a simple logical expression to recognize what data to collect.
+      description: Specifies what data to collect and how often or when to collect it.
+    TimestreamConfig:
+      type: object
+      required:
+      - timestreamTableArn
+      - executionRoleArn
+      properties:
+        timestreamTableArn:
+          allOf:
+          - $ref: '#/components/schemas/TimestreamTableArn'
+          - description: The Amazon Resource Name (ARN) of the Amazon Timestream table.
+        executionRoleArn:
+          allOf:
+          - $ref: '#/components/schemas/IAMRoleArn'
+          - description: The Amazon Resource Name (ARN) of the task execution role that grants Amazon Web Services IoT FleetWise permission to deliver data to the Amazon Timestream table.
+      description: The Amazon Timestream table where the Amazon Web Services IoT FleetWise campaign sends data. Timestream stores and organizes data to optimize query processing time and to reduce storage costs. For more information, see <a href="https://docs.aws.amazon.com/timestream/latest/developerguide/data-modeling.html">Data modeling</a> in the <i>Amazon Timestream Developer Guide</i>.
+    S3Config:
+      type: object
+      required:
+      - bucketArn
+      properties:
+        bucketArn:
+          allOf:
+          - $ref: '#/components/schemas/S3BucketArn'
+          - description: The Amazon Resource Name (ARN) of the Amazon S3 bucket.
+        dataFormat:
+          allOf:
+          - $ref: '#/components/schemas/DataFormat'
+          - description: <p>Specify the format that files are saved in the Amazon S3 bucket. You can save files in an Apache Parquet or JSON format.</p> <ul> <li> <p>Parquet - Store data in a columnar storage file format. Parquet is optimal for fast data retrieval and can reduce costs. This option is selected by default.</p> </li> <li> <p>JSON - Store data in a standard text-based JSON file format.</p> </li> </ul>
+        storageCompressionFormat:
+          allOf:
+          - $ref: '#/components/schemas/StorageCompressionFormat'
+          - description: By default, stored data is compressed as a .gzip file. Compressed files have a reduced file size, which can optimize the cost of data storage.
+        prefix:
+          allOf:
+          - $ref: '#/components/schemas/Prefix'
+          - description: <p>(Optional) Enter an S3 bucket prefix. The prefix is the string of characters after the bucket name and before the object name. You can use the prefix to organize data stored in Amazon S3 buckets. For more information, see <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-prefixes.html">Organizing objects using prefixes</a> in the <i>Amazon Simple Storage Service User Guide</i>.</p> <p>By default, Amazon Web Services IoT FleetWise sets the prefix <code>processed-data/year=YY/month=MM/date=DD/hour=HH/</code> (in UTC) to data it delivers to Amazon S3. You can enter a prefix to append it to this default prefix. For example, if you enter the prefix <code>vehicles</code>, the prefix will be <code>vehicles/processed-data/year=YY/month=MM/date=DD/hour=HH/</code>.</p>
+      description: The Amazon S3 bucket where the Amazon Web Services IoT FleetWise campaign sends data. Amazon S3 is an object storage service that stores data as objects within buckets. For more information, see <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-buckets-s3.html">Creating, configuring, and working with Amazon S3 buckets</a> in the <i>Amazon Simple Storage Service User Guide</i>.
+    S3BucketArn:
+      type: string
+      pattern: arn:(aws[a-zA-Z0-9-]*):s3:::.+
+      minLength: 16
+      maxLength: 100
+    NodePath:
+      type: string
+      pattern: '[a-zA-Z0-9_.]+'
+      minLength: 1
+      maxLength: 150
+    TimestreamTableArn:
+      type: string
+      pattern: arn:(aws[a-zA-Z0-9-]*):timestream:[a-zA-Z0-9-]+:[0-9]{12}:database/[a-zA-Z0-9_.-]+/table/[a-zA-Z0-9_.-]+
+      minLength: 20
+      maxLength: 2048
+    SignalInformationList:
+      type: array
+      items:
+        $ref: '#/components/schemas/SignalInformation'
+      minItems: 0
+      maxItems: 1000
+    campaignName:
+      type: string
+      pattern: '[a-zA-Z\d\-_:]+'
+      minLength: 1
+      maxLength: 100
+    DiagnosticsMode:
+      type: string
+      enum:
+      - 'OFF'
+      - SEND_ACTIVE_DTCS
+    description:
+      type: string
+      pattern: '[^\u0000-\u001F\u007F]+'
+      minLength: 1
+      maxLength: 2048
+    IAMRoleArn:
+      type: string
+      pattern: arn:(aws[a-zA-Z0-9-]*):iam::(\d{12})?:(role((\u002F)|(\u002F[\u0021-\u007F]+\u002F))[\w+=,.@-]+)
+      minLength: 20
+      maxLength: 2048
+    ResourceNotFoundException: {}
+    SpoolingMode:
+      type: string
+      enum:
+      - 'OFF'
+      - TO_DISK
+    AccessDeniedException: {}
+    wildcardSignalName:
+      type: string
+      pattern: '[\w|*|-]+(\.[\w|*|-]+)*'
+      minLength: 1
+      maxLength: 150
+    DataDestinationConfig:
+      type: object
+      properties:
+        s3Config:
+          allOf:
+          - $ref: '#/components/schemas/S3Config'
+          - description: The Amazon S3 bucket where the Amazon Web Services IoT FleetWise campaign sends data.
+        timestreamConfig:
+          allOf:
+          - $ref: '#/components/schemas/TimestreamConfig'
+          - description: The Amazon Timestream table where the campaign sends data.
+      description: The destination where the Amazon Web Services IoT FleetWise campaign sends data. You can send data to be stored in Amazon S3 or Amazon Timestream.
+    ConditionBasedCollectionScheme:
+      type: object
+      required:
+      - expression
+      properties:
+        expression:
+          allOf:
+          - $ref: '#/components/schemas/eventExpression'
+          - description: The logical expression used to recognize what data to collect. For example, <code>$variable.Vehicle.OutsideAirTemperature &gt;= 105.0</code>.
+        minimumTriggerIntervalMs:
+          allOf:
+          - $ref: '#/components/schemas/uint32'
+          - description: <p>The minimum duration of time between two triggering events to collect data, in milliseconds.</p> <note> <p>If a signal changes often, you might want to collect data at a slower rate.</p> </note>
+        triggerMode:
+          allOf:
+          - $ref: '#/components/schemas/TriggerMode'
+          - description: Whether to collect data for all triggering events (<code>ALWAYS</code>). Specify (<code>RISING_EDGE</code>), or specify only when the condition first evaluates to false. For example, triggering on "AirbagDeployed"; Users aren't interested on triggering when the airbag is already exploded; they only care about the change from not deployed =&gt; deployed.
+        conditionLanguageVersion:
+          allOf:
+          - $ref: '#/components/schemas/languageVersion'
+          - description: Specifies the version of the conditional expression language.
+      description: Information about a collection scheme that uses a simple logical expression to recognize what data to collect.
+    Prefix:
+      type: string
+      pattern: '[a-zA-Z0-9-_:./!*''()]+'
+      minLength: 1
+      maxLength: 512
+    DataFormat:
+      type: string
+      enum:
+      - JSON
+      - PARQUET
+    TriggerMode:
+      type: string
+      enum:
+      - ALWAYS
+      - RISING_EDGE
+    ValidationException: {}
+    TagKey:
+      type: string
+      minLength: 1
+      maxLength: 128
+    SignalInformation:
+      type: object
+      required:
+      - name
+      properties:
+        name:
+          allOf:
+          - $ref: '#/components/schemas/wildcardSignalName'
+          - description: The name of the signal.
+        maxSampleCount:
+          allOf:
+          - $ref: '#/components/schemas/maxSampleCount'
+          - description: The maximum number of samples to collect.
+        minimumSamplingIntervalMs:
+          allOf:
+          - $ref: '#/components/schemas/uint32'
+          - description: <p>The minimum duration of time (in milliseconds) between two triggering events to collect data.</p> <note> <p>If a signal changes often, you might want to collect data at a slower rate.</p> </note>
+      description: Information about a signal.
+    TimeBasedCollectionScheme:
+      type: object
+      required:
+      - periodMs
+      properties:
+        periodMs:
+          allOf:
+          - $ref: '#/components/schemas/collectionPeriodMs'
+          - description: The time period (in milliseconds) to decide how often to collect data. For example, if the time period is <code>60000</code>, the Edge Agent software collects data once every minute.
+      description: Information about a collection scheme that uses a time period to decide how often to collect data.
+    TagList:
+      type: array
+      items:
+        $ref: '#/components/schemas/Tag'
+      minItems: 0
+      maxItems: 50
+    maxSampleCount:
+      type: integer
+      minimum: 1
+      maximum: 4294967295
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/iotfleetwise/
+x-hasEquivalentPaths: true
