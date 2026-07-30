@@ -4,7 +4,20 @@ description: AWS IoT FleetWise is a managed service that makes it easy for autom
   and transfer vehicle data to the cloud in near-real time. It provides tools for vehicle data modeling, intelligent data
   collection, and cloud-based analytics.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amazon-iot-fleetwise.png
 tags:
 - Automotive
 - AWS
@@ -17,21 +30,1200 @@ created: '2026-03-16'
 modified: '2026-05-19'
 specificationVersion: '0.19'
 apis:
-- aid: amazon-iot-fleetwise:aws-iot-fleetwise-api
-  name: AWS IoT FleetWise API
-  description: The AWS IoT FleetWise API provides access to vehicle data modeling, fleet management, signal catalogs, campaigns,
-    and data collection for connected vehicle platforms.
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-associatevehiclefleet-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet API from Amazon IoT FleetWise — 1
+    operation(s) for #x amz target=iotautobahncontrolplane.associatevehiclefleet.
   humanURL: https://aws.amazon.com/iot-fleetwise/
   baseURL: https://iotfleetwise.amazonaws.com
   tags:
-  - Automotive
-  - IoT
-  - Vehicle Data
+  - '#X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet'
   properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-associatevehiclefleet-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-batchcreatevehicle-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.BatchCreateVehicle API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.BatchCreateVehicle API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.batchcreatevehicle.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.BatchCreateVehicle'
+  properties:
   - type: OpenAPI
-    url: openapi/amazon-iot-fleetwise-openapi-original.yml
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-batchcreatevehicle-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-batchupdatevehicle-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.BatchUpdateVehicle API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.BatchUpdateVehicle API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.batchupdatevehicle.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.BatchUpdateVehicle'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-batchupdatevehicle-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createcampaign-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.CreateCampaign API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.CreateCampaign API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.createcampaign.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.CreateCampaign'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createcampaign-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createdecodermanifest-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.CreateDecoderManifest API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.CreateDecoderManifest API from Amazon IoT FleetWise — 1
+    operation(s) for #x amz target=iotautobahncontrolplane.createdecodermanifest.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.CreateDecoderManifest'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createdecodermanifest-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createfleet-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.CreateFleet API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.CreateFleet API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.createfleet.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.CreateFleet'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createfleet-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createmodelmanifest-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.CreateModelManifest API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.CreateModelManifest API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.createmodelmanifest.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.CreateModelManifest'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createmodelmanifest-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createsignalcatalog-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.CreateSignalCatalog API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.CreateSignalCatalog API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.createsignalcatalog.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.CreateSignalCatalog'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createsignalcatalog-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createvehicle-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.CreateVehicle API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.CreateVehicle API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.createvehicle.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.CreateVehicle'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createvehicle-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletecampaign-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.DeleteCampaign API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.DeleteCampaign API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.deletecampaign.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.DeleteCampaign'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletecampaign-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletedecodermanifest-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.DeleteDecoderManifest API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.DeleteDecoderManifest API from Amazon IoT FleetWise — 1
+    operation(s) for #x amz target=iotautobahncontrolplane.deletedecodermanifest.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.DeleteDecoderManifest'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletedecodermanifest-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletefleet-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.DeleteFleet API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.DeleteFleet API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.deletefleet.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.DeleteFleet'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletefleet-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletemodelmanifest-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.DeleteModelManifest API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.DeleteModelManifest API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.deletemodelmanifest.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.DeleteModelManifest'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletemodelmanifest-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletesignalcatalog-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.DeleteSignalCatalog API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.DeleteSignalCatalog API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.deletesignalcatalog.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.DeleteSignalCatalog'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletesignalcatalog-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletevehicle-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.DeleteVehicle API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.DeleteVehicle API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.deletevehicle.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.DeleteVehicle'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletevehicle-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-disassociatevehiclefleet-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.DisassociateVehicleFleet API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.DisassociateVehicleFleet API from Amazon IoT FleetWise —
+    1 operation(s) for #x amz target=iotautobahncontrolplane.disassociatevehiclefleet.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.DisassociateVehicleFleet'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-disassociatevehiclefleet-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getcampaign-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.GetCampaign API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.GetCampaign API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.getcampaign.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.GetCampaign'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getcampaign-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getdecodermanifest-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.GetDecoderManifest API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.GetDecoderManifest API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.getdecodermanifest.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.GetDecoderManifest'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getdecodermanifest-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getfleet-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.GetFleet API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.GetFleet API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.getfleet.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.GetFleet'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getfleet-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getloggingoptions-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.GetLoggingOptions API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.GetLoggingOptions API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.getloggingoptions.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.GetLoggingOptions'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getloggingoptions-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getmodelmanifest-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.GetModelManifest API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.GetModelManifest API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.getmodelmanifest.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.GetModelManifest'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getmodelmanifest-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getregisteraccountstatus-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.GetRegisterAccountStatus API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.GetRegisterAccountStatus API from Amazon IoT FleetWise —
+    1 operation(s) for #x amz target=iotautobahncontrolplane.getregisteraccountstatus.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.GetRegisterAccountStatus'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getregisteraccountstatus-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getsignalcatalog-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.GetSignalCatalog API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.GetSignalCatalog API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.getsignalcatalog.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.GetSignalCatalog'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getsignalcatalog-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getvehicle-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.GetVehicle API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.GetVehicle API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.getvehicle.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.GetVehicle'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getvehicle-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getvehiclestatus-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.GetVehicleStatus API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.GetVehicleStatus API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.getvehiclestatus.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.GetVehicleStatus'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getvehiclestatus-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-importdecodermanifest-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.ImportDecoderManifest API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.ImportDecoderManifest API from Amazon IoT FleetWise — 1
+    operation(s) for #x amz target=iotautobahncontrolplane.importdecodermanifest.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.ImportDecoderManifest'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-importdecodermanifest-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-importsignalcatalog-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.ImportSignalCatalog API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.ImportSignalCatalog API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.importsignalcatalog.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.ImportSignalCatalog'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-importsignalcatalog-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listcampaigns-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.ListCampaigns API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.ListCampaigns API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.listcampaigns.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.ListCampaigns'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listcampaigns-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifestnetworkinterfaces-api
+  name: >-
+    Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.ListDecoderManifestNetworkInterfaces API
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.ListDecoderManifestNetworkInterfaces API from Amazon IoT
+    FleetWise — 1 operation(s) for #x amz target=iotautobahncontrolplane.listdecodermanifestnetworkinterfaces.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.ListDecoderManifestNetworkInterfaces'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifestnetworkinterfaces-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifests-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.ListDecoderManifests API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.ListDecoderManifests API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.listdecodermanifests.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.ListDecoderManifests'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifests-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifestsignals-api
+  name: >-
+    Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.ListDecoderManifestSignals API
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.ListDecoderManifestSignals API from Amazon IoT FleetWise
+    — 1 operation(s) for #x amz target=iotautobahncontrolplane.listdecodermanifestsignals.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.ListDecoderManifestSignals'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifestsignals-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listfleets-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.ListFleets API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.ListFleets API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.listfleets.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.ListFleets'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listfleets-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listfleetsforvehicle-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.ListFleetsForVehicle API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.ListFleetsForVehicle API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.listfleetsforvehicle.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.ListFleetsForVehicle'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listfleetsforvehicle-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listmodelmanifestnodes-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.ListModelManifestNodes API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.ListModelManifestNodes API from Amazon IoT FleetWise — 1
+    operation(s) for #x amz target=iotautobahncontrolplane.listmodelmanifestnodes.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.ListModelManifestNodes'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listmodelmanifestnodes-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listmodelmanifests-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.ListModelManifests API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.ListModelManifests API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.listmodelmanifests.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.ListModelManifests'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listmodelmanifests-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listsignalcatalognodes-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.ListSignalCatalogNodes API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.ListSignalCatalogNodes API from Amazon IoT FleetWise — 1
+    operation(s) for #x amz target=iotautobahncontrolplane.listsignalcatalognodes.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.ListSignalCatalogNodes'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listsignalcatalognodes-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listsignalcatalogs-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.ListSignalCatalogs API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.ListSignalCatalogs API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.listsignalcatalogs.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.ListSignalCatalogs'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listsignalcatalogs-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listtagsforresource-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.ListTagsForResource API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.ListTagsForResource API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.listtagsforresource.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.ListTagsForResource'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listtagsforresource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listvehicles-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.ListVehicles API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.ListVehicles API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.listvehicles.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.ListVehicles'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listvehicles-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listvehiclesinfleet-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.ListVehiclesInFleet API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.ListVehiclesInFleet API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.listvehiclesinfleet.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.ListVehiclesInFleet'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listvehiclesinfleet-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-putloggingoptions-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.PutLoggingOptions API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.PutLoggingOptions API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.putloggingoptions.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.PutLoggingOptions'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-putloggingoptions-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-registeraccount-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.RegisterAccount API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.RegisterAccount API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.registeraccount.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.RegisterAccount'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-registeraccount-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-tagresource-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.TagResource API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.TagResource API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.tagresource.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.TagResource'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-tagresource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-untagresource-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.UntagResource API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.UntagResource API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.untagresource.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.UntagResource'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-untagresource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatecampaign-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.UpdateCampaign API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.UpdateCampaign API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.updatecampaign.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.UpdateCampaign'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatecampaign-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatedecodermanifest-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.UpdateDecoderManifest API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.UpdateDecoderManifest API from Amazon IoT FleetWise — 1
+    operation(s) for #x amz target=iotautobahncontrolplane.updatedecodermanifest.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.UpdateDecoderManifest'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatedecodermanifest-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatefleet-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.UpdateFleet API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.UpdateFleet API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.updatefleet.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.UpdateFleet'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatefleet-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatemodelmanifest-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.UpdateModelManifest API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.UpdateModelManifest API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.updatemodelmanifest.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.UpdateModelManifest'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatemodelmanifest-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatesignalcatalog-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.UpdateSignalCatalog API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.UpdateSignalCatalog API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.updatesignalcatalog.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.UpdateSignalCatalog'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatesignalcatalog-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
+  - type: GettingStarted
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
+  - type: Pricing
+    url: https://aws.amazon.com/iot-fleetwise/pricing/
+  - type: FAQ
+    url: https://aws.amazon.com/iot-fleetwise/faqs/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-iot-fleetwise.yaml
+- aid: >-
+    amazon-iot-fleetwise:amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatevehicle-api
+  name: 'Amazon IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.UpdateVehicle API'
+  description: >-
+    The #X Amz Target=IoTAutobahnControlPlane.UpdateVehicle API from Amazon IoT FleetWise — 1 operation(s)
+    for #x amz target=iotautobahncontrolplane.updatevehicle.
+  humanURL: https://aws.amazon.com/iot-fleetwise/
+  baseURL: https://iotfleetwise.amazonaws.com
+  tags:
+  - '#X Amz Target=IoTAutobahnControlPlane.UpdateVehicle'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatevehicle-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/
   - type: GettingStarted
     url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/getting-started.html
   - type: Pricing
@@ -41,6 +1233,8 @@ apis:
   - type: X-NaftikoCapability
     url: capabilities/amazon-iot-fleetwise.yaml
 common:
+- type: PostmanWorkspace
+  url: https://www.postman.com/kinlaneapi/amazon-iot-fleetwise/overview
 - type: AgenticAccess
   url: agentic-access/amazon-iot-fleetwise-agentic-access.yml
 - type: TrustCenter
