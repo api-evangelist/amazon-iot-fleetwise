@@ -1,0 +1,846 @@
+{
+  "info": {
+    "_postman_id": "c0c1856e-c7fd-42b2-976a-92c4a1f2a26f",
+    "name": "AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.ListSignalCatalogNodes API",
+    "description": "<p>Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale. With Amazon Web Services IoT FleetWise, you can standardize all of your vehicle data models, independent of the in-vehicle communication architecture, and define data collection rules to transfer only high-value data to the cloud. </p> <p>For more information, see <a href=\"https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/\">What is Amazon Web Services IoT FleetWise?</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:36:50.000Z",
+    "updatedAt": "2026-07-28T10:36:50.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-c0c1856e-c7fd-42b2-976a-92c4a1f2a26f"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=IoTAutobahnControlPlane.ListSignalCatalogNodes",
+      "item": [
+        {
+          "name": "Amazon IoT FleetWise List Signal Catalog Nodes",
+          "id": "0a9afc34-8c06-4511-8495-002180eba479",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "IoTAutobahnControlPlane.ListSignalCatalogNodes"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"DzJA\",\n  \"nextToken\": \"<string>\",\n  \"maxResults\": \"<integer>\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/?maxResults=<string>&nextToken=<string>#X-Amz-Target=IoTAutobahnControlPlane.ListSignalCatalogNodes",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "query": [
+                {
+                  "description": "Pagination limit",
+                  "key": "maxResults",
+                  "value": "<string>"
+                },
+                {
+                  "description": "Pagination token",
+                  "key": "nextToken",
+                  "value": "<string>"
+                }
+              ],
+              "hash": "X-Amz-Target=IoTAutobahnControlPlane.ListSignalCatalogNodes"
+            },
+            "description": "<p> Lists of information about the signals (nodes) specified in a signal catalog. </p> <note> <p>This API operation uses pagination. Specify the <code>nextToken</code> parameter in the request to return more results.</p> </note>"
+          },
+          "response": [
+            {
+              "id": "f2e8e267-22b6-417b-87e9-16e7bb325509",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "IoTAutobahnControlPlane.ListSignalCatalogNodes"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"DzJA\",\n  \"nextToken\": \"<string>\",\n  \"maxResults\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?maxResults=<string>&nextToken=<string>#X-Amz-Target=IoTAutobahnControlPlane.ListSignalCatalogNodes",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination limit",
+                      "key": "maxResults",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "Pagination token",
+                      "key": "nextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.ListSignalCatalogNodes"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"nodes\": [\n    {\n      \"branch\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"description\": \";r[n(+{R\",\n        \"deprecationMessage\": \"%\",\n        \"comment\": \"{b\"\n      },\n      \"sensor\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"DOUBLE\",\n        \"description\": \"F%/wx|\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"deprecationMessage\": \"ypL\\\\YmT']\",\n        \"comment\": \"V}h).\"\n      },\n      \"actuator\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UNIX_TIMESTAMP\",\n        \"description\": \"x,CY(PvwnT\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"deprecationMessage\": \"[1?u`xF4*6\",\n        \"comment\": \"sQ\\\\8p@ \"\n      },\n      \"attribute\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"STRING_ARRAY\",\n        \"description\": \"9<{L\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"defaultValue\": \"<string>\",\n        \"deprecationMessage\": \"v1GcMd#{\",\n        \"comment\": \"87uHxho\"\n      }\n    },\n    {\n      \"branch\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"description\": \"(Wg2NY)d\",\n        \"deprecationMessage\": \"o@oPW S?\",\n        \"comment\": \"aWAu\"\n      },\n      \"sensor\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"BOOLEAN_ARRAY\",\n        \"description\": \"h|Gvy,g\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"deprecationMessage\": \"2@\\\\0v-\",\n        \"comment\": \"b~y(<JIx\"\n      },\n      \"actuator\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"INT64\",\n        \"description\": \"@6N0im#o-\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"deprecationMessage\": \"SC\",\n        \"comment\": \"/N;F\"\n      },\n      \"attribute\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UNIX_TIMESTAMP_ARRAY\",\n        \"description\": \"p2Oar{rT\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"defaultValue\": \"<string>\",\n        \"deprecationMessage\": \"OC~)N\",\n        \"comment\": \"=fbqyR\"\n      }\n    },\n    {\n      \"branch\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"description\": \")$tW^^Rpj\",\n        \"deprecationMessage\": \"&et-[4G>x\\\"T\",\n        \"comment\": \"FTc>ssO(\"\n      },\n      \"sensor\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"DOUBLE_ARRAY\",\n        \"description\": \"h\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"deprecationMessage\": \"fI\\\\pD-\",\n        \"comment\": \"uhw?'&:2Y^b\"\n      },\n      \"actuator\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UINT16_ARRAY\",\n        \"description\": \"'\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"deprecationMessage\": \"18.K\",\n        \"comment\": \"72p(1M@q [K\"\n      },\n      \"attribute\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"INT16\",\n        \"description\": \"c t{\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"defaultValue\": \"<string>\",\n        \"deprecationMessage\": \"@610pV!?\",\n        \"comment\": \"N.~Z>ZXCNR\"\n      }\n    },\n    {\n      \"branch\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"description\": \"2IUD\",\n        \"deprecationMessage\": \"H*|$\",\n        \"comment\": \"B~xVDpi\"\n      },\n      \"sensor\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"INT32\",\n        \"description\": \"o[KG$OU?\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"deprecationMessage\": \"*|\\\"S>\",\n        \"comment\": \"\\\\CKX~D%\"\n      },\n      \"actuator\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UNKNOWN\",\n        \"description\": \"Zkina#wN7J\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"deprecationMessage\": \"eJi0)s5G\",\n        \"comment\": \"RNmt2\"\n      },\n      \"attribute\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"INT16_ARRAY\",\n        \"description\": \"R5m6\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"defaultValue\": \"<string>\",\n        \"deprecationMessage\": \"/sAz\",\n        \"comment\": \"waWqUrNiNL<\"\n      }\n    },\n    {\n      \"branch\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"description\": \"aXA.9G;4V\",\n        \"deprecationMessage\": \"/DT-R+.U\",\n        \"comment\": \"L:_5^E_v\"\n      },\n      \"sensor\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UINT16\",\n        \"description\": \"Pkp~/\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"deprecationMessage\": \"Z`*Z\\\\m*\",\n        \"comment\": \" cXLo6*\"\n      },\n      \"actuator\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UINT8\",\n        \"description\": \"N\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"deprecationMessage\": \"GHOAEy\",\n        \"comment\": \"!]FAxGQqMF\"\n      },\n      \"attribute\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UNIX_TIMESTAMP\",\n        \"description\": \"cY)=y]\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"defaultValue\": \"<string>\",\n        \"deprecationMessage\": \"2qX_,y$W?2$\",\n        \"comment\": \"3R[D)x&;h0r\"\n      }\n    },\n    {\n      \"branch\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"description\": \"(\",\n        \"deprecationMessage\": \"u:3DbT#=u\",\n        \"comment\": \"HP\"\n      },\n      \"sensor\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UINT64\",\n        \"description\": \"<s4_z`\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"deprecationMessage\": \"'\",\n        \"comment\": \"?[T\"\n      },\n      \"actuator\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"FLOAT\",\n        \"description\": \"<kc\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"deprecationMessage\": \"AC\",\n        \"comment\": \"Z2xf-\"\n      },\n      \"attribute\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"DOUBLE_ARRAY\",\n        \"description\": \"MW\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"defaultValue\": \"<string>\",\n        \"deprecationMessage\": \"FWWP}Cip\",\n        \"comment\": \"X&R\"\n      }\n    },\n    {\n      \"branch\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"description\": \"3O|/%+>A\",\n        \"deprecationMessage\": \"2\",\n        \"comment\": \")ke8(_B\"\n      },\n      \"sensor\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"INT32\",\n        \"description\": \"nP335J\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"deprecationMessage\": \"L'} jNmyjG\",\n        \"comment\": \"od\"\n      },\n      \"actuator\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UINT16_ARRAY\",\n        \"description\": \"#\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"deprecationMessage\": \"/.OL*S)%_\",\n        \"comment\": \"}\"\n      },\n      \"attribute\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"BOOLEAN\",\n        \"description\": \"jZ&55?iR[G\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"defaultValue\": \"<string>\",\n        \"deprecationMessage\": \"P=PbGET\",\n        \"comment\": \"!x'6\"\n      }\n    },\n    {\n      \"branch\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"description\": \"F`\",\n        \"deprecationMessage\": \"6/i-0n-T\",\n        \"comment\": \"a]Jr(,f\"\n      },\n      \"sensor\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"INT8\",\n        \"description\": \"LlITqOhQJ d\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"deprecationMessage\": \"J}<O#yz\",\n        \"comment\": \"&#=\"\n      },\n      \"actuator\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UINT64\",\n        \"description\": \"-@A\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"deprecationMessage\": \"uyb^r;P@3{\",\n        \"comment\": \"Q^x_x>#1M.\"\n      },\n      \"attribute\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UINT16_ARRAY\",\n        \"description\": \"C|E\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"defaultValue\": \"<string>\",\n        \"deprecationMessage\": \"M1-3u/H(J~\",\n        \"comment\": \"p0[L2h\"\n      }\n    },\n    {\n      \"branch\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"description\": \"sI&)mtp\",\n        \"deprecationMessage\": \"\\\"@\",\n        \"comment\": \"+@\"\n      },\n      \"sensor\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UNIX_TIMESTAMP\",\n        \"description\": \"z:F^RHqf\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"deprecationMessage\": \",^$'dz}\",\n        \"comment\": \"U`u7e|-X\"\n      },\n      \"actuator\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"INT8\",\n        \"description\": \"5IEwqwx|QK\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"deprecationMessage\": \"(1C9\",\n        \"comment\": \"@.nsrZ.R5\"\n      },\n      \"attribute\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UINT8\",\n        \"description\": \"6>\\\"\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"defaultValue\": \"<string>\",\n        \"deprecationMessage\": \"Hq\",\n        \"comment\": \"B@S&G:Jje\"\n      }\n    },\n    {\n      \"branch\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"description\": \"kDV`y\",\n        \"deprecationMessage\": \")63E-\",\n        \"comment\": \"5\\\\ ,}\"\n      },\n      \"sensor\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"DOUBLE\",\n        \"description\": \"K?W\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"deprecationMessage\": \"[N:kR$+xb\",\n        \"comment\": \"~`+SjB=y\"\n      },\n      \"actuator\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"FLOAT\",\n        \"description\": \"D5\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"deprecationMessage\": \"G5b.IVIMIlz\",\n        \"comment\": \"Z\"\n      },\n      \"attribute\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UINT8\",\n        \"description\": \"R/chAiHPPY7\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"defaultValue\": \"<string>\",\n        \"deprecationMessage\": \"wS_5.R$1HI\",\n        \"comment\": \"Y2Z`zp\"\n      }\n    },\n    {\n      \"branch\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"description\": \"HK|.%\",\n        \"deprecationMessage\": \"Sf]\",\n        \"comment\": \"8Tvm6]$(\"\n      },\n      \"sensor\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"INT32\",\n        \"description\": \">*&ez.Y\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"deprecationMessage\": \"}\\\"\",\n        \"comment\": \";3d\"\n      },\n      \"actuator\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UINT64\",\n        \"description\": \"iM4\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"deprecationMessage\": \"mCH=G#JK\",\n        \"comment\": \"|7ne7eS<4ig\"\n      },\n      \"attribute\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UINT16\",\n        \"description\": \"G'~lPp+}/\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"defaultValue\": \"<string>\",\n        \"deprecationMessage\": \"fIWFS\",\n        \"comment\": \" =W\\\"(Lv~m7\"\n      }\n    },\n    {\n      \"branch\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"description\": \"fQ|\",\n        \"deprecationMessage\": \"3t'M=&(o\",\n        \"comment\": \"i_.T*kZlGJI\"\n      },\n      \"sensor\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"INT64_ARRAY\",\n        \"description\": \"F0gIT4#[&J\\\"\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"deprecationMessage\": \"`?Mg#IRNRr\",\n        \"comment\": \"r(75N#8X#\"\n      },\n      \"actuator\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UINT32\",\n        \"description\": \"c?/.C9<=|\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"deprecationMessage\": \"Iy?{&`R02)\",\n        \"comment\": \"*V}V&\"\n      },\n      \"attribute\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"STRING_ARRAY\",\n        \"description\": \"ikaRtT{=c\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"defaultValue\": \"<string>\",\n        \"deprecationMessage\": \" \\\\Bt<5\",\n        \"comment\": \"0zm\"\n      }\n    },\n    {\n      \"branch\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"description\": \"TJ&\\\"\\\"(8ub\",\n        \"deprecationMessage\": \"A\",\n        \"comment\": \"8]!(m=K<u[\"\n      },\n      \"sensor\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UINT32\",\n        \"description\": \"9%xn=$1?\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"deprecationMessage\": \"]|d{r#g\",\n        \"comment\": \"]|Z$h.Em+\"\n      },\n      \"actuator\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UINT8_ARRAY\",\n        \"description\": \"TF(O<mw5/\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"deprecationMessage\": \"f/D\",\n        \"comment\": \"M|D1)\"\n      },\n      \"attribute\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"DOUBLE_ARRAY\",\n        \"description\": \"`y@yp6\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"defaultValue\": \"<string>\",\n        \"deprecationMessage\": \"@MR)i=\",\n        \"comment\": \"1X=\"\n      }\n    },\n    {\n      \"branch\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"description\": \"/m\",\n        \"deprecationMessage\": \"c\",\n        \"comment\": \"d!ZkAfG3)q\"\n      },\n      \"sensor\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UINT8_ARRAY\",\n        \"description\": \"4DUg)(.M1\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"deprecationMessage\": \"$jgt vAv&2\",\n        \"comment\": \"RJ#2k9(p\"\n      },\n      \"actuator\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UNIX_TIMESTAMP\",\n        \"description\": \"f\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"deprecationMessage\": \" @\",\n        \"comment\": \"J}9?(v\"\n      },\n      \"attribute\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"INT8_ARRAY\",\n        \"description\": \"=Fl0~ZB@G8\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"defaultValue\": \"<string>\",\n        \"deprecationMessage\": \"dW)D\",\n        \"comment\": \"Hz?\"\n      }\n    },\n    {\n      \"branch\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"description\": \"a}mD{=\",\n        \"deprecationMessage\": \"+8Gd*\",\n        \"comment\": \"7h]eMk$BX\"\n      },\n      \"sensor\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"BOOLEAN\",\n        \"description\": \"FOhV^3jF\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"deprecationMessage\": \"]m,33{$\\\\j%l\",\n        \"comment\": \"9PRH6J q\"\n      },\n      \"actuator\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UINT16_ARRAY\",\n        \"description\": \")Gc\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"deprecationMessage\": \"MmD%V]|+^\",\n        \"comment\": \"*e4\"\n      },\n      \"attribute\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"INT8\",\n        \"description\": \"vxf{L6~{=x:\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"defaultValue\": \"<string>\",\n        \"deprecationMessage\": \"3bB;a.`_6\\\"_\",\n        \"comment\": \"0!w\"\n      }\n    },\n    {\n      \"branch\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"description\": \"2!56he5v\",\n        \"deprecationMessage\": \"Nm;0r<\",\n        \"comment\": \"TjWB|pl*A\"\n      },\n      \"sensor\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"STRING\",\n        \"description\": \"Fr\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"deprecationMessage\": \"&(0%\",\n        \"comment\": \"]:?l@c[a\"\n      },\n      \"actuator\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UINT16_ARRAY\",\n        \"description\": \"9mp[No`)\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"deprecationMessage\": \"*KZK^eozw\",\n        \"comment\": \"*-Z2N|N#\"\n      },\n      \"attribute\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"INT16_ARRAY\",\n        \"description\": \"B_>y\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"defaultValue\": \"<string>\",\n        \"deprecationMessage\": \"k~p\",\n        \"comment\": \"`tRRy0A@_x>\"\n      }\n    },\n    {\n      \"branch\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"description\": \"jO\",\n        \"deprecationMessage\": \"R+@\",\n        \"comment\": \"W6Amm?|70@i\"\n      },\n      \"sensor\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"INT8_ARRAY\",\n        \"description\": \"N~X4pf\\\\\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"deprecationMessage\": \"G\",\n        \"comment\": \"Gc\"\n      },\n      \"actuator\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UINT8_ARRAY\",\n        \"description\": \"emKg\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"deprecationMessage\": \"U<HafgamPMw\",\n        \"comment\": \"bNh\"\n      },\n      \"attribute\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"BOOLEAN_ARRAY\",\n        \"description\": \"%@eO|mG$2\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"defaultValue\": \"<string>\",\n        \"deprecationMessage\": \"`ajOO3yt'Ul\",\n        \"comment\": \"(C\"\n      }\n    },\n    {\n      \"branch\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"description\": \"=r3w\",\n        \"deprecationMessage\": \"'D0%O\",\n        \"comment\": \"[b\"\n      },\n      \"sensor\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UINT32\",\n        \"description\": \"Iir^F\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"deprecationMessage\": \"y={<k\\\\aVS\",\n        \"comment\": \"oqbrF\"\n      },\n      \"actuator\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"BOOLEAN_ARRAY\",\n        \"description\": \"8.>I-}\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"deprecationMessage\": \"owj~8_P{04L\",\n        \"comment\": \"]J$[\\\"imHP\"\n      },\n      \"attribute\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"INT8\",\n        \"description\": \"U3i!O\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"defaultValue\": \"<string>\",\n        \"deprecationMessage\": \":T=)\",\n        \"comment\": \"mVAQGGuWJ\"\n      }\n    },\n    {\n      \"branch\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"description\": \"\\\"'c\",\n        \"deprecationMessage\": \"H_jlO\",\n        \"comment\": \"w;UdgL57\"\n      },\n      \"sensor\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UINT16\",\n        \"description\": \"}:[^9UhFld\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"deprecationMessage\": \".#\",\n        \"comment\": \"&1_NRhOi\"\n      },\n      \"actuator\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"DOUBLE_ARRAY\",\n        \"description\": \"LL\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"deprecationMessage\": \"Ws\",\n        \"comment\": \"fP\"\n      },\n      \"attribute\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"UINT64\",\n        \"description\": \"6$L,\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"defaultValue\": \"<string>\",\n        \"deprecationMessage\": \"/R`O\",\n        \"comment\": \",\"\n      }\n    },\n    {\n      \"branch\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"description\": \";}XRDL\",\n        \"deprecationMessage\": \"vf/st,\",\n        \"comment\": \"Eg)H, Z8\"\n      },\n      \"sensor\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"INT8\",\n        \"description\": \"w|\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"deprecationMessage\": \"[U,^\",\n        \"comment\": \"UjdXEP~aO\"\n      },\n      \"actuator\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"FLOAT_ARRAY\",\n        \"description\": \"`\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"deprecationMessage\": \"|>y>a)tfasF\",\n        \"comment\": \"]\"\n      },\n      \"attribute\": {\n        \"fullyQualifiedName\": \"<string>\",\n        \"dataType\": \"FLOAT_ARRAY\",\n        \"description\": \"duU5STG/x\",\n        \"unit\": \"<string>\",\n        \"allowedValues\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"min\": \"<double>\",\n        \"max\": \"<double>\",\n        \"assignedValue\": \"<string>\",\n        \"defaultValue\": \"<string>\",\n        \"deprecationMessage\": \"2=E\",\n        \"comment\": \"SM]Y~F.>>1F\"\n      }\n    }\n  ],\n  \"nextToken\": \"<string>\"\n}",
+              "createdAt": "2026-07-28T10:36:50.000Z",
+              "updatedAt": "2026-07-28T10:36:50.000Z",
+              "uid": "35240-f2e8e267-22b6-417b-87e9-16e7bb325509"
+            },
+            {
+              "id": "2d7f20da-ee73-4b9d-aa2d-1884db85470e",
+              "name": "InternalServerException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "IoTAutobahnControlPlane.ListSignalCatalogNodes"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"DzJA\",\n  \"nextToken\": \"<string>\",\n  \"maxResults\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?maxResults=<string>&nextToken=<string>#X-Amz-Target=IoTAutobahnControlPlane.ListSignalCatalogNodes",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination limit",
+                      "key": "maxResults",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "Pagination token",
+                      "key": "nextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.ListSignalCatalogNodes"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:36:50.000Z",
+              "updatedAt": "2026-07-28T10:36:50.000Z",
+              "uid": "35240-2d7f20da-ee73-4b9d-aa2d-1884db85470e"
+            },
+            {
+              "id": "a86a5171-6ec0-4b4f-8bde-8ce7113e590e",
+              "name": "ResourceNotFoundException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "IoTAutobahnControlPlane.ListSignalCatalogNodes"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"DzJA\",\n  \"nextToken\": \"<string>\",\n  \"maxResults\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?maxResults=<string>&nextToken=<string>#X-Amz-Target=IoTAutobahnControlPlane.ListSignalCatalogNodes",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination limit",
+                      "key": "maxResults",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "Pagination token",
+                      "key": "nextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.ListSignalCatalogNodes"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:36:50.000Z",
+              "updatedAt": "2026-07-28T10:36:50.000Z",
+              "uid": "35240-a86a5171-6ec0-4b4f-8bde-8ce7113e590e"
+            },
+            {
+              "id": "aaca399d-7ecf-4436-b404-5827b379b422",
+              "name": "LimitExceededException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "IoTAutobahnControlPlane.ListSignalCatalogNodes"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"DzJA\",\n  \"nextToken\": \"<string>\",\n  \"maxResults\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?maxResults=<string>&nextToken=<string>#X-Amz-Target=IoTAutobahnControlPlane.ListSignalCatalogNodes",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination limit",
+                      "key": "maxResults",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "Pagination token",
+                      "key": "nextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.ListSignalCatalogNodes"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:36:50.000Z",
+              "updatedAt": "2026-07-28T10:36:50.000Z",
+              "uid": "35240-aaca399d-7ecf-4436-b404-5827b379b422"
+            },
+            {
+              "id": "a71e7825-9467-43fe-82a9-a832581a1660",
+              "name": "ThrottlingException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "IoTAutobahnControlPlane.ListSignalCatalogNodes"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"DzJA\",\n  \"nextToken\": \"<string>\",\n  \"maxResults\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?maxResults=<string>&nextToken=<string>#X-Amz-Target=IoTAutobahnControlPlane.ListSignalCatalogNodes",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination limit",
+                      "key": "maxResults",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "Pagination token",
+                      "key": "nextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.ListSignalCatalogNodes"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:36:50.000Z",
+              "updatedAt": "2026-07-28T10:36:50.000Z",
+              "uid": "35240-a71e7825-9467-43fe-82a9-a832581a1660"
+            },
+            {
+              "id": "38d53872-35a9-47bc-b880-715d7ed4f5de",
+              "name": "ValidationException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "IoTAutobahnControlPlane.ListSignalCatalogNodes"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"DzJA\",\n  \"nextToken\": \"<string>\",\n  \"maxResults\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?maxResults=<string>&nextToken=<string>#X-Amz-Target=IoTAutobahnControlPlane.ListSignalCatalogNodes",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination limit",
+                      "key": "maxResults",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "Pagination token",
+                      "key": "nextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.ListSignalCatalogNodes"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:36:50.000Z",
+              "updatedAt": "2026-07-28T10:36:50.000Z",
+              "uid": "35240-38d53872-35a9-47bc-b880-715d7ed4f5de"
+            },
+            {
+              "id": "aa54f641-751a-43e0-8221-dd375a8970bd",
+              "name": "AccessDeniedException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "IoTAutobahnControlPlane.ListSignalCatalogNodes"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"DzJA\",\n  \"nextToken\": \"<string>\",\n  \"maxResults\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?maxResults=<string>&nextToken=<string>#X-Amz-Target=IoTAutobahnControlPlane.ListSignalCatalogNodes",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination limit",
+                      "key": "maxResults",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "Pagination token",
+                      "key": "nextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.ListSignalCatalogNodes"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:36:50.000Z",
+              "updatedAt": "2026-07-28T10:36:50.000Z",
+              "uid": "35240-aa54f641-751a-43e0-8221-dd375a8970bd"
+            }
+          ],
+          "createdAt": "2026-07-28T10:36:50.000Z",
+          "updatedAt": "2026-07-28T10:36:50.000Z",
+          "uid": "35240-0a9afc34-8c06-4511-8495-002180eba479"
+        }
+      ],
+      "id": "d0ae6e88-15ba-49d2-b85e-9a1cd0837831",
+      "createdAt": "2026-07-28T10:36:50.000Z",
+      "updatedAt": "2026-07-28T10:36:50.000Z",
+      "uid": "35240-d0ae6e88-15ba-49d2-b85e-9a1cd0837831"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://iotfleetwise.{{region}}.amazonaws.com"
+    }
+  ]
+}

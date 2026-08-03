@@ -1,0 +1,926 @@
+{
+  "info": {
+    "_postman_id": "5ea60284-028d-4526-bc1c-2eb7f7e254e9",
+    "name": "AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.ImportDecoderManifest API",
+    "description": "<p>Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale. With Amazon Web Services IoT FleetWise, you can standardize all of your vehicle data models, independent of the in-vehicle communication architecture, and define data collection rules to transfer only high-value data to the cloud. </p> <p>For more information, see <a href=\"https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/\">What is Amazon Web Services IoT FleetWise?</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:36:34.000Z",
+    "updatedAt": "2026-07-28T10:36:34.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-5ea60284-028d-4526-bc1c-2eb7f7e254e9"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=IoTAutobahnControlPlane.ImportDecoderManifest",
+      "item": [
+        {
+          "name": "Amazon IoT FleetWise Import Decoder Manifest",
+          "id": "cdb1068e-f534-4245-8f74-3d131c3b7107",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "IoTAutobahnControlPlane.ImportDecoderManifest"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"1\",\n  \"networkFileDefinitions\": [\n    {\n      \"canDbc\": {\n        \"networkInterface\": \"<string>\",\n        \"canDbcFiles\": [\n          \"<string>\"\n        ],\n        \"signalsMap\": {\n          \"amet_b\": \"<string>\",\n          \"consectetur_a\": \"<string>\",\n          \"cillum_4e7\": \"<string>\",\n          \"anim_65e\": \"<string>\",\n          \"laborise1\": \"<string>\"\n        }\n      }\n    },\n    {\n      \"canDbc\": {\n        \"networkInterface\": \"<string>\",\n        \"canDbcFiles\": [\n          \"<string>\"\n        ],\n        \"signalsMap\": {\n          \"dolor4_7\": \"<string>\",\n          \"ut07\": \"<string>\"\n        }\n      }\n    }\n  ]\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/#X-Amz-Target=IoTAutobahnControlPlane.ImportDecoderManifest",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=IoTAutobahnControlPlane.ImportDecoderManifest"
+            },
+            "description": " Creates a decoder manifest using your existing CAN DBC file from your local device. "
+          },
+          "response": [
+            {
+              "id": "04aa82f9-9b6b-432e-ad4a-ee62ba0a7c8d",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "IoTAutobahnControlPlane.ImportDecoderManifest"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"1\",\n  \"networkFileDefinitions\": [\n    {\n      \"canDbc\": {\n        \"networkInterface\": \"<string>\",\n        \"canDbcFiles\": [\n          \"<string>\"\n        ],\n        \"signalsMap\": {\n          \"amet_b\": \"<string>\",\n          \"consectetur_a\": \"<string>\",\n          \"cillum_4e7\": \"<string>\",\n          \"anim_65e\": \"<string>\",\n          \"laborise1\": \"<string>\"\n        }\n      }\n    },\n    {\n      \"canDbc\": {\n        \"networkInterface\": \"<string>\",\n        \"canDbcFiles\": [\n          \"<string>\"\n        ],\n        \"signalsMap\": {\n          \"dolor4_7\": \"<string>\",\n          \"ut07\": \"<string>\"\n        }\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=IoTAutobahnControlPlane.ImportDecoderManifest",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.ImportDecoderManifest"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"name\": \"BFhXiTx43\",\n  \"arn\": \"<string>\"\n}",
+              "createdAt": "2026-07-28T10:36:35.000Z",
+              "updatedAt": "2026-07-28T10:36:35.000Z",
+              "uid": "35240-04aa82f9-9b6b-432e-ad4a-ee62ba0a7c8d"
+            },
+            {
+              "id": "b1d292d0-c7b3-4543-8dc6-8694da4836ea",
+              "name": "ResourceNotFoundException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "IoTAutobahnControlPlane.ImportDecoderManifest"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"1\",\n  \"networkFileDefinitions\": [\n    {\n      \"canDbc\": {\n        \"networkInterface\": \"<string>\",\n        \"canDbcFiles\": [\n          \"<string>\"\n        ],\n        \"signalsMap\": {\n          \"amet_b\": \"<string>\",\n          \"consectetur_a\": \"<string>\",\n          \"cillum_4e7\": \"<string>\",\n          \"anim_65e\": \"<string>\",\n          \"laborise1\": \"<string>\"\n        }\n      }\n    },\n    {\n      \"canDbc\": {\n        \"networkInterface\": \"<string>\",\n        \"canDbcFiles\": [\n          \"<string>\"\n        ],\n        \"signalsMap\": {\n          \"dolor4_7\": \"<string>\",\n          \"ut07\": \"<string>\"\n        }\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=IoTAutobahnControlPlane.ImportDecoderManifest",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.ImportDecoderManifest"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:36:35.000Z",
+              "updatedAt": "2026-07-28T10:36:35.000Z",
+              "uid": "35240-b1d292d0-c7b3-4543-8dc6-8694da4836ea"
+            },
+            {
+              "id": "c712da71-c3f7-4142-8d3b-7aebf73be11d",
+              "name": "InternalServerException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "IoTAutobahnControlPlane.ImportDecoderManifest"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"1\",\n  \"networkFileDefinitions\": [\n    {\n      \"canDbc\": {\n        \"networkInterface\": \"<string>\",\n        \"canDbcFiles\": [\n          \"<string>\"\n        ],\n        \"signalsMap\": {\n          \"amet_b\": \"<string>\",\n          \"consectetur_a\": \"<string>\",\n          \"cillum_4e7\": \"<string>\",\n          \"anim_65e\": \"<string>\",\n          \"laborise1\": \"<string>\"\n        }\n      }\n    },\n    {\n      \"canDbc\": {\n        \"networkInterface\": \"<string>\",\n        \"canDbcFiles\": [\n          \"<string>\"\n        ],\n        \"signalsMap\": {\n          \"dolor4_7\": \"<string>\",\n          \"ut07\": \"<string>\"\n        }\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=IoTAutobahnControlPlane.ImportDecoderManifest",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.ImportDecoderManifest"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:36:35.000Z",
+              "updatedAt": "2026-07-28T10:36:35.000Z",
+              "uid": "35240-c712da71-c3f7-4142-8d3b-7aebf73be11d"
+            },
+            {
+              "id": "0e991208-d42d-4b50-b1b6-3d01ad2622ed",
+              "name": "ConflictException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "IoTAutobahnControlPlane.ImportDecoderManifest"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"1\",\n  \"networkFileDefinitions\": [\n    {\n      \"canDbc\": {\n        \"networkInterface\": \"<string>\",\n        \"canDbcFiles\": [\n          \"<string>\"\n        ],\n        \"signalsMap\": {\n          \"amet_b\": \"<string>\",\n          \"consectetur_a\": \"<string>\",\n          \"cillum_4e7\": \"<string>\",\n          \"anim_65e\": \"<string>\",\n          \"laborise1\": \"<string>\"\n        }\n      }\n    },\n    {\n      \"canDbc\": {\n        \"networkInterface\": \"<string>\",\n        \"canDbcFiles\": [\n          \"<string>\"\n        ],\n        \"signalsMap\": {\n          \"dolor4_7\": \"<string>\",\n          \"ut07\": \"<string>\"\n        }\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=IoTAutobahnControlPlane.ImportDecoderManifest",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.ImportDecoderManifest"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:36:35.000Z",
+              "updatedAt": "2026-07-28T10:36:35.000Z",
+              "uid": "35240-0e991208-d42d-4b50-b1b6-3d01ad2622ed"
+            },
+            {
+              "id": "623d72fc-d15b-4518-b630-e598dfebba3b",
+              "name": "DecoderManifestValidationException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "IoTAutobahnControlPlane.ImportDecoderManifest"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"1\",\n  \"networkFileDefinitions\": [\n    {\n      \"canDbc\": {\n        \"networkInterface\": \"<string>\",\n        \"canDbcFiles\": [\n          \"<string>\"\n        ],\n        \"signalsMap\": {\n          \"amet_b\": \"<string>\",\n          \"consectetur_a\": \"<string>\",\n          \"cillum_4e7\": \"<string>\",\n          \"anim_65e\": \"<string>\",\n          \"laborise1\": \"<string>\"\n        }\n      }\n    },\n    {\n      \"canDbc\": {\n        \"networkInterface\": \"<string>\",\n        \"canDbcFiles\": [\n          \"<string>\"\n        ],\n        \"signalsMap\": {\n          \"dolor4_7\": \"<string>\",\n          \"ut07\": \"<string>\"\n        }\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=IoTAutobahnControlPlane.ImportDecoderManifest",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.ImportDecoderManifest"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:36:35.000Z",
+              "updatedAt": "2026-07-28T10:36:35.000Z",
+              "uid": "35240-623d72fc-d15b-4518-b630-e598dfebba3b"
+            },
+            {
+              "id": "a8377f1f-9788-49a8-a0d1-367324ae4bba",
+              "name": "ThrottlingException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "IoTAutobahnControlPlane.ImportDecoderManifest"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"1\",\n  \"networkFileDefinitions\": [\n    {\n      \"canDbc\": {\n        \"networkInterface\": \"<string>\",\n        \"canDbcFiles\": [\n          \"<string>\"\n        ],\n        \"signalsMap\": {\n          \"amet_b\": \"<string>\",\n          \"consectetur_a\": \"<string>\",\n          \"cillum_4e7\": \"<string>\",\n          \"anim_65e\": \"<string>\",\n          \"laborise1\": \"<string>\"\n        }\n      }\n    },\n    {\n      \"canDbc\": {\n        \"networkInterface\": \"<string>\",\n        \"canDbcFiles\": [\n          \"<string>\"\n        ],\n        \"signalsMap\": {\n          \"dolor4_7\": \"<string>\",\n          \"ut07\": \"<string>\"\n        }\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=IoTAutobahnControlPlane.ImportDecoderManifest",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.ImportDecoderManifest"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:36:35.000Z",
+              "updatedAt": "2026-07-28T10:36:35.000Z",
+              "uid": "35240-a8377f1f-9788-49a8-a0d1-367324ae4bba"
+            },
+            {
+              "id": "3c82e27b-d5d1-4573-84cd-58c23b8ff4ff",
+              "name": "ValidationException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "IoTAutobahnControlPlane.ImportDecoderManifest"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"1\",\n  \"networkFileDefinitions\": [\n    {\n      \"canDbc\": {\n        \"networkInterface\": \"<string>\",\n        \"canDbcFiles\": [\n          \"<string>\"\n        ],\n        \"signalsMap\": {\n          \"amet_b\": \"<string>\",\n          \"consectetur_a\": \"<string>\",\n          \"cillum_4e7\": \"<string>\",\n          \"anim_65e\": \"<string>\",\n          \"laborise1\": \"<string>\"\n        }\n      }\n    },\n    {\n      \"canDbc\": {\n        \"networkInterface\": \"<string>\",\n        \"canDbcFiles\": [\n          \"<string>\"\n        ],\n        \"signalsMap\": {\n          \"dolor4_7\": \"<string>\",\n          \"ut07\": \"<string>\"\n        }\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=IoTAutobahnControlPlane.ImportDecoderManifest",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.ImportDecoderManifest"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:36:35.000Z",
+              "updatedAt": "2026-07-28T10:36:35.000Z",
+              "uid": "35240-3c82e27b-d5d1-4573-84cd-58c23b8ff4ff"
+            },
+            {
+              "id": "46367bc8-5a19-4539-8d91-8dc6dce12de6",
+              "name": "InvalidSignalsException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "IoTAutobahnControlPlane.ImportDecoderManifest"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"1\",\n  \"networkFileDefinitions\": [\n    {\n      \"canDbc\": {\n        \"networkInterface\": \"<string>\",\n        \"canDbcFiles\": [\n          \"<string>\"\n        ],\n        \"signalsMap\": {\n          \"amet_b\": \"<string>\",\n          \"consectetur_a\": \"<string>\",\n          \"cillum_4e7\": \"<string>\",\n          \"anim_65e\": \"<string>\",\n          \"laborise1\": \"<string>\"\n        }\n      }\n    },\n    {\n      \"canDbc\": {\n        \"networkInterface\": \"<string>\",\n        \"canDbcFiles\": [\n          \"<string>\"\n        ],\n        \"signalsMap\": {\n          \"dolor4_7\": \"<string>\",\n          \"ut07\": \"<string>\"\n        }\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=IoTAutobahnControlPlane.ImportDecoderManifest",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.ImportDecoderManifest"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:36:35.000Z",
+              "updatedAt": "2026-07-28T10:36:35.000Z",
+              "uid": "35240-46367bc8-5a19-4539-8d91-8dc6dce12de6"
+            },
+            {
+              "id": "ebdbdd43-763d-46f5-992a-3fb7d2d60300",
+              "name": "AccessDeniedException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "IoTAutobahnControlPlane.ImportDecoderManifest"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"1\",\n  \"networkFileDefinitions\": [\n    {\n      \"canDbc\": {\n        \"networkInterface\": \"<string>\",\n        \"canDbcFiles\": [\n          \"<string>\"\n        ],\n        \"signalsMap\": {\n          \"amet_b\": \"<string>\",\n          \"consectetur_a\": \"<string>\",\n          \"cillum_4e7\": \"<string>\",\n          \"anim_65e\": \"<string>\",\n          \"laborise1\": \"<string>\"\n        }\n      }\n    },\n    {\n      \"canDbc\": {\n        \"networkInterface\": \"<string>\",\n        \"canDbcFiles\": [\n          \"<string>\"\n        ],\n        \"signalsMap\": {\n          \"dolor4_7\": \"<string>\",\n          \"ut07\": \"<string>\"\n        }\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=IoTAutobahnControlPlane.ImportDecoderManifest",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.ImportDecoderManifest"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:36:35.000Z",
+              "updatedAt": "2026-07-28T10:36:35.000Z",
+              "uid": "35240-ebdbdd43-763d-46f5-992a-3fb7d2d60300"
+            }
+          ],
+          "createdAt": "2026-07-28T10:36:35.000Z",
+          "updatedAt": "2026-07-28T10:36:35.000Z",
+          "uid": "35240-cdb1068e-f534-4245-8f74-3d131c3b7107"
+        }
+      ],
+      "id": "339cd229-cb13-45d7-afbd-2ce69120e17e",
+      "createdAt": "2026-07-28T10:36:35.000Z",
+      "updatedAt": "2026-07-28T10:36:35.000Z",
+      "uid": "35240-339cd229-cb13-45d7-afbd-2ce69120e17e"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://iotfleetwise.{{region}}.amazonaws.com"
+    }
+  ]
+}

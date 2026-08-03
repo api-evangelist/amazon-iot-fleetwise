@@ -1,0 +1,838 @@
+{
+  "info": {
+    "_postman_id": "c5534201-fd9b-42bd-ae9f-bd110589f5c2",
+    "name": "AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.CreateCampaign API",
+    "description": "<p>Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale. With Amazon Web Services IoT FleetWise, you can standardize all of your vehicle data models, independent of the in-vehicle communication architecture, and define data collection rules to transfer only high-value data to the cloud. </p> <p>For more information, see <a href=\"https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/\">What is Amazon Web Services IoT FleetWise?</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:35:26.000Z",
+    "updatedAt": "2026-07-28T10:35:26.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-c5534201-fd9b-42bd-ae9f-bd110589f5c2"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign",
+      "item": [
+        {
+          "name": "Amazon IoT FleetWise Create Campaign",
+          "id": "d5a9ddf9-2434-4de2-bb63-86d97d62f359",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "IoTAutobahnControlPlane.CreateCampaign"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Q\",\n  \"signalCatalogArn\": \"<string>\",\n  \"targetArn\": \"<string>\",\n  \"collectionScheme\": {\n    \"timeBasedCollectionScheme\": {\n      \"periodMs\": \"<integer>\"\n    },\n    \"conditionBasedCollectionScheme\": {\n      \"expression\": \"<string>\",\n      \"minimumTriggerIntervalMs\": \"<integer>\",\n      \"triggerMode\": \"RISING_EDGE\",\n      \"conditionLanguageVersion\": \"<integer>\"\n    }\n  },\n  \"description\": \"mQa6\",\n  \"startTime\": \"<dateTime>\",\n  \"expiryTime\": \"<dateTime>\",\n  \"postTriggerCollectionDuration\": \"<integer>\",\n  \"diagnosticsMode\": \"OFF\",\n  \"spoolingMode\": \"TO_DISK\",\n  \"compression\": \"OFF\",\n  \"priority\": \"<integer>\",\n  \"signalsToCollect\": [\n    {\n      \"name\": \"MTHTvp5.nd.A2Pi7T.mP.XSZYE.faPy.QhiObNRV.fjYXy8j.y9.rqAKLeBmroT.BT-mqf1-\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"1XGs*n.ezk\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"2lB60.-7v12ttCU.OX.uaBujdrFKAu.Ov2Ck759.d-J0l9a92Q-\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"_RI.fIqz9GR-*T.4Ad.3eeWtDfm5j.aj*db.44-vs0I.0z9ce66Y9JH.eYd_a.X\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"cutNDkHncl.vO*Zm.sA.FKaf-DmF.pa|932ho.T7*e9Icu.KOX1v.MN.bDUFs0.*Bi8rTIHgS5\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"drFC.oS3SDHRXD.OlvYVG9ZAym._e_Nxp53TM.vJN5.yt6C2UeNqt.rJGJwt4.e*41.03mY3|Fk|.ZY89U0jL.B\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"9nQcxRGV.igyDV.32.Y56.kveiV7bD7w2.Z.CFNL-.z._60*GO\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"De1.ez3H5eN\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"Xp\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"DBEe.epaGHp0A_2.bS6OC.X5YU1xL.B\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"7hORO.qQt4Xaa9Op4\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"CJM2Q*|.A0u.bg_DX-N1.qzc|Lv.A.*x.5Bfi6zUJVz.X.o37Q.m*s0LGdyT\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"cncKc4XB45.iI0**SYY\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"xC.8.jhe-ItY-U.Io|wVqOM-.P\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"hjlttGJx_h.fsNQB.JCqXkys.x.tHk\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"EHo.GLNw|Kw.2HY.RXi0.9JeMH.x6c\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"P.c*O.Xh.UVAYEtCU0Y.JU_pD_iFo.gkJpwM.tc-61eGFR0h.m8PrxO\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"|.-A4yVx6k.-GOadky5Z.KpW25.yQOyG3Ee\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"dB.l|yjU7IujA.q.xI4LLkHYT.JCHDC-KHtk.KiI.F.CJgK2\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"S.l*PbxV4Amw.JPLSAtU2.RcRD.Nqp.twvEM6aP2ta.|sl.8gB.T5L|p5.dpqAQk.bSrduOOz\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    }\n  ],\n  \"dataExtraDimensions\": [\n    \"A\",\n    \"N_EBVk.1\",\n    \"OM_cFHTpxE1\",\n    \"XGIvNGf\",\n    \"e3aubDZbpx\"\n  ],\n  \"tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"dataDestinationConfigs\": [\n    {\n      \"s3Config\": {\n        \"bucketArn\": \"arn:awsNP3FtWizB:s3:::R15LFFlVjv6\",\n        \"dataFormat\": \"PARQUET\",\n        \"storageCompressionFormat\": \"GZIP\",\n        \"prefix\": \"w5p74K:V\"\n      },\n      \"timestreamConfig\": {\n        \"timestreamTableArn\": \"arn:awsQVS0aVQc:timestream:UJBzI3mUmJ:473423303976:database/YzHkSi1t7Er/table/YvtOizlf\",\n        \"executionRoleArn\": \"arn:awsw4a10u:iam::969131323601:role/}L=.m/M99GWTPq5jP\"\n      }\n    }\n  ]\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/#X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign"
+            },
+            "description": "<p>Creates an orchestration of data collection rules. The Amazon Web Services IoT FleetWise Edge Agent software running in vehicles uses campaigns to decide how to collect and transfer data to the cloud. You create campaigns in the cloud. After you or your team approve campaigns, Amazon Web Services IoT FleetWise automatically deploys them to vehicles. </p> <p>For more information, see <a href=\"https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/campaigns.html\">Collect and transfer data with campaigns</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>"
+          },
+          "response": [
+            {
+              "id": "e3d8bfac-3fc8-4b1c-84c7-f0d61e0633d4",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "IoTAutobahnControlPlane.CreateCampaign"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"Q\",\n  \"signalCatalogArn\": \"<string>\",\n  \"targetArn\": \"<string>\",\n  \"collectionScheme\": {\n    \"timeBasedCollectionScheme\": {\n      \"periodMs\": \"<integer>\"\n    },\n    \"conditionBasedCollectionScheme\": {\n      \"expression\": \"<string>\",\n      \"minimumTriggerIntervalMs\": \"<integer>\",\n      \"triggerMode\": \"RISING_EDGE\",\n      \"conditionLanguageVersion\": \"<integer>\"\n    }\n  },\n  \"description\": \"mQa6\",\n  \"startTime\": \"<dateTime>\",\n  \"expiryTime\": \"<dateTime>\",\n  \"postTriggerCollectionDuration\": \"<integer>\",\n  \"diagnosticsMode\": \"OFF\",\n  \"spoolingMode\": \"TO_DISK\",\n  \"compression\": \"OFF\",\n  \"priority\": \"<integer>\",\n  \"signalsToCollect\": [\n    {\n      \"name\": \"MTHTvp5.nd.A2Pi7T.mP.XSZYE.faPy.QhiObNRV.fjYXy8j.y9.rqAKLeBmroT.BT-mqf1-\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"1XGs*n.ezk\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"2lB60.-7v12ttCU.OX.uaBujdrFKAu.Ov2Ck759.d-J0l9a92Q-\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"_RI.fIqz9GR-*T.4Ad.3eeWtDfm5j.aj*db.44-vs0I.0z9ce66Y9JH.eYd_a.X\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"cutNDkHncl.vO*Zm.sA.FKaf-DmF.pa|932ho.T7*e9Icu.KOX1v.MN.bDUFs0.*Bi8rTIHgS5\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"drFC.oS3SDHRXD.OlvYVG9ZAym._e_Nxp53TM.vJN5.yt6C2UeNqt.rJGJwt4.e*41.03mY3|Fk|.ZY89U0jL.B\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"9nQcxRGV.igyDV.32.Y56.kveiV7bD7w2.Z.CFNL-.z._60*GO\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"De1.ez3H5eN\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"Xp\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"DBEe.epaGHp0A_2.bS6OC.X5YU1xL.B\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"7hORO.qQt4Xaa9Op4\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"CJM2Q*|.A0u.bg_DX-N1.qzc|Lv.A.*x.5Bfi6zUJVz.X.o37Q.m*s0LGdyT\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"cncKc4XB45.iI0**SYY\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"xC.8.jhe-ItY-U.Io|wVqOM-.P\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"hjlttGJx_h.fsNQB.JCqXkys.x.tHk\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"EHo.GLNw|Kw.2HY.RXi0.9JeMH.x6c\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"P.c*O.Xh.UVAYEtCU0Y.JU_pD_iFo.gkJpwM.tc-61eGFR0h.m8PrxO\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"|.-A4yVx6k.-GOadky5Z.KpW25.yQOyG3Ee\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"dB.l|yjU7IujA.q.xI4LLkHYT.JCHDC-KHtk.KiI.F.CJgK2\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"S.l*PbxV4Amw.JPLSAtU2.RcRD.Nqp.twvEM6aP2ta.|sl.8gB.T5L|p5.dpqAQk.bSrduOOz\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    }\n  ],\n  \"dataExtraDimensions\": [\n    \"A\",\n    \"N_EBVk.1\",\n    \"OM_cFHTpxE1\",\n    \"XGIvNGf\",\n    \"e3aubDZbpx\"\n  ],\n  \"tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"dataDestinationConfigs\": [\n    {\n      \"s3Config\": {\n        \"bucketArn\": \"arn:awsNP3FtWizB:s3:::R15LFFlVjv6\",\n        \"dataFormat\": \"PARQUET\",\n        \"storageCompressionFormat\": \"GZIP\",\n        \"prefix\": \"w5p74K:V\"\n      },\n      \"timestreamConfig\": {\n        \"timestreamTableArn\": \"arn:awsQVS0aVQc:timestream:UJBzI3mUmJ:473423303976:database/YzHkSi1t7Er/table/YvtOizlf\",\n        \"executionRoleArn\": \"arn:awsw4a10u:iam::969131323601:role/}L=.m/M99GWTPq5jP\"\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"name\": \"war5_n\",\n  \"arn\": \"<string>\"\n}",
+              "createdAt": "2026-07-28T10:35:26.000Z",
+              "updatedAt": "2026-07-28T10:35:26.000Z",
+              "uid": "35240-e3d8bfac-3fc8-4b1c-84c7-f0d61e0633d4"
+            },
+            {
+              "id": "883572a5-117b-4b89-bb6b-e01109969e6f",
+              "name": "ResourceNotFoundException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "IoTAutobahnControlPlane.CreateCampaign"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"Q\",\n  \"signalCatalogArn\": \"<string>\",\n  \"targetArn\": \"<string>\",\n  \"collectionScheme\": {\n    \"timeBasedCollectionScheme\": {\n      \"periodMs\": \"<integer>\"\n    },\n    \"conditionBasedCollectionScheme\": {\n      \"expression\": \"<string>\",\n      \"minimumTriggerIntervalMs\": \"<integer>\",\n      \"triggerMode\": \"RISING_EDGE\",\n      \"conditionLanguageVersion\": \"<integer>\"\n    }\n  },\n  \"description\": \"mQa6\",\n  \"startTime\": \"<dateTime>\",\n  \"expiryTime\": \"<dateTime>\",\n  \"postTriggerCollectionDuration\": \"<integer>\",\n  \"diagnosticsMode\": \"OFF\",\n  \"spoolingMode\": \"TO_DISK\",\n  \"compression\": \"OFF\",\n  \"priority\": \"<integer>\",\n  \"signalsToCollect\": [\n    {\n      \"name\": \"MTHTvp5.nd.A2Pi7T.mP.XSZYE.faPy.QhiObNRV.fjYXy8j.y9.rqAKLeBmroT.BT-mqf1-\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"1XGs*n.ezk\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"2lB60.-7v12ttCU.OX.uaBujdrFKAu.Ov2Ck759.d-J0l9a92Q-\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"_RI.fIqz9GR-*T.4Ad.3eeWtDfm5j.aj*db.44-vs0I.0z9ce66Y9JH.eYd_a.X\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"cutNDkHncl.vO*Zm.sA.FKaf-DmF.pa|932ho.T7*e9Icu.KOX1v.MN.bDUFs0.*Bi8rTIHgS5\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"drFC.oS3SDHRXD.OlvYVG9ZAym._e_Nxp53TM.vJN5.yt6C2UeNqt.rJGJwt4.e*41.03mY3|Fk|.ZY89U0jL.B\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"9nQcxRGV.igyDV.32.Y56.kveiV7bD7w2.Z.CFNL-.z._60*GO\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"De1.ez3H5eN\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"Xp\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"DBEe.epaGHp0A_2.bS6OC.X5YU1xL.B\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"7hORO.qQt4Xaa9Op4\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"CJM2Q*|.A0u.bg_DX-N1.qzc|Lv.A.*x.5Bfi6zUJVz.X.o37Q.m*s0LGdyT\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"cncKc4XB45.iI0**SYY\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"xC.8.jhe-ItY-U.Io|wVqOM-.P\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"hjlttGJx_h.fsNQB.JCqXkys.x.tHk\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"EHo.GLNw|Kw.2HY.RXi0.9JeMH.x6c\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"P.c*O.Xh.UVAYEtCU0Y.JU_pD_iFo.gkJpwM.tc-61eGFR0h.m8PrxO\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"|.-A4yVx6k.-GOadky5Z.KpW25.yQOyG3Ee\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"dB.l|yjU7IujA.q.xI4LLkHYT.JCHDC-KHtk.KiI.F.CJgK2\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"S.l*PbxV4Amw.JPLSAtU2.RcRD.Nqp.twvEM6aP2ta.|sl.8gB.T5L|p5.dpqAQk.bSrduOOz\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    }\n  ],\n  \"dataExtraDimensions\": [\n    \"A\",\n    \"N_EBVk.1\",\n    \"OM_cFHTpxE1\",\n    \"XGIvNGf\",\n    \"e3aubDZbpx\"\n  ],\n  \"tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"dataDestinationConfigs\": [\n    {\n      \"s3Config\": {\n        \"bucketArn\": \"arn:awsNP3FtWizB:s3:::R15LFFlVjv6\",\n        \"dataFormat\": \"PARQUET\",\n        \"storageCompressionFormat\": \"GZIP\",\n        \"prefix\": \"w5p74K:V\"\n      },\n      \"timestreamConfig\": {\n        \"timestreamTableArn\": \"arn:awsQVS0aVQc:timestream:UJBzI3mUmJ:473423303976:database/YzHkSi1t7Er/table/YvtOizlf\",\n        \"executionRoleArn\": \"arn:awsw4a10u:iam::969131323601:role/}L=.m/M99GWTPq5jP\"\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:35:26.000Z",
+              "updatedAt": "2026-07-28T10:35:26.000Z",
+              "uid": "35240-883572a5-117b-4b89-bb6b-e01109969e6f"
+            },
+            {
+              "id": "4fc2c72f-3c3c-4d07-a16b-e15fe6e1ccc0",
+              "name": "InternalServerException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "IoTAutobahnControlPlane.CreateCampaign"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"Q\",\n  \"signalCatalogArn\": \"<string>\",\n  \"targetArn\": \"<string>\",\n  \"collectionScheme\": {\n    \"timeBasedCollectionScheme\": {\n      \"periodMs\": \"<integer>\"\n    },\n    \"conditionBasedCollectionScheme\": {\n      \"expression\": \"<string>\",\n      \"minimumTriggerIntervalMs\": \"<integer>\",\n      \"triggerMode\": \"RISING_EDGE\",\n      \"conditionLanguageVersion\": \"<integer>\"\n    }\n  },\n  \"description\": \"mQa6\",\n  \"startTime\": \"<dateTime>\",\n  \"expiryTime\": \"<dateTime>\",\n  \"postTriggerCollectionDuration\": \"<integer>\",\n  \"diagnosticsMode\": \"OFF\",\n  \"spoolingMode\": \"TO_DISK\",\n  \"compression\": \"OFF\",\n  \"priority\": \"<integer>\",\n  \"signalsToCollect\": [\n    {\n      \"name\": \"MTHTvp5.nd.A2Pi7T.mP.XSZYE.faPy.QhiObNRV.fjYXy8j.y9.rqAKLeBmroT.BT-mqf1-\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"1XGs*n.ezk\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"2lB60.-7v12ttCU.OX.uaBujdrFKAu.Ov2Ck759.d-J0l9a92Q-\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"_RI.fIqz9GR-*T.4Ad.3eeWtDfm5j.aj*db.44-vs0I.0z9ce66Y9JH.eYd_a.X\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"cutNDkHncl.vO*Zm.sA.FKaf-DmF.pa|932ho.T7*e9Icu.KOX1v.MN.bDUFs0.*Bi8rTIHgS5\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"drFC.oS3SDHRXD.OlvYVG9ZAym._e_Nxp53TM.vJN5.yt6C2UeNqt.rJGJwt4.e*41.03mY3|Fk|.ZY89U0jL.B\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"9nQcxRGV.igyDV.32.Y56.kveiV7bD7w2.Z.CFNL-.z._60*GO\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"De1.ez3H5eN\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"Xp\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"DBEe.epaGHp0A_2.bS6OC.X5YU1xL.B\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"7hORO.qQt4Xaa9Op4\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"CJM2Q*|.A0u.bg_DX-N1.qzc|Lv.A.*x.5Bfi6zUJVz.X.o37Q.m*s0LGdyT\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"cncKc4XB45.iI0**SYY\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"xC.8.jhe-ItY-U.Io|wVqOM-.P\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"hjlttGJx_h.fsNQB.JCqXkys.x.tHk\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"EHo.GLNw|Kw.2HY.RXi0.9JeMH.x6c\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"P.c*O.Xh.UVAYEtCU0Y.JU_pD_iFo.gkJpwM.tc-61eGFR0h.m8PrxO\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"|.-A4yVx6k.-GOadky5Z.KpW25.yQOyG3Ee\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"dB.l|yjU7IujA.q.xI4LLkHYT.JCHDC-KHtk.KiI.F.CJgK2\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"S.l*PbxV4Amw.JPLSAtU2.RcRD.Nqp.twvEM6aP2ta.|sl.8gB.T5L|p5.dpqAQk.bSrduOOz\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    }\n  ],\n  \"dataExtraDimensions\": [\n    \"A\",\n    \"N_EBVk.1\",\n    \"OM_cFHTpxE1\",\n    \"XGIvNGf\",\n    \"e3aubDZbpx\"\n  ],\n  \"tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"dataDestinationConfigs\": [\n    {\n      \"s3Config\": {\n        \"bucketArn\": \"arn:awsNP3FtWizB:s3:::R15LFFlVjv6\",\n        \"dataFormat\": \"PARQUET\",\n        \"storageCompressionFormat\": \"GZIP\",\n        \"prefix\": \"w5p74K:V\"\n      },\n      \"timestreamConfig\": {\n        \"timestreamTableArn\": \"arn:awsQVS0aVQc:timestream:UJBzI3mUmJ:473423303976:database/YzHkSi1t7Er/table/YvtOizlf\",\n        \"executionRoleArn\": \"arn:awsw4a10u:iam::969131323601:role/}L=.m/M99GWTPq5jP\"\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:35:26.000Z",
+              "updatedAt": "2026-07-28T10:35:26.000Z",
+              "uid": "35240-4fc2c72f-3c3c-4d07-a16b-e15fe6e1ccc0"
+            },
+            {
+              "id": "90d03637-8d4c-4aa7-8aff-c4362ef1814f",
+              "name": "ConflictException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "IoTAutobahnControlPlane.CreateCampaign"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"Q\",\n  \"signalCatalogArn\": \"<string>\",\n  \"targetArn\": \"<string>\",\n  \"collectionScheme\": {\n    \"timeBasedCollectionScheme\": {\n      \"periodMs\": \"<integer>\"\n    },\n    \"conditionBasedCollectionScheme\": {\n      \"expression\": \"<string>\",\n      \"minimumTriggerIntervalMs\": \"<integer>\",\n      \"triggerMode\": \"RISING_EDGE\",\n      \"conditionLanguageVersion\": \"<integer>\"\n    }\n  },\n  \"description\": \"mQa6\",\n  \"startTime\": \"<dateTime>\",\n  \"expiryTime\": \"<dateTime>\",\n  \"postTriggerCollectionDuration\": \"<integer>\",\n  \"diagnosticsMode\": \"OFF\",\n  \"spoolingMode\": \"TO_DISK\",\n  \"compression\": \"OFF\",\n  \"priority\": \"<integer>\",\n  \"signalsToCollect\": [\n    {\n      \"name\": \"MTHTvp5.nd.A2Pi7T.mP.XSZYE.faPy.QhiObNRV.fjYXy8j.y9.rqAKLeBmroT.BT-mqf1-\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"1XGs*n.ezk\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"2lB60.-7v12ttCU.OX.uaBujdrFKAu.Ov2Ck759.d-J0l9a92Q-\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"_RI.fIqz9GR-*T.4Ad.3eeWtDfm5j.aj*db.44-vs0I.0z9ce66Y9JH.eYd_a.X\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"cutNDkHncl.vO*Zm.sA.FKaf-DmF.pa|932ho.T7*e9Icu.KOX1v.MN.bDUFs0.*Bi8rTIHgS5\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"drFC.oS3SDHRXD.OlvYVG9ZAym._e_Nxp53TM.vJN5.yt6C2UeNqt.rJGJwt4.e*41.03mY3|Fk|.ZY89U0jL.B\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"9nQcxRGV.igyDV.32.Y56.kveiV7bD7w2.Z.CFNL-.z._60*GO\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"De1.ez3H5eN\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"Xp\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"DBEe.epaGHp0A_2.bS6OC.X5YU1xL.B\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"7hORO.qQt4Xaa9Op4\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"CJM2Q*|.A0u.bg_DX-N1.qzc|Lv.A.*x.5Bfi6zUJVz.X.o37Q.m*s0LGdyT\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"cncKc4XB45.iI0**SYY\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"xC.8.jhe-ItY-U.Io|wVqOM-.P\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"hjlttGJx_h.fsNQB.JCqXkys.x.tHk\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"EHo.GLNw|Kw.2HY.RXi0.9JeMH.x6c\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"P.c*O.Xh.UVAYEtCU0Y.JU_pD_iFo.gkJpwM.tc-61eGFR0h.m8PrxO\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"|.-A4yVx6k.-GOadky5Z.KpW25.yQOyG3Ee\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"dB.l|yjU7IujA.q.xI4LLkHYT.JCHDC-KHtk.KiI.F.CJgK2\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"S.l*PbxV4Amw.JPLSAtU2.RcRD.Nqp.twvEM6aP2ta.|sl.8gB.T5L|p5.dpqAQk.bSrduOOz\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    }\n  ],\n  \"dataExtraDimensions\": [\n    \"A\",\n    \"N_EBVk.1\",\n    \"OM_cFHTpxE1\",\n    \"XGIvNGf\",\n    \"e3aubDZbpx\"\n  ],\n  \"tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"dataDestinationConfigs\": [\n    {\n      \"s3Config\": {\n        \"bucketArn\": \"arn:awsNP3FtWizB:s3:::R15LFFlVjv6\",\n        \"dataFormat\": \"PARQUET\",\n        \"storageCompressionFormat\": \"GZIP\",\n        \"prefix\": \"w5p74K:V\"\n      },\n      \"timestreamConfig\": {\n        \"timestreamTableArn\": \"arn:awsQVS0aVQc:timestream:UJBzI3mUmJ:473423303976:database/YzHkSi1t7Er/table/YvtOizlf\",\n        \"executionRoleArn\": \"arn:awsw4a10u:iam::969131323601:role/}L=.m/M99GWTPq5jP\"\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:35:26.000Z",
+              "updatedAt": "2026-07-28T10:35:26.000Z",
+              "uid": "35240-90d03637-8d4c-4aa7-8aff-c4362ef1814f"
+            },
+            {
+              "id": "3ab74cc4-5270-4295-af31-c57acf3a3dc2",
+              "name": "LimitExceededException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "IoTAutobahnControlPlane.CreateCampaign"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"Q\",\n  \"signalCatalogArn\": \"<string>\",\n  \"targetArn\": \"<string>\",\n  \"collectionScheme\": {\n    \"timeBasedCollectionScheme\": {\n      \"periodMs\": \"<integer>\"\n    },\n    \"conditionBasedCollectionScheme\": {\n      \"expression\": \"<string>\",\n      \"minimumTriggerIntervalMs\": \"<integer>\",\n      \"triggerMode\": \"RISING_EDGE\",\n      \"conditionLanguageVersion\": \"<integer>\"\n    }\n  },\n  \"description\": \"mQa6\",\n  \"startTime\": \"<dateTime>\",\n  \"expiryTime\": \"<dateTime>\",\n  \"postTriggerCollectionDuration\": \"<integer>\",\n  \"diagnosticsMode\": \"OFF\",\n  \"spoolingMode\": \"TO_DISK\",\n  \"compression\": \"OFF\",\n  \"priority\": \"<integer>\",\n  \"signalsToCollect\": [\n    {\n      \"name\": \"MTHTvp5.nd.A2Pi7T.mP.XSZYE.faPy.QhiObNRV.fjYXy8j.y9.rqAKLeBmroT.BT-mqf1-\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"1XGs*n.ezk\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"2lB60.-7v12ttCU.OX.uaBujdrFKAu.Ov2Ck759.d-J0l9a92Q-\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"_RI.fIqz9GR-*T.4Ad.3eeWtDfm5j.aj*db.44-vs0I.0z9ce66Y9JH.eYd_a.X\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"cutNDkHncl.vO*Zm.sA.FKaf-DmF.pa|932ho.T7*e9Icu.KOX1v.MN.bDUFs0.*Bi8rTIHgS5\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"drFC.oS3SDHRXD.OlvYVG9ZAym._e_Nxp53TM.vJN5.yt6C2UeNqt.rJGJwt4.e*41.03mY3|Fk|.ZY89U0jL.B\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"9nQcxRGV.igyDV.32.Y56.kveiV7bD7w2.Z.CFNL-.z._60*GO\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"De1.ez3H5eN\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"Xp\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"DBEe.epaGHp0A_2.bS6OC.X5YU1xL.B\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"7hORO.qQt4Xaa9Op4\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"CJM2Q*|.A0u.bg_DX-N1.qzc|Lv.A.*x.5Bfi6zUJVz.X.o37Q.m*s0LGdyT\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"cncKc4XB45.iI0**SYY\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"xC.8.jhe-ItY-U.Io|wVqOM-.P\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"hjlttGJx_h.fsNQB.JCqXkys.x.tHk\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"EHo.GLNw|Kw.2HY.RXi0.9JeMH.x6c\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"P.c*O.Xh.UVAYEtCU0Y.JU_pD_iFo.gkJpwM.tc-61eGFR0h.m8PrxO\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"|.-A4yVx6k.-GOadky5Z.KpW25.yQOyG3Ee\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"dB.l|yjU7IujA.q.xI4LLkHYT.JCHDC-KHtk.KiI.F.CJgK2\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"S.l*PbxV4Amw.JPLSAtU2.RcRD.Nqp.twvEM6aP2ta.|sl.8gB.T5L|p5.dpqAQk.bSrduOOz\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    }\n  ],\n  \"dataExtraDimensions\": [\n    \"A\",\n    \"N_EBVk.1\",\n    \"OM_cFHTpxE1\",\n    \"XGIvNGf\",\n    \"e3aubDZbpx\"\n  ],\n  \"tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"dataDestinationConfigs\": [\n    {\n      \"s3Config\": {\n        \"bucketArn\": \"arn:awsNP3FtWizB:s3:::R15LFFlVjv6\",\n        \"dataFormat\": \"PARQUET\",\n        \"storageCompressionFormat\": \"GZIP\",\n        \"prefix\": \"w5p74K:V\"\n      },\n      \"timestreamConfig\": {\n        \"timestreamTableArn\": \"arn:awsQVS0aVQc:timestream:UJBzI3mUmJ:473423303976:database/YzHkSi1t7Er/table/YvtOizlf\",\n        \"executionRoleArn\": \"arn:awsw4a10u:iam::969131323601:role/}L=.m/M99GWTPq5jP\"\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:35:26.000Z",
+              "updatedAt": "2026-07-28T10:35:26.000Z",
+              "uid": "35240-3ab74cc4-5270-4295-af31-c57acf3a3dc2"
+            },
+            {
+              "id": "79983ed8-2b62-4bfd-b5c3-80c6e8b70dcd",
+              "name": "ThrottlingException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "IoTAutobahnControlPlane.CreateCampaign"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"Q\",\n  \"signalCatalogArn\": \"<string>\",\n  \"targetArn\": \"<string>\",\n  \"collectionScheme\": {\n    \"timeBasedCollectionScheme\": {\n      \"periodMs\": \"<integer>\"\n    },\n    \"conditionBasedCollectionScheme\": {\n      \"expression\": \"<string>\",\n      \"minimumTriggerIntervalMs\": \"<integer>\",\n      \"triggerMode\": \"RISING_EDGE\",\n      \"conditionLanguageVersion\": \"<integer>\"\n    }\n  },\n  \"description\": \"mQa6\",\n  \"startTime\": \"<dateTime>\",\n  \"expiryTime\": \"<dateTime>\",\n  \"postTriggerCollectionDuration\": \"<integer>\",\n  \"diagnosticsMode\": \"OFF\",\n  \"spoolingMode\": \"TO_DISK\",\n  \"compression\": \"OFF\",\n  \"priority\": \"<integer>\",\n  \"signalsToCollect\": [\n    {\n      \"name\": \"MTHTvp5.nd.A2Pi7T.mP.XSZYE.faPy.QhiObNRV.fjYXy8j.y9.rqAKLeBmroT.BT-mqf1-\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"1XGs*n.ezk\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"2lB60.-7v12ttCU.OX.uaBujdrFKAu.Ov2Ck759.d-J0l9a92Q-\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"_RI.fIqz9GR-*T.4Ad.3eeWtDfm5j.aj*db.44-vs0I.0z9ce66Y9JH.eYd_a.X\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"cutNDkHncl.vO*Zm.sA.FKaf-DmF.pa|932ho.T7*e9Icu.KOX1v.MN.bDUFs0.*Bi8rTIHgS5\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"drFC.oS3SDHRXD.OlvYVG9ZAym._e_Nxp53TM.vJN5.yt6C2UeNqt.rJGJwt4.e*41.03mY3|Fk|.ZY89U0jL.B\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"9nQcxRGV.igyDV.32.Y56.kveiV7bD7w2.Z.CFNL-.z._60*GO\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"De1.ez3H5eN\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"Xp\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"DBEe.epaGHp0A_2.bS6OC.X5YU1xL.B\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"7hORO.qQt4Xaa9Op4\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"CJM2Q*|.A0u.bg_DX-N1.qzc|Lv.A.*x.5Bfi6zUJVz.X.o37Q.m*s0LGdyT\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"cncKc4XB45.iI0**SYY\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"xC.8.jhe-ItY-U.Io|wVqOM-.P\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"hjlttGJx_h.fsNQB.JCqXkys.x.tHk\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"EHo.GLNw|Kw.2HY.RXi0.9JeMH.x6c\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"P.c*O.Xh.UVAYEtCU0Y.JU_pD_iFo.gkJpwM.tc-61eGFR0h.m8PrxO\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"|.-A4yVx6k.-GOadky5Z.KpW25.yQOyG3Ee\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"dB.l|yjU7IujA.q.xI4LLkHYT.JCHDC-KHtk.KiI.F.CJgK2\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"S.l*PbxV4Amw.JPLSAtU2.RcRD.Nqp.twvEM6aP2ta.|sl.8gB.T5L|p5.dpqAQk.bSrduOOz\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    }\n  ],\n  \"dataExtraDimensions\": [\n    \"A\",\n    \"N_EBVk.1\",\n    \"OM_cFHTpxE1\",\n    \"XGIvNGf\",\n    \"e3aubDZbpx\"\n  ],\n  \"tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"dataDestinationConfigs\": [\n    {\n      \"s3Config\": {\n        \"bucketArn\": \"arn:awsNP3FtWizB:s3:::R15LFFlVjv6\",\n        \"dataFormat\": \"PARQUET\",\n        \"storageCompressionFormat\": \"GZIP\",\n        \"prefix\": \"w5p74K:V\"\n      },\n      \"timestreamConfig\": {\n        \"timestreamTableArn\": \"arn:awsQVS0aVQc:timestream:UJBzI3mUmJ:473423303976:database/YzHkSi1t7Er/table/YvtOizlf\",\n        \"executionRoleArn\": \"arn:awsw4a10u:iam::969131323601:role/}L=.m/M99GWTPq5jP\"\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:35:26.000Z",
+              "updatedAt": "2026-07-28T10:35:26.000Z",
+              "uid": "35240-79983ed8-2b62-4bfd-b5c3-80c6e8b70dcd"
+            },
+            {
+              "id": "59965518-9cf5-4d85-9b61-f25d55915792",
+              "name": "ValidationException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "IoTAutobahnControlPlane.CreateCampaign"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"Q\",\n  \"signalCatalogArn\": \"<string>\",\n  \"targetArn\": \"<string>\",\n  \"collectionScheme\": {\n    \"timeBasedCollectionScheme\": {\n      \"periodMs\": \"<integer>\"\n    },\n    \"conditionBasedCollectionScheme\": {\n      \"expression\": \"<string>\",\n      \"minimumTriggerIntervalMs\": \"<integer>\",\n      \"triggerMode\": \"RISING_EDGE\",\n      \"conditionLanguageVersion\": \"<integer>\"\n    }\n  },\n  \"description\": \"mQa6\",\n  \"startTime\": \"<dateTime>\",\n  \"expiryTime\": \"<dateTime>\",\n  \"postTriggerCollectionDuration\": \"<integer>\",\n  \"diagnosticsMode\": \"OFF\",\n  \"spoolingMode\": \"TO_DISK\",\n  \"compression\": \"OFF\",\n  \"priority\": \"<integer>\",\n  \"signalsToCollect\": [\n    {\n      \"name\": \"MTHTvp5.nd.A2Pi7T.mP.XSZYE.faPy.QhiObNRV.fjYXy8j.y9.rqAKLeBmroT.BT-mqf1-\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"1XGs*n.ezk\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"2lB60.-7v12ttCU.OX.uaBujdrFKAu.Ov2Ck759.d-J0l9a92Q-\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"_RI.fIqz9GR-*T.4Ad.3eeWtDfm5j.aj*db.44-vs0I.0z9ce66Y9JH.eYd_a.X\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"cutNDkHncl.vO*Zm.sA.FKaf-DmF.pa|932ho.T7*e9Icu.KOX1v.MN.bDUFs0.*Bi8rTIHgS5\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"drFC.oS3SDHRXD.OlvYVG9ZAym._e_Nxp53TM.vJN5.yt6C2UeNqt.rJGJwt4.e*41.03mY3|Fk|.ZY89U0jL.B\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"9nQcxRGV.igyDV.32.Y56.kveiV7bD7w2.Z.CFNL-.z._60*GO\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"De1.ez3H5eN\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"Xp\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"DBEe.epaGHp0A_2.bS6OC.X5YU1xL.B\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"7hORO.qQt4Xaa9Op4\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"CJM2Q*|.A0u.bg_DX-N1.qzc|Lv.A.*x.5Bfi6zUJVz.X.o37Q.m*s0LGdyT\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"cncKc4XB45.iI0**SYY\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"xC.8.jhe-ItY-U.Io|wVqOM-.P\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"hjlttGJx_h.fsNQB.JCqXkys.x.tHk\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"EHo.GLNw|Kw.2HY.RXi0.9JeMH.x6c\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"P.c*O.Xh.UVAYEtCU0Y.JU_pD_iFo.gkJpwM.tc-61eGFR0h.m8PrxO\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"|.-A4yVx6k.-GOadky5Z.KpW25.yQOyG3Ee\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"dB.l|yjU7IujA.q.xI4LLkHYT.JCHDC-KHtk.KiI.F.CJgK2\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"S.l*PbxV4Amw.JPLSAtU2.RcRD.Nqp.twvEM6aP2ta.|sl.8gB.T5L|p5.dpqAQk.bSrduOOz\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    }\n  ],\n  \"dataExtraDimensions\": [\n    \"A\",\n    \"N_EBVk.1\",\n    \"OM_cFHTpxE1\",\n    \"XGIvNGf\",\n    \"e3aubDZbpx\"\n  ],\n  \"tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"dataDestinationConfigs\": [\n    {\n      \"s3Config\": {\n        \"bucketArn\": \"arn:awsNP3FtWizB:s3:::R15LFFlVjv6\",\n        \"dataFormat\": \"PARQUET\",\n        \"storageCompressionFormat\": \"GZIP\",\n        \"prefix\": \"w5p74K:V\"\n      },\n      \"timestreamConfig\": {\n        \"timestreamTableArn\": \"arn:awsQVS0aVQc:timestream:UJBzI3mUmJ:473423303976:database/YzHkSi1t7Er/table/YvtOizlf\",\n        \"executionRoleArn\": \"arn:awsw4a10u:iam::969131323601:role/}L=.m/M99GWTPq5jP\"\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:35:26.000Z",
+              "updatedAt": "2026-07-28T10:35:26.000Z",
+              "uid": "35240-59965518-9cf5-4d85-9b61-f25d55915792"
+            },
+            {
+              "id": "d82a57e7-9928-42fc-ba73-ebd28a8d115f",
+              "name": "AccessDeniedException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "IoTAutobahnControlPlane.CreateCampaign"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"Q\",\n  \"signalCatalogArn\": \"<string>\",\n  \"targetArn\": \"<string>\",\n  \"collectionScheme\": {\n    \"timeBasedCollectionScheme\": {\n      \"periodMs\": \"<integer>\"\n    },\n    \"conditionBasedCollectionScheme\": {\n      \"expression\": \"<string>\",\n      \"minimumTriggerIntervalMs\": \"<integer>\",\n      \"triggerMode\": \"RISING_EDGE\",\n      \"conditionLanguageVersion\": \"<integer>\"\n    }\n  },\n  \"description\": \"mQa6\",\n  \"startTime\": \"<dateTime>\",\n  \"expiryTime\": \"<dateTime>\",\n  \"postTriggerCollectionDuration\": \"<integer>\",\n  \"diagnosticsMode\": \"OFF\",\n  \"spoolingMode\": \"TO_DISK\",\n  \"compression\": \"OFF\",\n  \"priority\": \"<integer>\",\n  \"signalsToCollect\": [\n    {\n      \"name\": \"MTHTvp5.nd.A2Pi7T.mP.XSZYE.faPy.QhiObNRV.fjYXy8j.y9.rqAKLeBmroT.BT-mqf1-\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"1XGs*n.ezk\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"2lB60.-7v12ttCU.OX.uaBujdrFKAu.Ov2Ck759.d-J0l9a92Q-\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"_RI.fIqz9GR-*T.4Ad.3eeWtDfm5j.aj*db.44-vs0I.0z9ce66Y9JH.eYd_a.X\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"cutNDkHncl.vO*Zm.sA.FKaf-DmF.pa|932ho.T7*e9Icu.KOX1v.MN.bDUFs0.*Bi8rTIHgS5\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"drFC.oS3SDHRXD.OlvYVG9ZAym._e_Nxp53TM.vJN5.yt6C2UeNqt.rJGJwt4.e*41.03mY3|Fk|.ZY89U0jL.B\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"9nQcxRGV.igyDV.32.Y56.kveiV7bD7w2.Z.CFNL-.z._60*GO\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"De1.ez3H5eN\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"Xp\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"DBEe.epaGHp0A_2.bS6OC.X5YU1xL.B\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"7hORO.qQt4Xaa9Op4\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"CJM2Q*|.A0u.bg_DX-N1.qzc|Lv.A.*x.5Bfi6zUJVz.X.o37Q.m*s0LGdyT\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"cncKc4XB45.iI0**SYY\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"xC.8.jhe-ItY-U.Io|wVqOM-.P\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"hjlttGJx_h.fsNQB.JCqXkys.x.tHk\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"EHo.GLNw|Kw.2HY.RXi0.9JeMH.x6c\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"P.c*O.Xh.UVAYEtCU0Y.JU_pD_iFo.gkJpwM.tc-61eGFR0h.m8PrxO\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"|.-A4yVx6k.-GOadky5Z.KpW25.yQOyG3Ee\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"dB.l|yjU7IujA.q.xI4LLkHYT.JCHDC-KHtk.KiI.F.CJgK2\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"S.l*PbxV4Amw.JPLSAtU2.RcRD.Nqp.twvEM6aP2ta.|sl.8gB.T5L|p5.dpqAQk.bSrduOOz\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    }\n  ],\n  \"dataExtraDimensions\": [\n    \"A\",\n    \"N_EBVk.1\",\n    \"OM_cFHTpxE1\",\n    \"XGIvNGf\",\n    \"e3aubDZbpx\"\n  ],\n  \"tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"dataDestinationConfigs\": [\n    {\n      \"s3Config\": {\n        \"bucketArn\": \"arn:awsNP3FtWizB:s3:::R15LFFlVjv6\",\n        \"dataFormat\": \"PARQUET\",\n        \"storageCompressionFormat\": \"GZIP\",\n        \"prefix\": \"w5p74K:V\"\n      },\n      \"timestreamConfig\": {\n        \"timestreamTableArn\": \"arn:awsQVS0aVQc:timestream:UJBzI3mUmJ:473423303976:database/YzHkSi1t7Er/table/YvtOizlf\",\n        \"executionRoleArn\": \"arn:awsw4a10u:iam::969131323601:role/}L=.m/M99GWTPq5jP\"\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:35:26.000Z",
+              "updatedAt": "2026-07-28T10:35:26.000Z",
+              "uid": "35240-d82a57e7-9928-42fc-ba73-ebd28a8d115f"
+            }
+          ],
+          "createdAt": "2026-07-28T10:35:26.000Z",
+          "updatedAt": "2026-07-28T10:35:26.000Z",
+          "uid": "35240-d5a9ddf9-2434-4de2-bb63-86d97d62f359"
+        }
+      ],
+      "id": "4610a103-a214-4daf-bd25-5ebae99ce3a8",
+      "createdAt": "2026-07-28T10:35:26.000Z",
+      "updatedAt": "2026-07-28T10:35:26.000Z",
+      "uid": "35240-4610a103-a214-4daf-bd25-5ebae99ce3a8"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://iotfleetwise.{{region}}.amazonaws.com"
+    }
+  ]
+}
