@@ -1,0 +1,1011 @@
+{
+  "item": [
+    {
+      "id": "8fd12f81-47d9-4e3b-bf7e-257210190f75",
+      "name": "#X Amz Target=IoTAutobahnControlPlane.CreateCampaign",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "a448d481-e27b-4a37-842d-a7947acf72b7",
+          "name": "Amazon IoT FleetWise Create Campaign",
+          "request": {
+            "name": "Amazon IoT FleetWise Create Campaign",
+            "description": {
+              "content": "<p>Creates an orchestration of data collection rules. The Amazon Web Services IoT FleetWise Edge Agent software running in vehicles uses campaigns to decide how to collect and transfer data to the cloud. You create campaigns in the cloud. After you or your team approve campaigns, Amazon Web Services IoT FleetWise automatically deploys them to vehicles. </p> <p>For more information, see <a href=\"https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/campaigns.html\">Collect and transfer data with campaigns</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                  "type": "any",
+                  "value": "{{region}}",
+                  "key": "region"
+                }
+              ]
+            },
+            "header": [
+              {
+                "disabled": false,
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "<string>"
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-Date",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-Algorithm",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-Credential",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-Security-Token",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-Signature",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "disabled": false,
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>",
+                "description": ""
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"<string>\",\n  \"signalCatalogArn\": \"<string>\",\n  \"targetArn\": \"<string>\",\n  \"collectionScheme\": {\n    \"timeBasedCollectionScheme\": {\n      \"periodMs\": \"<integer>\"\n    },\n    \"conditionBasedCollectionScheme\": {\n      \"expression\": \"<string>\",\n      \"minimumTriggerIntervalMs\": \"<integer>\",\n      \"triggerMode\": \"<string>\",\n      \"conditionLanguageVersion\": \"<integer>\"\n    }\n  },\n  \"description\": \"<string>\",\n  \"startTime\": \"<dateTime>\",\n  \"expiryTime\": \"<dateTime>\",\n  \"postTriggerCollectionDuration\": \"<integer>\",\n  \"diagnosticsMode\": \"<string>\",\n  \"spoolingMode\": \"<string>\",\n  \"compression\": \"<string>\",\n  \"priority\": \"<integer>\",\n  \"signalsToCollect\": [\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    }\n  ],\n  \"dataExtraDimensions\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"dataDestinationConfigs\": [\n    {\n      \"s3Config\": {\n        \"bucketArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"dataFormat\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"storageCompressionFormat\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"prefix\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      },\n      \"timestreamConfig\": {\n        \"timestreamTableArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"executionRoleArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      }\n    }\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "6450d6f8-c63f-4e9e-ae3f-a44b159e9942",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"<string>\",\n  \"signalCatalogArn\": \"<string>\",\n  \"targetArn\": \"<string>\",\n  \"collectionScheme\": {\n    \"timeBasedCollectionScheme\": {\n      \"periodMs\": \"<integer>\"\n    },\n    \"conditionBasedCollectionScheme\": {\n      \"expression\": \"<string>\",\n      \"minimumTriggerIntervalMs\": \"<integer>\",\n      \"triggerMode\": \"<string>\",\n      \"conditionLanguageVersion\": \"<integer>\"\n    }\n  },\n  \"description\": \"<string>\",\n  \"startTime\": \"<dateTime>\",\n  \"expiryTime\": \"<dateTime>\",\n  \"postTriggerCollectionDuration\": \"<integer>\",\n  \"diagnosticsMode\": \"<string>\",\n  \"spoolingMode\": \"<string>\",\n  \"compression\": \"<string>\",\n  \"priority\": \"<integer>\",\n  \"signalsToCollect\": [\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    }\n  ],\n  \"dataExtraDimensions\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"dataDestinationConfigs\": [\n    {\n      \"s3Config\": {\n        \"bucketArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"dataFormat\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"storageCompressionFormat\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"prefix\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      },\n      \"timestreamConfig\": {\n        \"timestreamTableArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"executionRoleArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"name\": \"<string>\",\n  \"arn\": \"<string>\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "8c410ef7-dabc-4f25-ae8d-dbfc061f3ec5",
+              "name": "ResourceNotFoundException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"<string>\",\n  \"signalCatalogArn\": \"<string>\",\n  \"targetArn\": \"<string>\",\n  \"collectionScheme\": {\n    \"timeBasedCollectionScheme\": {\n      \"periodMs\": \"<integer>\"\n    },\n    \"conditionBasedCollectionScheme\": {\n      \"expression\": \"<string>\",\n      \"minimumTriggerIntervalMs\": \"<integer>\",\n      \"triggerMode\": \"<string>\",\n      \"conditionLanguageVersion\": \"<integer>\"\n    }\n  },\n  \"description\": \"<string>\",\n  \"startTime\": \"<dateTime>\",\n  \"expiryTime\": \"<dateTime>\",\n  \"postTriggerCollectionDuration\": \"<integer>\",\n  \"diagnosticsMode\": \"<string>\",\n  \"spoolingMode\": \"<string>\",\n  \"compression\": \"<string>\",\n  \"priority\": \"<integer>\",\n  \"signalsToCollect\": [\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    }\n  ],\n  \"dataExtraDimensions\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"dataDestinationConfigs\": [\n    {\n      \"s3Config\": {\n        \"bucketArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"dataFormat\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"storageCompressionFormat\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"prefix\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      },\n      \"timestreamConfig\": {\n        \"timestreamTableArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"executionRoleArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 480,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "11bdf2e2-bbfe-4b2f-b8aa-723e36854fb0",
+              "name": "InternalServerException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"<string>\",\n  \"signalCatalogArn\": \"<string>\",\n  \"targetArn\": \"<string>\",\n  \"collectionScheme\": {\n    \"timeBasedCollectionScheme\": {\n      \"periodMs\": \"<integer>\"\n    },\n    \"conditionBasedCollectionScheme\": {\n      \"expression\": \"<string>\",\n      \"minimumTriggerIntervalMs\": \"<integer>\",\n      \"triggerMode\": \"<string>\",\n      \"conditionLanguageVersion\": \"<integer>\"\n    }\n  },\n  \"description\": \"<string>\",\n  \"startTime\": \"<dateTime>\",\n  \"expiryTime\": \"<dateTime>\",\n  \"postTriggerCollectionDuration\": \"<integer>\",\n  \"diagnosticsMode\": \"<string>\",\n  \"spoolingMode\": \"<string>\",\n  \"compression\": \"<string>\",\n  \"priority\": \"<integer>\",\n  \"signalsToCollect\": [\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    }\n  ],\n  \"dataExtraDimensions\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"dataDestinationConfigs\": [\n    {\n      \"s3Config\": {\n        \"bucketArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"dataFormat\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"storageCompressionFormat\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"prefix\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      },\n      \"timestreamConfig\": {\n        \"timestreamTableArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"executionRoleArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 481,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "61afecac-6b58-41e5-8d8e-998b6274ea7d",
+              "name": "ConflictException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"<string>\",\n  \"signalCatalogArn\": \"<string>\",\n  \"targetArn\": \"<string>\",\n  \"collectionScheme\": {\n    \"timeBasedCollectionScheme\": {\n      \"periodMs\": \"<integer>\"\n    },\n    \"conditionBasedCollectionScheme\": {\n      \"expression\": \"<string>\",\n      \"minimumTriggerIntervalMs\": \"<integer>\",\n      \"triggerMode\": \"<string>\",\n      \"conditionLanguageVersion\": \"<integer>\"\n    }\n  },\n  \"description\": \"<string>\",\n  \"startTime\": \"<dateTime>\",\n  \"expiryTime\": \"<dateTime>\",\n  \"postTriggerCollectionDuration\": \"<integer>\",\n  \"diagnosticsMode\": \"<string>\",\n  \"spoolingMode\": \"<string>\",\n  \"compression\": \"<string>\",\n  \"priority\": \"<integer>\",\n  \"signalsToCollect\": [\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    }\n  ],\n  \"dataExtraDimensions\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"dataDestinationConfigs\": [\n    {\n      \"s3Config\": {\n        \"bucketArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"dataFormat\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"storageCompressionFormat\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"prefix\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      },\n      \"timestreamConfig\": {\n        \"timestreamTableArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"executionRoleArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 482,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "b8e102f3-a7c7-458b-a645-036fbb1bb889",
+              "name": "LimitExceededException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"<string>\",\n  \"signalCatalogArn\": \"<string>\",\n  \"targetArn\": \"<string>\",\n  \"collectionScheme\": {\n    \"timeBasedCollectionScheme\": {\n      \"periodMs\": \"<integer>\"\n    },\n    \"conditionBasedCollectionScheme\": {\n      \"expression\": \"<string>\",\n      \"minimumTriggerIntervalMs\": \"<integer>\",\n      \"triggerMode\": \"<string>\",\n      \"conditionLanguageVersion\": \"<integer>\"\n    }\n  },\n  \"description\": \"<string>\",\n  \"startTime\": \"<dateTime>\",\n  \"expiryTime\": \"<dateTime>\",\n  \"postTriggerCollectionDuration\": \"<integer>\",\n  \"diagnosticsMode\": \"<string>\",\n  \"spoolingMode\": \"<string>\",\n  \"compression\": \"<string>\",\n  \"priority\": \"<integer>\",\n  \"signalsToCollect\": [\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    }\n  ],\n  \"dataExtraDimensions\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"dataDestinationConfigs\": [\n    {\n      \"s3Config\": {\n        \"bucketArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"dataFormat\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"storageCompressionFormat\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"prefix\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      },\n      \"timestreamConfig\": {\n        \"timestreamTableArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"executionRoleArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 483,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "fa8540dd-c73a-4d60-8d79-b5eb71130229",
+              "name": "ThrottlingException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"<string>\",\n  \"signalCatalogArn\": \"<string>\",\n  \"targetArn\": \"<string>\",\n  \"collectionScheme\": {\n    \"timeBasedCollectionScheme\": {\n      \"periodMs\": \"<integer>\"\n    },\n    \"conditionBasedCollectionScheme\": {\n      \"expression\": \"<string>\",\n      \"minimumTriggerIntervalMs\": \"<integer>\",\n      \"triggerMode\": \"<string>\",\n      \"conditionLanguageVersion\": \"<integer>\"\n    }\n  },\n  \"description\": \"<string>\",\n  \"startTime\": \"<dateTime>\",\n  \"expiryTime\": \"<dateTime>\",\n  \"postTriggerCollectionDuration\": \"<integer>\",\n  \"diagnosticsMode\": \"<string>\",\n  \"spoolingMode\": \"<string>\",\n  \"compression\": \"<string>\",\n  \"priority\": \"<integer>\",\n  \"signalsToCollect\": [\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    }\n  ],\n  \"dataExtraDimensions\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"dataDestinationConfigs\": [\n    {\n      \"s3Config\": {\n        \"bucketArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"dataFormat\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"storageCompressionFormat\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"prefix\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      },\n      \"timestreamConfig\": {\n        \"timestreamTableArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"executionRoleArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 484,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "d92fe7a6-51c8-466c-8e55-49f21677566c",
+              "name": "ValidationException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"<string>\",\n  \"signalCatalogArn\": \"<string>\",\n  \"targetArn\": \"<string>\",\n  \"collectionScheme\": {\n    \"timeBasedCollectionScheme\": {\n      \"periodMs\": \"<integer>\"\n    },\n    \"conditionBasedCollectionScheme\": {\n      \"expression\": \"<string>\",\n      \"minimumTriggerIntervalMs\": \"<integer>\",\n      \"triggerMode\": \"<string>\",\n      \"conditionLanguageVersion\": \"<integer>\"\n    }\n  },\n  \"description\": \"<string>\",\n  \"startTime\": \"<dateTime>\",\n  \"expiryTime\": \"<dateTime>\",\n  \"postTriggerCollectionDuration\": \"<integer>\",\n  \"diagnosticsMode\": \"<string>\",\n  \"spoolingMode\": \"<string>\",\n  \"compression\": \"<string>\",\n  \"priority\": \"<integer>\",\n  \"signalsToCollect\": [\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    }\n  ],\n  \"dataExtraDimensions\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"dataDestinationConfigs\": [\n    {\n      \"s3Config\": {\n        \"bucketArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"dataFormat\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"storageCompressionFormat\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"prefix\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      },\n      \"timestreamConfig\": {\n        \"timestreamTableArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"executionRoleArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 485,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "87a8fa8d-995e-433d-85a3-82fe07091c16",
+              "name": "AccessDeniedException",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=IoTAutobahnControlPlane.CreateCampaign",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+                      "type": "any",
+                      "value": "{{region}}",
+                      "key": "region"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "<string>"
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Date",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Credential",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-Signature",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "disabled": false,
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>",
+                    "description": ""
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"<string>\",\n  \"signalCatalogArn\": \"<string>\",\n  \"targetArn\": \"<string>\",\n  \"collectionScheme\": {\n    \"timeBasedCollectionScheme\": {\n      \"periodMs\": \"<integer>\"\n    },\n    \"conditionBasedCollectionScheme\": {\n      \"expression\": \"<string>\",\n      \"minimumTriggerIntervalMs\": \"<integer>\",\n      \"triggerMode\": \"<string>\",\n      \"conditionLanguageVersion\": \"<integer>\"\n    }\n  },\n  \"description\": \"<string>\",\n  \"startTime\": \"<dateTime>\",\n  \"expiryTime\": \"<dateTime>\",\n  \"postTriggerCollectionDuration\": \"<integer>\",\n  \"diagnosticsMode\": \"<string>\",\n  \"spoolingMode\": \"<string>\",\n  \"compression\": \"<string>\",\n  \"priority\": \"<integer>\",\n  \"signalsToCollect\": [\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"maxSampleCount\": \"<integer>\",\n      \"minimumSamplingIntervalMs\": \"<integer>\"\n    }\n  ],\n  \"dataExtraDimensions\": [\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    },\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"dataDestinationConfigs\": [\n    {\n      \"s3Config\": {\n        \"bucketArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"dataFormat\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"storageCompressionFormat\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"prefix\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      },\n      \"timestreamConfig\": {\n        \"timestreamTableArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        },\n        \"executionRoleArn\": {\n          \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n        }\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "code": 486,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "The AWS region (This can only be one of us-east-1,us-east-2,us-west-1,us-west-2,us-gov-west-1,us-gov-east-1,ca-central-1,eu-north-1,eu-west-1,eu-west-2,eu-west-3,eu-central-1,eu-south-1,af-south-1,ap-northeast-1,ap-northeast-2,ap-northeast-3,ap-southeast-1,ap-southeast-2,ap-east-1,ap-south-1,sa-east-1,me-south-1)",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "us-east-1",
+      "key": "region"
+    },
+    {
+      "type": "string",
+      "value": "http://iotfleetwise.{{region}}.amazonaws.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "2adb244b-600f-4cb2-b1a2-ca3c0d3feed9",
+    "name": "AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.CreateCampaign API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "<p>Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale. With Amazon Web Services IoT FleetWise, you can standardize all of your vehicle data models, independent of the in-vehicle communication architecture, and define data collection rules to transfer only high-value data to the cloud. </p> <p>For more information, see <a href=\"https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/\">What is Amazon Web Services IoT FleetWise?</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+      "type": "text/plain"
+    }
+  }
+}
