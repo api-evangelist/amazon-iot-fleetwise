@@ -368,7 +368,8 @@ apis:
     1 operation(s) for #x amz target=iotautobahncontrolplane.disassociatevehiclefleet.
   humanURL: https://aws.amazon.com/iot-fleetwise/
   baseURL: https://iotfleetwise.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=IoTAutobahnControlPlane.DisassociateVehicleFleet'
   properties:
   - type: OpenAPI
@@ -500,7 +501,8 @@ apis:
     1 operation(s) for #x amz target=iotautobahncontrolplane.getregisteraccountstatus.
   humanURL: https://aws.amazon.com/iot-fleetwise/
   baseURL: https://iotfleetwise.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=IoTAutobahnControlPlane.GetRegisterAccountStatus'
   properties:
   - type: OpenAPI
@@ -655,7 +657,8 @@ apis:
     FleetWise — 1 operation(s) for #x amz target=iotautobahncontrolplane.listdecodermanifestnetworkinterfaces.
   humanURL: https://aws.amazon.com/iot-fleetwise/
   baseURL: https://iotfleetwise.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=IoTAutobahnControlPlane.ListDecoderManifestNetworkInterfaces'
   properties:
   - type: OpenAPI
@@ -700,7 +703,8 @@ apis:
     — 1 operation(s) for #x amz target=iotautobahncontrolplane.listdecodermanifestsignals.
   humanURL: https://aws.amazon.com/iot-fleetwise/
   baseURL: https://iotfleetwise.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=IoTAutobahnControlPlane.ListDecoderManifestSignals'
   properties:
   - type: OpenAPI
