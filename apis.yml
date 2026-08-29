@@ -1149,6 +1149,9 @@ apis:
   - type: FAQ
     url: https://aws.amazon.com/iot-fleetwise/faqs/
 common:
+- type: CapabilityMap
+  url: capabilities/amazon-iot-fleetwise-capability-edges.yml
+  name: Amazon IoT FleetWise Business Capability Map
 - type: PostmanWorkspace
   url: https://www.postman.com/kinlaneapi/amazon-iot-fleetwise/overview
 - type: AgenticAccess

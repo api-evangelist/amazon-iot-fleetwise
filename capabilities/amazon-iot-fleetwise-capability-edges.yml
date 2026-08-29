@@ -1,0 +1,242 @@
+slug: amazon-iot-fleetwise
+provider: Amazon IoT FleetWise
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Automotive & Mobility
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 23
+edges:
+- tag: '#X Amz Target=IoTAutobahnControlPlane.GetCampaign'
+  spec_file: amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getcampaign-api-openapi.yml
+  capability_id: BC-3460.40
+  capability_id_l1: BC-3460
+  capability_name: Vehicle Data Platform Operations
+  confidence: 0.8
+  evidence: '"GetCampaign"; schemas "CollectionScheme", "ConditionBasedCollectionScheme", "DataDestinationConfigs",
+    "S3Config", "SignalInformationList"'
+  reason: A FleetWise campaign is a vehicle data collection rule with collection schemes and cloud data
+    destinations — squarely vehicle data platform ingestion/storage, not a marketing or service campaign.
+- tag: '#X Amz Target=IoTAutobahnControlPlane.CreateCampaign'
+  spec_file: amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createcampaign-api-openapi.yml
+  capability_id: BC-3460.40
+  capability_id_l1: BC-3460
+  capability_name: Vehicle Data Platform Operations
+  confidence: 0.78
+  evidence: CreateCampaign — schemas CollectionScheme, ConditionBasedCollectionScheme, SignalInformationList,
+    S3Config; "define data collection rules to transfer only high-value data to the cloud"
+  reason: A 'campaign' here is a vehicle data-collection rule set (collection scheme, signals, S3 destination),
+    not a marketing or OTA update campaign — squarely vehicle data platform ingestion configuration.
+- tag: '#X Amz Target=IoTAutobahnControlPlane.CreateSignalCatalog'
+  spec_file: amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createsignalcatalog-api-openapi.yml
+  capability_id: BC-3460.40
+  capability_id_l1: BC-3460
+  capability_name: Vehicle Data Platform Operations
+  confidence: 0.75
+  evidence: CreateSignalCatalog — schemas Sensor, Actuator, Node, Nodes, NodeDataType
+  reason: Defines the catalogue of vehicle signals (sensors/actuators) that the platform ingests — the
+    semantic layer of the vehicle data platform.
+- tag: '#X Amz Target=IoTAutobahnControlPlane.DeleteModelManifest'
+  spec_file: amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletemodelmanifest-api-openapi.yml
+  capability_id: BC-3460.40
+  capability_id_l1: BC-3460
+  capability_name: Vehicle Data Platform Operations
+  confidence: 0.75
+  evidence: '"DeleteModelManifest  Amazon IoT FleetWise Delete Model Manifest"; service lets you "standardize
+    all of your vehicle data models, independent of the in-vehicle communication architecture"'
+  reason: Model manifests are the vehicle signal/data model definitions in AWS IoT FleetWise, i.e. artefacts
+    of a vehicle data platform used to ingest and standardise vehicle data in the cloud. Maps to Vehicle
+    Data Platform Operations rather than any engineering or aftersales capability.
+- tag: '#X Amz Target=IoTAutobahnControlPlane.DeleteSignalCatalog'
+  spec_file: amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletesignalcatalog-api-openapi.yml
+  capability_id: BC-3460.40
+  capability_id_l1: BC-3460
+  capability_name: Vehicle Data Platform Operations
+  confidence: 0.75
+  evidence: '"DeleteSignalCatalog  Amazon IoT FleetWise Delete Signal Catalog"; "collect, model, and transfer
+    vehicle data to the Amazon Web Services cloud at scale"'
+  reason: The signal catalog is the vehicle-signal data model underpinning cloud ingestion of vehicle
+    telemetry — vehicle data platform operations.
+- tag: '#X Amz Target=IoTAutobahnControlPlane.GetDecoderManifest'
+  spec_file: amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getdecodermanifest-api-openapi.yml
+  capability_id: BC-3460.40
+  capability_id_l1: BC-3460
+  capability_name: Vehicle Data Platform Operations
+  confidence: 0.75
+  evidence: '"GetDecoderManifest  Amazon IoT FleetWise Get Decoder Manifest"; "independent of the in-vehicle
+    communication architecture"'
+  reason: Decoder manifests define how raw in-vehicle network signals are decoded for cloud ingestion
+    — vehicle data platform operations.
+- tag: '#X Amz Target=IoTAutobahnControlPlane.GetModelManifest'
+  spec_file: amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getmodelmanifest-api-openapi.yml
+  capability_id: BC-3460.40
+  capability_id_l1: BC-3460
+  capability_name: Vehicle Data Platform Operations
+  confidence: 0.75
+  evidence: '"GetModelManifest  Amazon IoT FleetWise Get Model Manifest"; "standardize all of your vehicle
+    data models"'
+  reason: Retrieves the vehicle data model manifest used by the cloud vehicle data platform; data platform
+    operations.
+- tag: '#X Amz Target=IoTAutobahnControlPlane.GetSignalCatalog'
+  spec_file: amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getsignalcatalog-api-openapi.yml
+  capability_id: BC-3460.40
+  capability_id_l1: BC-3460
+  capability_name: Vehicle Data Platform Operations
+  confidence: 0.75
+  evidence: '"GetSignalCatalog  Amazon IoT FleetWise Get Signal Catalog", schema "NodeCounts"'
+  reason: The signal catalog is the canonical vehicle signal model for cloud data ingestion — vehicle
+    data platform operations.
+- tag: '#X Amz Target=IoTAutobahnControlPlane.CreateDecoderManifest'
+  spec_file: amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createdecodermanifest-api-openapi.yml
+  capability_id: BC-3460.40
+  capability_id_l1: BC-3460
+  capability_name: Vehicle Data Platform Operations
+  confidence: 0.72
+  evidence: CreateDecoderManifest — schemas CanSignal, ObdSignal, ObdInterface, NetworkInterfaceType,
+    SignalDecoderType
+  reason: Defines how in-vehicle CAN/OBD network signals are decoded for cloud ingestion — configuration
+    of the vehicle data platform's signal decoding layer.
+- tag: '#X Amz Target=IoTAutobahnControlPlane.CreateModelManifest'
+  spec_file: amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createmodelmanifest-api-openapi.yml
+  capability_id: BC-3460.40
+  capability_id_l1: BC-3460
+  capability_name: Vehicle Data Platform Operations
+  confidence: 0.72
+  evidence: CreateModelManifest — InvalidSignalsException; "standardize all of your vehicle data models,
+    independent of the in-vehicle communication architecture"
+  reason: Creates the vehicle signal model (model manifest) used by the data platform; this is vehicle
+    data modelling for ingestion, not product engineering of the vehicle itself.
+- tag: '#X Amz Target=IoTAutobahnControlPlane.DeleteCampaign'
+  spec_file: amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletecampaign-api-openapi.yml
+  capability_id: BC-3460.40
+  capability_id_l1: BC-3460
+  capability_name: Vehicle Data Platform Operations
+  confidence: 0.72
+  evidence: DeleteCampaign — schemas DeleteCampaignRequest, campaignName; "define data collection rules
+    to transfer only high-value data to the cloud"
+  reason: Lifecycle management of a vehicle data-collection campaign; part of operating the vehicle data
+    platform's ingestion rules.
+- tag: '#X Amz Target=IoTAutobahnControlPlane.ListSignalCatalogs'
+  spec_file: amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listsignalcatalogs-api-openapi.yml
+  capability_id: BC-3460.40
+  capability_id_l1: BC-3460
+  capability_name: Vehicle Data Platform Operations
+  confidence: 0.72
+  evidence: ListSignalCatalogs ... "you can standardize all of your vehicle data models, independent of
+    the in-vehicle communication architecture"
+  reason: Signal catalogs are the vehicle-signal data models underpinning FleetWise's vehicle-to-cloud
+    data platform; listing them is an operation of the vehicle data platform rather than generic IT plumbing.
+- tag: '#X Amz Target=IoTAutobahnControlPlane.UpdateCampaign'
+  spec_file: amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatecampaign-api-openapi.yml
+  capability_id: BC-3460.40
+  capability_id_l1: BC-3460
+  capability_name: Vehicle Data Platform Operations
+  confidence: 0.72
+  evidence: 'UpdateCampaign ... schemas: CampaignStatus, campaignName, DataExtraDimensionNodePathList;
+    "define data collection rules to transfer only high-value data to the cloud"'
+  reason: A FleetWise campaign is a vehicle data collection scheme, not a marketing or recall campaign;
+    updating it is vehicle data platform ingestion configuration.
+- tag: '#X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet'
+  spec_file: amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-associatevehiclefleet-api-openapi.yml
+  capability_id: BC-3460.40
+  capability_id_l1: BC-3460
+  capability_name: Vehicle Data Platform Operations
+  confidence: 0.7
+  evidence: AssociateVehicleFleet — "collect, model, and transfer vehicle data to the Amazon Web Services
+    cloud at scale"; schemas vehicleName, fleetId
+  reason: Associating a registered vehicle with a fleet inside the vehicle data platform; the surface
+    is the vehicle-data ingestion/organisation platform, not a telematics service sold to drivers. Vehicle
+    Data Platform Operations is the closest fit; some ambiguity vs. connectivity platform operations.
+- tag: '#X Amz Target=IoTAutobahnControlPlane.BatchCreateVehicle'
+  spec_file: amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-batchcreatevehicle-api-openapi.yml
+  capability_id: BC-3460.40
+  capability_id_l1: BC-3460
+  capability_name: Vehicle Data Platform Operations
+  confidence: 0.7
+  evidence: BatchCreateVehicle — schemas CreateVehicleRequestItem, VehicleAssociationBehavior, attributesMap;
+    "standardize all of your vehicle data models"
+  reason: Bulk registration of vehicles as data-platform entities so their signals can be ingested; maps
+    to vehicle data platform operations rather than any commercial vehicle-sales capability.
+- tag: '#X Amz Target=IoTAutobahnControlPlane.BatchUpdateVehicle'
+  spec_file: amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-batchupdatevehicle-api-openapi.yml
+  capability_id: BC-3460.40
+  capability_id_l1: BC-3460
+  capability_name: Vehicle Data Platform Operations
+  confidence: 0.7
+  evidence: BatchUpdateVehicle — schemas UpdateVehicleRequestItem, UpdateMode, attributesMap
+  reason: Maintenance of vehicle records within the vehicle data platform (attributes, model/decoder association),
+    i.e. data platform administration for vehicle telemetry.
+- tag: '#X Amz Target=IoTAutobahnControlPlane.CreateVehicle'
+  spec_file: amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createvehicle-api-openapi.yml
+  capability_id: BC-3460.40
+  capability_id_l1: BC-3460
+  capability_name: Vehicle Data Platform Operations
+  confidence: 0.7
+  evidence: CreateVehicle — schemas CreateVehicleRequest, VehicleAssociationBehavior, attributesMap
+  reason: Registers a single vehicle as a data-platform entity bound to model/decoder manifests, enabling
+    telemetry ingestion.
+- tag: '#X Amz Target=IoTAutobahnControlPlane.DeleteVehicle'
+  spec_file: amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletevehicle-api-openapi.yml
+  capability_id: BC-3460.40
+  capability_id_l1: BC-3460
+  capability_name: Vehicle Data Platform Operations
+  confidence: 0.7
+  evidence: '"DeleteVehicle  Amazon IoT FleetWise Delete Vehicle", schemas "vehicleName", "DeleteVehicleRequest"'
+  reason: Manages the registration of a vehicle as a data-producing entity in the vehicle-to-cloud data
+    platform; not an OEM sales, warranty or fleet-service function.
+- tag: '#X Amz Target=IoTAutobahnControlPlane.GetVehicle'
+  spec_file: amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getvehicle-api-openapi.yml
+  capability_id: BC-3460.40
+  capability_id_l1: BC-3460
+  capability_name: Vehicle Data Platform Operations
+  confidence: 0.7
+  evidence: '"GetVehicle  Amazon IoT FleetWise Get Vehicle", schemas "vehicleName", "attributesMap"'
+  reason: Reads a vehicle entity registered in the vehicle-to-cloud data platform along with its attributes;
+    data platform operations rather than any commercial vehicle capability.
+- tag: '#X Amz Target=IoTAutobahnControlPlane.GetVehicleStatus'
+  spec_file: amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getvehiclestatus-api-openapi.yml
+  capability_id: BC-3460.10
+  capability_id_l1: BC-3460
+  capability_name: Vehicle Connectivity Platform Operations
+  confidence: 0.7
+  evidence: GetVehicleStatus with schemas "VehicleStatus", "VehicleState", "vehicleName" in a service
+    to "collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale"
+  reason: Reports the connectivity/campaign state of individual vehicles in the vehicle-to-cloud telemetry
+    platform, which is connected-vehicle platform operations rather than any cross-industry IT capability.
+- tag: '#X Amz Target=IoTAutobahnControlPlane.ImportDecoderManifest'
+  spec_file: amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-importdecodermanifest-api-openapi.yml
+  capability_id: BC-3460.40
+  capability_id_l1: BC-3460
+  capability_name: Vehicle Data Platform Operations
+  confidence: 0.7
+  evidence: ImportDecoderManifest with schemas "CanDbcDefinition", "NetworkFileDefinition", "ModelSignalsMap"
+  reason: Imports CAN/DBC decoder definitions that map in-vehicle bus signals to the cloud data model
+    — configuration of the vehicle data platform's ingestion/decoding layer.
+- tag: '#X Amz Target=IoTAutobahnControlPlane.ImportSignalCatalog'
+  spec_file: amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-importsignalcatalog-api-openapi.yml
+  capability_id: BC-3460.40
+  capability_id_l1: BC-3460
+  capability_name: Vehicle Data Platform Operations
+  confidence: 0.7
+  evidence: ImportSignalCatalog with schema "FormattedVss"; vendor "standardize all of your vehicle data
+    models"
+  reason: Defines the vehicle signal catalogue (VSS) underpinning cloud vehicle data modelling — vehicle
+    data platform operations.
+- tag: '#X Amz Target=IoTAutobahnControlPlane.UpdateSignalCatalog'
+  spec_file: amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatesignalcatalog-api-openapi.yml
+  capability_id: BC-3460.40
+  capability_id_l1: BC-3460
+  capability_name: Vehicle Data Platform Operations
+  confidence: 0.7
+  evidence: '"UpdateSignalCatalog" with schemas "Sensor", "Actuator", "Node", "NodeDataType"; service
+    "you can standardize all of your vehicle data models ... and define data collection rules to transfer
+    only high-value data to the cloud"'
+  reason: The operation maintains the signal/sensor catalogue that defines the vehicle data model for
+    cloud ingestion — this is vehicle data platform operations (modelling and ingestion of vehicle telemetry),
+    not generic IT data management, given the explicitly automotive vehicle-signal domain.
