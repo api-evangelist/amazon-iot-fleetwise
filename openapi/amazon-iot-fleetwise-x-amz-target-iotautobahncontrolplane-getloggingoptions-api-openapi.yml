@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.GetLoggingOptions API'
+  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.GetLoggingOptions #X Amz Target=IoTAutobahnControlPlane.GetLoggingOptions #X Amz Target=IoTAutobahnControlPlane.GetLoggingOptions API'
   description: <p>Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale. With Amazon Web Services IoT FleetWise, you can standardize all of your vehicle data models, independent of the in-vehicle communication architecture, and define data collection rules to transfer only high-value data to the cloud. </p> <p>For more information, see <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/">What is Amazon Web Services IoT FleetWise?</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -172,56 +172,15 @@ paths:
       tags:
       - '#X Amz Target=IoTAutobahnControlPlane.GetLoggingOptions'
 components:
-  schemas:
-    CloudWatchLogDeliveryOptions:
-      type: object
-      required:
-      - logType
-      properties:
-        logType:
-          allOf:
-          - $ref: '#/components/schemas/LogType'
-          - description: The type of log to send data to Amazon CloudWatch Logs.
-        logGroupName:
-          allOf:
-          - $ref: '#/components/schemas/CloudWatchLogGroupName'
-          - description: The Amazon CloudWatch Logs group the operation sends data to.
-      description: The log delivery option to send data to Amazon CloudWatch Logs.
-    CloudWatchLogGroupName:
-      type: string
-      pattern: '[\.\-_\/#A-Za-z0-9]+'
-      minLength: 1
-      maxLength: 512
-    GetLoggingOptionsResponse:
-      type: object
-      required:
-      - cloudWatchLogDelivery
-      properties:
-        cloudWatchLogDelivery:
-          allOf:
-          - $ref: '#/components/schemas/CloudWatchLogDeliveryOptions'
-          - description: Returns information about log delivery to Amazon CloudWatch Logs.
-    InternalServerException: {}
-    ThrottlingException: {}
-    GetLoggingOptionsRequest:
-      type: object
-      title: GetLoggingOptionsRequest
-      properties: {}
-    LogType:
-      type: string
-      enum:
-      - 'OFF'
-      - ERROR
-    AccessDeniedException: {}
   parameters:
-    X-Amz-Credential:
-      name: X-Amz-Credential
+    X-Amz-Date:
+      name: X-Amz-Date
       in: header
       schema:
         type: string
       required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
+    X-Amz-Credential:
+      name: X-Amz-Credential
       in: header
       schema:
         type: string
@@ -250,12 +209,53 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Date:
-      name: X-Amz-Date
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
       in: header
       schema:
         type: string
       required: false
+  schemas:
+    InternalServerException: {}
+    ThrottlingException: {}
+    LogType:
+      type: string
+      enum:
+      - 'OFF'
+      - ERROR
+    GetLoggingOptionsRequest:
+      type: object
+      title: GetLoggingOptionsRequest
+      properties: {}
+    AccessDeniedException: {}
+    GetLoggingOptionsResponse:
+      type: object
+      required:
+      - cloudWatchLogDelivery
+      properties:
+        cloudWatchLogDelivery:
+          allOf:
+          - $ref: '#/components/schemas/CloudWatchLogDeliveryOptions'
+          - description: Returns information about log delivery to Amazon CloudWatch Logs.
+    CloudWatchLogGroupName:
+      type: string
+      pattern: '[\.\-_\/#A-Za-z0-9]+'
+      minLength: 1
+      maxLength: 512
+    CloudWatchLogDeliveryOptions:
+      type: object
+      required:
+      - logType
+      properties:
+        logType:
+          allOf:
+          - $ref: '#/components/schemas/LogType'
+          - description: The type of log to send data to Amazon CloudWatch Logs.
+        logGroupName:
+          allOf:
+          - $ref: '#/components/schemas/CloudWatchLogGroupName'
+          - description: The Amazon CloudWatch Logs group the operation sends data to.
+      description: The log delivery option to send data to Amazon CloudWatch Logs.
   securitySchemes:
     hmac:
       type: apiKey

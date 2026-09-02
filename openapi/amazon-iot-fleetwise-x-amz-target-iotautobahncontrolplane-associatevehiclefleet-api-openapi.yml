@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet API'
+  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet API'
   description: <p>Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale. With Amazon Web Services IoT FleetWise, you can standardize all of your vehicle data models, independent of the in-vehicle communication architecture, and define data collection rules to transfer only high-value data to the cloud. </p> <p>For more information, see <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/">What is Amazon Web Services IoT FleetWise?</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -184,15 +184,43 @@ paths:
       tags:
       - '#X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet'
 components:
+  schemas:
+    ValidationException: {}
+    vehicleName:
+      type: string
+      pattern: '[a-zA-Z\d\-_:]+'
+      minLength: 1
+      maxLength: 100
+    ResourceNotFoundException: {}
+    InternalServerException: {}
+    ThrottlingException: {}
+    AssociateVehicleFleetResponse:
+      type: object
+      properties: {}
+    AccessDeniedException: {}
+    fleetId:
+      type: string
+      pattern: '[a-zA-Z0-9:_-]+'
+      minLength: 1
+      maxLength: 100
+    AssociateVehicleFleetRequest:
+      type: object
+      required:
+      - vehicleName
+      - fleetId
+      title: AssociateVehicleFleetRequest
+      properties:
+        vehicleName:
+          allOf:
+          - $ref: '#/components/schemas/vehicleName'
+          - description: ' The unique ID of the vehicle to associate with the fleet. '
+        fleetId:
+          allOf:
+          - $ref: '#/components/schemas/fleetId'
+          - description: ' The ID of a fleet. '
   parameters:
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
+    X-Amz-Date:
+      name: X-Amz-Date
       in: header
       schema:
         type: string
@@ -221,46 +249,18 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Date:
-      name: X-Amz-Date
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
       in: header
       schema:
         type: string
       required: false
-  schemas:
-    vehicleName:
-      type: string
-      pattern: '[a-zA-Z\d\-_:]+'
-      minLength: 1
-      maxLength: 100
-    AssociateVehicleFleetRequest:
-      type: object
-      required:
-      - vehicleName
-      - fleetId
-      title: AssociateVehicleFleetRequest
-      properties:
-        vehicleName:
-          allOf:
-          - $ref: '#/components/schemas/vehicleName'
-          - description: ' The unique ID of the vehicle to associate with the fleet. '
-        fleetId:
-          allOf:
-          - $ref: '#/components/schemas/fleetId'
-          - description: ' The ID of a fleet. '
-    ValidationException: {}
-    InternalServerException: {}
-    ThrottlingException: {}
-    fleetId:
-      type: string
-      pattern: '[a-zA-Z0-9:_-]+'
-      minLength: 1
-      maxLength: 100
-    ResourceNotFoundException: {}
-    AssociateVehicleFleetResponse:
-      type: object
-      properties: {}
-    AccessDeniedException: {}
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
   securitySchemes:
     hmac:
       type: apiKey

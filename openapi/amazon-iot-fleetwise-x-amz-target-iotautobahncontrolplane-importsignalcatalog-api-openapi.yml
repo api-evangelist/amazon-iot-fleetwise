@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.ImportSignalCatalog API'
+  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.ImportSignalCatalog #X Amz Target=IoTAutobahnControlPlane.ImportSignalCatalog #X Amz Target=IoTAutobahnControlPlane.ImportSignalCatalog API'
   description: <p>Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale. With Amazon Web Services IoT FleetWise, you can standardize all of your vehicle data models, independent of the in-vehicle communication architecture, and define data collection rules to transfer only high-value data to the cloud. </p> <p>For more information, see <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/">What is Amazon Web Services IoT FleetWise?</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -202,59 +202,28 @@ paths:
       tags:
       - '#X Amz Target=IoTAutobahnControlPlane.ImportSignalCatalog'
 components:
-  parameters:
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
   schemas:
-    InvalidSignalsException: {}
+    ConflictException: {}
+    arn:
+      type: string
     String:
       type: string
-    InternalServerException: {}
-    ThrottlingException: {}
-    TagValue:
+    resourceName:
       type: string
-      minLength: 0
-      maxLength: 256
+      pattern: '[a-zA-Z\d\-_:]+'
+      minLength: 1
+      maxLength: 100
+    TagList:
+      type: array
+      items:
+        $ref: '#/components/schemas/Tag'
+      minItems: 0
+      maxItems: 50
+    description:
+      type: string
+      pattern: '[^\u0000-\u001F\u007F]+'
+      minLength: 1
+      maxLength: 2048
     Tag:
       type: object
       required:
@@ -270,10 +239,16 @@ components:
           - $ref: '#/components/schemas/TagValue'
           - description: The tag's value.
       description: A set of key/value pairs that are used to manage the resource.
-    LimitExceededException: {}
-    ConflictException: {}
-    arn:
+    ResourceNotFoundException: {}
+    ThrottlingException: {}
+    TagKey:
       type: string
+      minLength: 1
+      maxLength: 128
+    TagValue:
+      type: string
+      minLength: 0
+      maxLength: 256
     FormattedVss:
       type: object
       properties:
@@ -282,13 +257,25 @@ components:
           - $ref: '#/components/schemas/String'
           - description: Provides the VSS in JSON format.
       description: ' <a href="https://www.w3.org/auto/wg/wiki/Vehicle_Signal_Specification_(VSS)/Vehicle_Data_Spec">Vehicle Signal Specification (VSS)</a> is a precise language used to describe and model signals in vehicle networks. The JSON file collects signal specificiations in a VSS format.'
-    description:
-      type: string
-      pattern: '[^\u0000-\u001F\u007F]+'
-      minLength: 1
-      maxLength: 2048
-    ResourceNotFoundException: {}
+    ImportSignalCatalogResponse:
+      type: object
+      required:
+      - name
+      - arn
+      properties:
+        name:
+          allOf:
+          - $ref: '#/components/schemas/resourceName'
+          - description: ' The name of the imported signal catalog. '
+        arn:
+          allOf:
+          - $ref: '#/components/schemas/arn'
+          - description: ' The Amazon Resource Name (ARN) of the imported signal catalog.'
+    ValidationException: {}
+    InternalServerException: {}
+    LimitExceededException: {}
     AccessDeniedException: {}
+    InvalidSignalsException: {}
     ImportSignalCatalogRequest:
       type: object
       required:
@@ -311,36 +298,49 @@ components:
           allOf:
           - $ref: '#/components/schemas/TagList'
           - description: Metadata that can be used to manage the signal catalog.
-    resourceName:
-      type: string
-      pattern: '[a-zA-Z\d\-_:]+'
-      minLength: 1
-      maxLength: 100
-    ImportSignalCatalogResponse:
-      type: object
-      required:
-      - name
-      - arn
-      properties:
-        name:
-          allOf:
-          - $ref: '#/components/schemas/resourceName'
-          - description: ' The name of the imported signal catalog. '
-        arn:
-          allOf:
-          - $ref: '#/components/schemas/arn'
-          - description: ' The Amazon Resource Name (ARN) of the imported signal catalog.'
-    ValidationException: {}
-    TagKey:
-      type: string
-      minLength: 1
-      maxLength: 128
-    TagList:
-      type: array
-      items:
-        $ref: '#/components/schemas/Tag'
-      minItems: 0
-      maxItems: 50
+  parameters:
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
   securitySchemes:
     hmac:
       type: apiKey

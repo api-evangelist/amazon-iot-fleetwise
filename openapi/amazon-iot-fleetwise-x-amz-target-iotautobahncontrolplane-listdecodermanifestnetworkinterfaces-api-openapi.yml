@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.ListDecoderManifestNetworkInterfaces API'
+  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.ListDecoderManifestNetworkInterfaces #X Amz Target=IoTAutobahnControlPlane.ListDecoderManifestNetworkInterfaces #X Amz Target=IoTAutobahnControlPlane.ListDecoderManifestNetworkInterfaces API'
   description: <p>Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale. With Amazon Web Services IoT FleetWise, you can standardize all of your vehicle data models, independent of the in-vehicle communication architecture, and define data collection rules to transfer only high-value data to the cloud. </p> <p>For more information, see <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/">What is Amazon Web Services IoT FleetWise?</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -196,86 +196,53 @@ paths:
       tags:
       - '#X Amz Target=IoTAutobahnControlPlane.ListDecoderManifestNetworkInterfaces'
 components:
-  parameters:
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
   schemas:
-    CanInterface:
-      type: object
-      required:
-      - name
-      properties:
-        name:
-          allOf:
-          - $ref: '#/components/schemas/CanInterfaceName'
-          - description: The unique name of the interface.
-        protocolName:
-          allOf:
-          - $ref: '#/components/schemas/ProtocolName'
-          - description: The name of the communication protocol for the interface.
-        protocolVersion:
-          allOf:
-          - $ref: '#/components/schemas/ProtocolVersion'
-          - description: The version of the communication protocol for the interface.
-      description: A single controller area network (CAN) device interface.
-    InterfaceId:
+    NetworkInterfaceType:
       type: string
-      minLength: 1
-      maxLength: 50
-    InternalServerException: {}
-    ThrottlingException: {}
+      enum:
+      - CAN_INTERFACE
+      - OBD_INTERFACE
     ObdInterfaceName:
       type: string
       minLength: 1
       maxLength: 100
-    maxResults:
-      type: integer
-      minimum: 1
-      maximum: 100
+    ProtocolName:
+      type: string
+      minLength: 1
+      maxLength: 50
+    resourceName:
+      type: string
+      pattern: '[a-zA-Z\d\-_:]+'
+      minLength: 1
+      maxLength: 100
     ObdStandard:
       type: string
       minLength: 1
       maxLength: 50
+    ListDecoderManifestNetworkInterfacesRequest:
+      type: object
+      required:
+      - name
+      title: ListDecoderManifestNetworkInterfacesRequest
+      properties:
+        name:
+          allOf:
+          - $ref: '#/components/schemas/resourceName'
+          - description: ' The name of the decoder manifest to list information about. '
+        nextToken:
+          allOf:
+          - $ref: '#/components/schemas/nextToken'
+          - description: <p>A pagination token for the next set of results.</p> <p>If the results of a search are large, only a portion of the results are returned, and a <code>nextToken</code> pagination token is returned in the response. To retrieve the next set of results, reissue the search request and include the returned token. When all results have been returned, the response does not contain a pagination token value. </p>
+        maxResults:
+          allOf:
+          - $ref: '#/components/schemas/maxResults'
+          - description: ' The maximum number of items to return, between 1 and 100, inclusive. '
+    ResourceNotFoundException: {}
+    nextToken:
+      type: string
+      minLength: 1
+      maxLength: 4096
+    ThrottlingException: {}
     ObdInterface:
       type: object
       required:
@@ -311,18 +278,41 @@ components:
           - $ref: '#/components/schemas/boolean'
           - description: Whether the vehicle has a transmission control module (TCM).
       description: A network interface that specifies the On-board diagnostic (OBD) II network protocol.
+    NetworkInterfaces:
+      type: array
+      items:
+        $ref: '#/components/schemas/NetworkInterface'
+      minItems: 1
+      maxItems: 500
+    ValidationException: {}
     nonNegativeInteger:
       type: integer
       minimum: 0
-    nextToken:
+    InternalServerException: {}
+    boolean:
+      type: boolean
+    CanInterface:
+      type: object
+      required:
+      - name
+      properties:
+        name:
+          allOf:
+          - $ref: '#/components/schemas/CanInterfaceName'
+          - description: The unique name of the interface.
+        protocolName:
+          allOf:
+          - $ref: '#/components/schemas/ProtocolName'
+          - description: The name of the communication protocol for the interface.
+        protocolVersion:
+          allOf:
+          - $ref: '#/components/schemas/ProtocolVersion'
+          - description: The version of the communication protocol for the interface.
+      description: A single controller area network (CAN) device interface.
+    InterfaceId:
       type: string
       minLength: 1
-      maxLength: 4096
-    NetworkInterfaceType:
-      type: string
-      enum:
-      - CAN_INTERFACE
-      - OBD_INTERFACE
+      maxLength: 50
     NetworkInterface:
       type: object
       required:
@@ -346,6 +336,10 @@ components:
           - $ref: '#/components/schemas/ObdInterface'
           - description: Information about a network interface specified by the On-board diagnostic (OBD) II protocol.
       description: <p>Represents a node and its specifications in an in-vehicle communication network. All signal decoders must be associated with a network node. </p> <p> To return this information about all the network interfaces specified in a decoder manifest, use the API operation.</p>
+    maxResults:
+      type: integer
+      minimum: 1
+      maximum: 100
     ListDecoderManifestNetworkInterfacesResponse:
       type: object
       properties:
@@ -357,52 +351,58 @@ components:
           allOf:
           - $ref: '#/components/schemas/nextToken'
           - description: ' The token to retrieve the next set of results, or <code>null</code> if there are no more results. '
-    ListDecoderManifestNetworkInterfacesRequest:
-      type: object
-      required:
-      - name
-      title: ListDecoderManifestNetworkInterfacesRequest
-      properties:
-        name:
-          allOf:
-          - $ref: '#/components/schemas/resourceName'
-          - description: ' The name of the decoder manifest to list information about. '
-        nextToken:
-          allOf:
-          - $ref: '#/components/schemas/nextToken'
-          - description: <p>A pagination token for the next set of results.</p> <p>If the results of a search are large, only a portion of the results are returned, and a <code>nextToken</code> pagination token is returned in the response. To retrieve the next set of results, reissue the search request and include the returned token. When all results have been returned, the response does not contain a pagination token value. </p>
-        maxResults:
-          allOf:
-          - $ref: '#/components/schemas/maxResults'
-          - description: ' The maximum number of items to return, between 1 and 100, inclusive. '
-    NetworkInterfaces:
-      type: array
-      items:
-        $ref: '#/components/schemas/NetworkInterface'
-      minItems: 1
-      maxItems: 500
-    ResourceNotFoundException: {}
     AccessDeniedException: {}
-    resourceName:
+    CanInterfaceName:
       type: string
-      pattern: '[a-zA-Z\d\-_:]+'
       minLength: 1
       maxLength: 100
     ProtocolVersion:
       type: string
       minLength: 1
       maxLength: 50
-    CanInterfaceName:
-      type: string
-      minLength: 1
-      maxLength: 100
-    boolean:
-      type: boolean
-    ValidationException: {}
-    ProtocolName:
-      type: string
-      minLength: 1
-      maxLength: 50
+  parameters:
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
   securitySchemes:
     hmac:
       type: apiKey

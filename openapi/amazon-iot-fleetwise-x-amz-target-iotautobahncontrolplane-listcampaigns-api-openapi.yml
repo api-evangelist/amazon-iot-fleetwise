@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.ListCampaigns API'
+  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.ListCampaigns #X Amz Target=IoTAutobahnControlPlane.ListCampaigns #X Amz Target=IoTAutobahnControlPlane.ListCampaigns API'
   description: <p>Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale. With Amazon Web Services IoT FleetWise, you can standardize all of your vehicle data models, independent of the in-vehicle communication architecture, and define data collection rules to transfer only high-value data to the cloud. </p> <p>For more information, see <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/">What is Amazon Web Services IoT FleetWise?</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -190,52 +190,68 @@ paths:
       tags:
       - '#X Amz Target=IoTAutobahnControlPlane.ListCampaigns'
 components:
-  parameters:
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
   schemas:
-    InternalServerException: {}
+    status:
+      type: string
+    ListCampaignsResponse:
+      type: object
+      properties:
+        campaignSummaries:
+          allOf:
+          - $ref: '#/components/schemas/campaignSummaries'
+          - description: ' A summary of information about each campaign. '
+        nextToken:
+          allOf:
+          - $ref: '#/components/schemas/nextToken'
+          - description: ' The token to retrieve the next set of results, or <code>null</code> if there are no more results. '
+    arn:
+      type: string
+    description:
+      type: string
+      pattern: '[^\u0000-\u001F\u007F]+'
+      minLength: 1
+      maxLength: 2048
+    CampaignStatus:
+      type: string
+      enum:
+      - CREATING
+      - WAITING_FOR_APPROVAL
+      - RUNNING
+      - SUSPENDED
+    campaignName:
+      type: string
+      pattern: '[a-zA-Z\d\-_:]+'
+      minLength: 1
+      maxLength: 100
+    nextToken:
+      type: string
+      minLength: 1
+      maxLength: 4096
     ThrottlingException: {}
+    timestamp:
+      type: string
+      format: date-time
+    campaignSummaries:
+      type: array
+      items:
+        $ref: '#/components/schemas/CampaignSummary'
+    ValidationException: {}
+    ListCampaignsRequest:
+      type: object
+      title: ListCampaignsRequest
+      properties:
+        nextToken:
+          allOf:
+          - $ref: '#/components/schemas/nextToken'
+          - description: <p>A pagination token for the next set of results.</p> <p>If the results of a search are large, only a portion of the results are returned, and a <code>nextToken</code> pagination token is returned in the response. To retrieve the next set of results, reissue the search request and include the returned token. When all results have been returned, the response does not contain a pagination token value. </p>
+        maxResults:
+          allOf:
+          - $ref: '#/components/schemas/maxResults'
+          - description: ' The maximum number of items to return, between 1 and 100, inclusive. '
+        status:
+          allOf:
+          - $ref: '#/components/schemas/status'
+          - description: 'Optional parameter to filter the results by the status of each created campaign in your account. The status can be one of: <code>CREATING</code>, <code>WAITING_FOR_APPROVAL</code>, <code>RUNNING</code>, or <code>SUSPENDED</code>.'
     CampaignSummary:
       type: object
       required:
@@ -275,71 +291,55 @@ components:
           - $ref: '#/components/schemas/timestamp'
           - description: The last time the campaign was modified.
       description: <p>Information about a campaign. </p> <p>You can use the API operation to return this information about multiple created campaigns.</p>
+    InternalServerException: {}
     maxResults:
       type: integer
       minimum: 1
       maximum: 100
-    timestamp:
-      type: string
-      format: date-time
-    arn:
-      type: string
-    nextToken:
-      type: string
-      minLength: 1
-      maxLength: 4096
-    campaignName:
-      type: string
-      pattern: '[a-zA-Z\d\-_:]+'
-      minLength: 1
-      maxLength: 100
-    description:
-      type: string
-      pattern: '[^\u0000-\u001F\u007F]+'
-      minLength: 1
-      maxLength: 2048
-    ListCampaignsRequest:
-      type: object
-      title: ListCampaignsRequest
-      properties:
-        nextToken:
-          allOf:
-          - $ref: '#/components/schemas/nextToken'
-          - description: <p>A pagination token for the next set of results.</p> <p>If the results of a search are large, only a portion of the results are returned, and a <code>nextToken</code> pagination token is returned in the response. To retrieve the next set of results, reissue the search request and include the returned token. When all results have been returned, the response does not contain a pagination token value. </p>
-        maxResults:
-          allOf:
-          - $ref: '#/components/schemas/maxResults'
-          - description: ' The maximum number of items to return, between 1 and 100, inclusive. '
-        status:
-          allOf:
-          - $ref: '#/components/schemas/status'
-          - description: 'Optional parameter to filter the results by the status of each created campaign in your account. The status can be one of: <code>CREATING</code>, <code>WAITING_FOR_APPROVAL</code>, <code>RUNNING</code>, or <code>SUSPENDED</code>.'
     AccessDeniedException: {}
-    campaignSummaries:
-      type: array
-      items:
-        $ref: '#/components/schemas/CampaignSummary'
-    ListCampaignsResponse:
-      type: object
-      properties:
-        campaignSummaries:
-          allOf:
-          - $ref: '#/components/schemas/campaignSummaries'
-          - description: ' A summary of information about each campaign. '
-        nextToken:
-          allOf:
-          - $ref: '#/components/schemas/nextToken'
-          - description: ' The token to retrieve the next set of results, or <code>null</code> if there are no more results. '
-    CampaignStatus:
-      type: string
-      enum:
-      - CREATING
-      - WAITING_FOR_APPROVAL
-      - RUNNING
-      - SUSPENDED
-    ValidationException: {}
-    status:
-      type: string
+  parameters:
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
   securitySchemes:
     hmac:
       type: apiKey

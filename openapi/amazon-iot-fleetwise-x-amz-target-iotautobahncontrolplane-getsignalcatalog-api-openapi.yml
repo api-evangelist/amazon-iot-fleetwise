@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.GetSignalCatalog API'
+  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.GetSignalCatalog #X Amz Target=IoTAutobahnControlPlane.GetSignalCatalog #X Amz Target=IoTAutobahnControlPlane.GetSignalCatalog API'
   description: <p>Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale. With Amazon Web Services IoT FleetWise, you can standardize all of your vehicle data models, independent of the in-vehicle communication architecture, and define data collection rules to transfer only high-value data to the cloud. </p> <p>For more information, see <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/">What is Amazon Web Services IoT FleetWise?</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -184,57 +184,50 @@ paths:
       tags:
       - '#X Amz Target=IoTAutobahnControlPlane.GetSignalCatalog'
 components:
-  parameters:
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
   schemas:
-    InternalServerException: {}
-    ThrottlingException: {}
-    timestamp:
-      type: string
-      format: date-time
+    NodeCounts:
+      type: object
+      properties:
+        totalNodes:
+          allOf:
+          - $ref: '#/components/schemas/number'
+          - description: The total number of nodes in a vehicle network.
+        totalBranches:
+          allOf:
+          - $ref: '#/components/schemas/number'
+          - description: The total number of nodes in a vehicle network that represent branches.
+        totalSensors:
+          allOf:
+          - $ref: '#/components/schemas/number'
+          - description: The total number of nodes in a vehicle network that represent sensors.
+        totalAttributes:
+          allOf:
+          - $ref: '#/components/schemas/number'
+          - description: The total number of nodes in a vehicle network that represent attributes.
+        totalActuators:
+          allOf:
+          - $ref: '#/components/schemas/number'
+          - description: The total number of nodes in a vehicle network that represent actuators.
+      description: Information about the number of nodes and node types in a vehicle network.
     arn:
       type: string
+    resourceName:
+      type: string
+      pattern: '[a-zA-Z\d\-_:]+'
+      minLength: 1
+      maxLength: 100
+    GetSignalCatalogRequest:
+      type: object
+      required:
+      - name
+      title: GetSignalCatalogRequest
+      properties:
+        name:
+          allOf:
+          - $ref: '#/components/schemas/resourceName'
+          - description: ' The name of the signal catalog to retrieve information about. '
+    number:
+      type: integer
     GetSignalCatalogResponse:
       type: object
       required:
@@ -273,49 +266,56 @@ components:
       minLength: 1
       maxLength: 2048
     ResourceNotFoundException: {}
-    number:
-      type: integer
-    AccessDeniedException: {}
-    resourceName:
+    ThrottlingException: {}
+    timestamp:
       type: string
-      pattern: '[a-zA-Z\d\-_:]+'
-      minLength: 1
-      maxLength: 100
-    GetSignalCatalogRequest:
-      type: object
-      required:
-      - name
-      title: GetSignalCatalogRequest
-      properties:
-        name:
-          allOf:
-          - $ref: '#/components/schemas/resourceName'
-          - description: ' The name of the signal catalog to retrieve information about. '
+      format: date-time
     ValidationException: {}
-    NodeCounts:
-      type: object
-      properties:
-        totalNodes:
-          allOf:
-          - $ref: '#/components/schemas/number'
-          - description: The total number of nodes in a vehicle network.
-        totalBranches:
-          allOf:
-          - $ref: '#/components/schemas/number'
-          - description: The total number of nodes in a vehicle network that represent branches.
-        totalSensors:
-          allOf:
-          - $ref: '#/components/schemas/number'
-          - description: The total number of nodes in a vehicle network that represent sensors.
-        totalAttributes:
-          allOf:
-          - $ref: '#/components/schemas/number'
-          - description: The total number of nodes in a vehicle network that represent attributes.
-        totalActuators:
-          allOf:
-          - $ref: '#/components/schemas/number'
-          - description: The total number of nodes in a vehicle network that represent actuators.
-      description: Information about the number of nodes and node types in a vehicle network.
+    InternalServerException: {}
+    AccessDeniedException: {}
+  parameters:
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
   securitySchemes:
     hmac:
       type: apiKey
