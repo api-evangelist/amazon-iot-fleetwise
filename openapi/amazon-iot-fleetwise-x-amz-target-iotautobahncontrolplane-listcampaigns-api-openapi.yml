@@ -1,9 +1,9 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: '2021-06-17'
   x-release: v4
-  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.ListCampaigns #X Amz Target=IoTAutobahnControlPlane.ListCampaigns #X Amz Target=IoTAutobahnControlPlane.ListCampaigns API'
-  description: <p>Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale. With Amazon Web Services IoT FleetWise, you can standardize all of your vehicle data models, independent of the in-vehicle communication architecture, and define data collection rules to transfer only high-value data to the cloud. </p> <p>For more information, see <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/">What is Amazon Web Services IoT FleetWise?</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>
+  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.List…'
+  description: Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale.
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
     backgroundColor: '#FFFFFF'
@@ -24,6 +24,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/iotfleetwise-2021-06-17.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -125,7 +126,10 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: ListCampaigns
-      description: <p> Lists information about created campaigns. </p> <note> <p>This API operation uses pagination. Specify the <code>nextToken</code> parameter in the request to return more results.</p> </note>
+      description: 'Lists information about created campaigns.
+
+
+        This API operation uses pagination. Specify the nextToken parameter in the request to return more results.'
       responses:
         '200':
           description: Success
@@ -191,51 +195,6 @@ paths:
       - '#X Amz Target=IoTAutobahnControlPlane.ListCampaigns'
 components:
   schemas:
-    status:
-      type: string
-    ListCampaignsResponse:
-      type: object
-      properties:
-        campaignSummaries:
-          allOf:
-          - $ref: '#/components/schemas/campaignSummaries'
-          - description: ' A summary of information about each campaign. '
-        nextToken:
-          allOf:
-          - $ref: '#/components/schemas/nextToken'
-          - description: ' The token to retrieve the next set of results, or <code>null</code> if there are no more results. '
-    arn:
-      type: string
-    description:
-      type: string
-      pattern: '[^\u0000-\u001F\u007F]+'
-      minLength: 1
-      maxLength: 2048
-    CampaignStatus:
-      type: string
-      enum:
-      - CREATING
-      - WAITING_FOR_APPROVAL
-      - RUNNING
-      - SUSPENDED
-    campaignName:
-      type: string
-      pattern: '[a-zA-Z\d\-_:]+'
-      minLength: 1
-      maxLength: 100
-    nextToken:
-      type: string
-      minLength: 1
-      maxLength: 4096
-    ThrottlingException: {}
-    timestamp:
-      type: string
-      format: date-time
-    campaignSummaries:
-      type: array
-      items:
-        $ref: '#/components/schemas/CampaignSummary'
-    ValidationException: {}
     ListCampaignsRequest:
       type: object
       title: ListCampaignsRequest
@@ -252,6 +211,43 @@ components:
           allOf:
           - $ref: '#/components/schemas/status'
           - description: 'Optional parameter to filter the results by the status of each created campaign in your account. The status can be one of: <code>CREATING</code>, <code>WAITING_FOR_APPROVAL</code>, <code>RUNNING</code>, or <code>SUSPENDED</code>.'
+    nextToken:
+      type: string
+      minLength: 1
+      maxLength: 4096
+    InternalServerException: {}
+    ListCampaignsResponse:
+      type: object
+      properties:
+        campaignSummaries:
+          allOf:
+          - $ref: '#/components/schemas/campaignSummaries'
+          - description: ' A summary of information about each campaign. '
+        nextToken:
+          allOf:
+          - $ref: '#/components/schemas/nextToken'
+          - description: ' The token to retrieve the next set of results, or <code>null</code> if there are no more results. '
+    ValidationException: {}
+    campaignName:
+      type: string
+      pattern: '[a-zA-Z\d\-_:]+'
+      minLength: 1
+      maxLength: 100
+    CampaignStatus:
+      type: string
+      enum:
+      - CREATING
+      - WAITING_FOR_APPROVAL
+      - RUNNING
+      - SUSPENDED
+    status:
+      type: string
+    maxResults:
+      type: integer
+      minimum: 1
+      maximum: 100
+    arn:
+      type: string
     CampaignSummary:
       type: object
       required:
@@ -291,21 +287,29 @@ components:
           - $ref: '#/components/schemas/timestamp'
           - description: The last time the campaign was modified.
       description: <p>Information about a campaign. </p> <p>You can use the API operation to return this information about multiple created campaigns.</p>
-    InternalServerException: {}
-    maxResults:
-      type: integer
-      minimum: 1
-      maximum: 100
+    ThrottlingException: {}
+    description:
+      type: string
+      pattern: '[^\u0000-\u001F\u007F]+'
+      minLength: 1
+      maxLength: 2048
+    campaignSummaries:
+      type: array
+      items:
+        $ref: '#/components/schemas/CampaignSummary'
     AccessDeniedException: {}
+    timestamp:
+      type: string
+      format: date-time
   parameters:
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
+    X-Amz-Signature:
+      name: X-Amz-Signature
       in: header
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
       in: header
       schema:
         type: string
@@ -316,8 +320,14 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
@@ -328,14 +338,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
+    X-Amz-Credential:
+      name: X-Amz-Credential
       in: header
       schema:
         type: string

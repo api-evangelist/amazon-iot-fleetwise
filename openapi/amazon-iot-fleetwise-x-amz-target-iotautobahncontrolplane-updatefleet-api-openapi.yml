@@ -1,9 +1,9 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: '2021-06-17'
   x-release: v4
-  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.UpdateFleet #X Amz Target=IoTAutobahnControlPlane.UpdateFleet #X Amz Target=IoTAutobahnControlPlane.UpdateFleet API'
-  description: <p>Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale. With Amazon Web Services IoT FleetWise, you can standardize all of your vehicle data models, independent of the in-vehicle communication architecture, and define data collection rules to transfer only high-value data to the cloud. </p> <p>For more information, see <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/">What is Amazon Web Services IoT FleetWise?</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>
+  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.Upda…'
+  description: Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale.
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
     backgroundColor: '#FFFFFF'
@@ -24,6 +24,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/iotfleetwise-2021-06-17.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -125,7 +126,10 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: UpdateFleet
-      description: <p> Updates the description of an existing fleet. </p> <note> <p>If the fleet is successfully updated, Amazon Web Services IoT FleetWise sends back an HTTP 200 response with an empty HTTP body.</p> </note>
+      description: 'Updates the description of an existing fleet.
+
+
+        If the fleet is successfully updated, Amazon Web Services IoT FleetWise sends back an HTTP 200 response with an empty HTTP body.'
       responses:
         '200':
           description: Success
@@ -191,8 +195,19 @@ paths:
       - '#X Amz Target=IoTAutobahnControlPlane.UpdateFleet'
 components:
   schemas:
-    ValidationException: {}
+    AccessDeniedException: {}
     ConflictException: {}
+    UpdateFleetResponse:
+      type: object
+      properties:
+        id:
+          allOf:
+          - $ref: '#/components/schemas/fleetId'
+          - description: The ID of the updated fleet.
+        arn:
+          allOf:
+          - $ref: '#/components/schemas/arn'
+          - description: The Amazon Resource Name (ARN) of the updated fleet.
     UpdateFleetRequest:
       type: object
       required:
@@ -207,48 +222,25 @@ components:
           allOf:
           - $ref: '#/components/schemas/description'
           - description: ' An updated description of the fleet. '
-    ResourceNotFoundException: {}
-    InternalServerException: {}
-    UpdateFleetResponse:
-      type: object
-      properties:
-        id:
-          allOf:
-          - $ref: '#/components/schemas/fleetId'
-          - description: The ID of the updated fleet.
-        arn:
-          allOf:
-          - $ref: '#/components/schemas/arn'
-          - description: The Amazon Resource Name (ARN) of the updated fleet.
-    description:
-      type: string
-      pattern: '[^\u0000-\u001F\u007F]+'
-      minLength: 1
-      maxLength: 2048
     ThrottlingException: {}
-    arn:
-      type: string
-    AccessDeniedException: {}
     fleetId:
       type: string
       pattern: '[a-zA-Z0-9:_-]+'
       minLength: 1
       maxLength: 100
+    InternalServerException: {}
+    ResourceNotFoundException: {}
+    description:
+      type: string
+      pattern: '[^\u0000-\u001F\u007F]+'
+      minLength: 1
+      maxLength: 2048
+    ValidationException: {}
+    arn:
+      type: string
   parameters:
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Signature:
       name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
@@ -259,8 +251,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
+    X-Amz-Credential:
+      name: X-Amz-Credential
       in: header
       schema:
         type: string
@@ -271,8 +263,20 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string

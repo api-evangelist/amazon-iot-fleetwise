@@ -1,9 +1,9 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: '2021-06-17'
   x-release: v4
-  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.RegisterAccount #X Amz Target=IoTAutobahnControlPlane.RegisterAccount #X Amz Target=IoTAutobahnControlPlane.RegisterAccount API'
-  description: <p>Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale. With Amazon Web Services IoT FleetWise, you can standardize all of your vehicle data models, independent of the in-vehicle communication architecture, and define data collection rules to transfer only high-value data to the cloud. </p> <p>For more information, see <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/">What is Amazon Web Services IoT FleetWise?</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>
+  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.Regi…'
+  description: Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale.
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
     backgroundColor: '#FFFFFF'
@@ -24,6 +24,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/iotfleetwise-2021-06-17.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -125,7 +126,16 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: RegisterAccount
-      description: <important> <p>This API operation contains deprecated parameters. Register your account again without the Timestream resources parameter so that Amazon Web Services IoT FleetWise can remove the Timestream metadata stored. You should then pass the data destination into the <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_CreateCampaign.html">CreateCampaign</a> API operation.</p> <p>You must delete any existing campaigns that include an empty data destination before you register your account again. For more information, see the <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_DeleteCampaign.html">DeleteCampaign</a> API operation.</p> <p>If you want to delete the Timestream inline policy from the service-linked role, such as to mitigate an overly permissive policy, you must first delete any existing campaigns. Then delete the service-linked role and register your account again to enable CloudWatch metrics. For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteServiceLinkedRole.html">DeleteServiceLinkedRole</a> in the <i>Identity and Access Management API Reference</i>.</p> </important> <pre><code> &lt;p&gt;Registers your Amazon Web Services account, IAM, and Amazon Timestream resources so Amazon Web Services IoT FleetWise can transfer your vehicle data to the Amazon Web Services Cloud. For more information, including step-by-step procedures, see &lt;a href=&quot;https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/setting-up.html&quot;&gt;Setting up Amazon Web Services IoT FleetWise&lt;/a&gt;. &lt;/p&gt; &lt;note&gt; &lt;p&gt;An Amazon Web Services account is &lt;b&gt;not&lt;/b&gt; the same thing as a &quot;user.&quot; An &lt;a href=&quot;https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_identity-management.html#intro-identity-users&quot;&gt;Amazon Web Services user&lt;/a&gt; is an identity that you create using Identity and Access Management (IAM) and takes the form of either an &lt;a href=&quot;https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html&quot;&gt;IAM user&lt;/a&gt; or an &lt;a href=&quot;https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html&quot;&gt;IAM role, both with credentials&lt;/a&gt;. A single Amazon Web Services account can, and typically does, contain many users and roles.&lt;/p&gt; &lt;/note&gt; </code></pre>
+      description: 'This API operation contains deprecated parameters. Register your account again without the Timestream resources parameter so that Amazon Web Services IoT FleetWise can remove the Timestream metadata stored. You should then pass the data destination into the CreateCampaign API operation.
+
+
+        You must delete any existing campaigns that include an empty data destination before you register your account again. For more information, see the DeleteCampaign API operation.
+
+
+        If you want to delete the Timestream inline policy from the service-linked role, such as to mitigate an overly permissive policy, you must first delete any existing campaigns. Then delete the service-linked role and register your account again to enable CloudWatch metrics. For more information, see DeleteServiceLinkedRole in the Identity and Access Management API Reference.
+
+
+        <p>Registers your Amazon Web Services account, IAM, and Amazon Timestream resources so Amazon Web Services IoT FleetWise can transfer your vehicle data to the Amazon Web Services Cloud. For more information, including step-by-step procedures, see <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/setting-up.html">Setting up Amazon Web Services IoT FleetWise</a>. </p> <note> <p>An Amazon Web Services account is <b>not</b> the same thing as a "user." An <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_identity-management.html#intro-identity-users">Amazon Web Services user</a> is an identity that you create using Identity and Access Management (IAM) and takes the form of either an <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html">IAM user</a> or an <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html">IAM role, both with credentials</a>. A single Amazon Web Services account can, and typically does, contain many users and roles.</p> </note>'
       responses:
         '200':
           description: Success
@@ -190,8 +200,79 @@ paths:
       tags:
       - '#X Amz Target=IoTAutobahnControlPlane.RegisterAccount'
 components:
+  parameters:
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
   schemas:
     ConflictException: {}
+    IamResources:
+      type: object
+      required:
+      - roleArn
+      properties:
+        roleArn:
+          allOf:
+          - $ref: '#/components/schemas/IAMRoleArn'
+          - description: 'The Amazon Resource Name (ARN) of the IAM resource that allows Amazon Web Services IoT FleetWise to send data to Amazon Timestream. For example, <code>arn:aws:iam::123456789012:role/SERVICE-ROLE-ARN</code>. '
+      description: <p>The IAM resource that enables Amazon Web Services IoT FleetWise edge agent software to send data to Amazon Timestream. </p> <p>For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html">IAM roles</a> in the <i>Identity and Access Management User Guide</i>.</p>
+    InternalServerException: {}
+    TimestreamDatabaseName:
+      type: string
+      pattern: '[a-zA-Z0-9_.-]+'
+      minLength: 3
+      maxLength: 255
+    RegistrationStatus:
+      type: string
+      enum:
+      - REGISTRATION_PENDING
+      - REGISTRATION_SUCCESS
+      - REGISTRATION_FAILURE
+    ValidationException: {}
+    IAMRoleArn:
+      type: string
+      pattern: arn:(aws[a-zA-Z0-9-]*):iam::(\d{12})?:(role((\u002F)|(\u002F[\u0021-\u007F]+\u002F))[\w+=,.@-]+)
+      minLength: 20
+      maxLength: 2048
     RegisterAccountResponse:
       type: object
       required:
@@ -218,53 +299,8 @@ components:
           allOf:
           - $ref: '#/components/schemas/timestamp'
           - description: ' The time this registration was last updated, in seconds since epoch (January 1, 1970 at midnight UTC time). '
-    TimestreamTableName:
-      type: string
-      pattern: '[a-zA-Z0-9_.-]+'
-      minLength: 3
-      maxLength: 255
-    IAMRoleArn:
-      type: string
-      pattern: arn:(aws[a-zA-Z0-9-]*):iam::(\d{12})?:(role((\u002F)|(\u002F[\u0021-\u007F]+\u002F))[\w+=,.@-]+)
-      minLength: 20
-      maxLength: 2048
-    ResourceNotFoundException: {}
     ThrottlingException: {}
-    RegistrationStatus:
-      type: string
-      enum:
-      - REGISTRATION_PENDING
-      - REGISTRATION_SUCCESS
-      - REGISTRATION_FAILURE
-    RegisterAccountRequest:
-      type: object
-      title: RegisterAccountRequest
-      properties:
-        timestreamResources:
-          allOf:
-          - $ref: '#/components/schemas/TimestreamResources'
-          - deprecated: true
-            description: Amazon Timestream metadata is now passed in the CreateCampaign API.
-        iamResources:
-          allOf:
-          - $ref: '#/components/schemas/IamResources'
-          - deprecated: true
-            description: The IAM resource that allows Amazon Web Services IoT FleetWise to send data to Amazon Timestream.iamResources is no longer used or needed as input
-    timestamp:
-      type: string
-      format: date-time
-    ValidationException: {}
-    InternalServerException: {}
-    IamResources:
-      type: object
-      required:
-      - roleArn
-      properties:
-        roleArn:
-          allOf:
-          - $ref: '#/components/schemas/IAMRoleArn'
-          - description: 'The Amazon Resource Name (ARN) of the IAM resource that allows Amazon Web Services IoT FleetWise to send data to Amazon Timestream. For example, <code>arn:aws:iam::123456789012:role/SERVICE-ROLE-ARN</code>. '
-      description: <p>The IAM resource that enables Amazon Web Services IoT FleetWise edge agent software to send data to Amazon Timestream. </p> <p>For more information, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html">IAM roles</a> in the <i>Identity and Access Management User Guide</i>.</p>
+    ResourceNotFoundException: {}
     TimestreamResources:
       type: object
       required:
@@ -280,55 +316,29 @@ components:
           - $ref: '#/components/schemas/TimestreamTableName'
           - description: The name of the registered Amazon Timestream database table.
       description: The registered Amazon Timestream resources that Amazon Web Services IoT FleetWise edge agent software can transfer your vehicle data to.
-    TimestreamDatabaseName:
+    TimestreamTableName:
       type: string
       pattern: '[a-zA-Z0-9_.-]+'
       minLength: 3
       maxLength: 255
+    RegisterAccountRequest:
+      type: object
+      title: RegisterAccountRequest
+      properties:
+        timestreamResources:
+          allOf:
+          - $ref: '#/components/schemas/TimestreamResources'
+          - deprecated: true
+            description: Amazon Timestream metadata is now passed in the CreateCampaign API.
+        iamResources:
+          allOf:
+          - $ref: '#/components/schemas/IamResources'
+          - deprecated: true
+            description: The IAM resource that allows Amazon Web Services IoT FleetWise to send data to Amazon Timestream.iamResources is no longer used or needed as input
     AccessDeniedException: {}
-  parameters:
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
+    timestamp:
+      type: string
+      format: date-time
   securitySchemes:
     hmac:
       type: apiKey

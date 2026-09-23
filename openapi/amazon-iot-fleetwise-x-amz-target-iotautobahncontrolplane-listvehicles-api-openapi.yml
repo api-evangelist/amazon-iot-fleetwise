@@ -1,9 +1,9 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: '2021-06-17'
   x-release: v4
-  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.ListVehicles #X Amz Target=IoTAutobahnControlPlane.ListVehicles #X Amz Target=IoTAutobahnControlPlane.ListVehicles API'
-  description: <p>Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale. With Amazon Web Services IoT FleetWise, you can standardize all of your vehicle data models, independent of the in-vehicle communication architecture, and define data collection rules to transfer only high-value data to the cloud. </p> <p>For more information, see <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/">What is Amazon Web Services IoT FleetWise?</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>
+  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.List…'
+  description: Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale.
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
     backgroundColor: '#FFFFFF'
@@ -24,6 +24,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/iotfleetwise-2021-06-17.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -125,7 +126,10 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: ListVehicles
-      description: <p> Retrieves a list of summaries of created vehicles. </p> <note> <p>This API operation uses pagination. Specify the <code>nextToken</code> parameter in the request to return more results.</p> </note>
+      description: 'Retrieves a list of summaries of created vehicles.
+
+
+        This API operation uses pagination. Specify the nextToken parameter in the request to return more results.'
       responses:
         '200':
           description: Success
@@ -191,13 +195,40 @@ paths:
       - '#X Amz Target=IoTAutobahnControlPlane.ListVehicles'
 components:
   schemas:
-    arn:
+    nextToken:
       type: string
+      minLength: 1
+      maxLength: 4096
     vehicleName:
       type: string
       pattern: '[a-zA-Z\d\-_:]+'
       minLength: 1
       maxLength: 100
+    InternalServerException: {}
+    ValidationException: {}
+    vehicleSummaries:
+      type: array
+      items:
+        $ref: '#/components/schemas/VehicleSummary'
+    listVehiclesMaxResults:
+      type: integer
+      minimum: 1
+      maximum: 100
+    arn:
+      type: string
+    ListVehiclesResponse:
+      type: object
+      properties:
+        vehicleSummaries:
+          allOf:
+          - $ref: '#/components/schemas/vehicleSummaries'
+          - description: ' A list of vehicles and information about them. '
+        nextToken:
+          allOf:
+          - $ref: '#/components/schemas/nextToken'
+          - description: ' The token to retrieve the next set of results, or <code>null</code> if there are no more results. '
+    ThrottlingException: {}
+    AccessDeniedException: {}
     ListVehiclesRequest:
       type: object
       title: ListVehiclesRequest
@@ -214,36 +245,9 @@ components:
           allOf:
           - $ref: '#/components/schemas/listVehiclesMaxResults'
           - description: ' The maximum number of items to return, between 1 and 100, inclusive. '
-    nextToken:
-      type: string
-      minLength: 1
-      maxLength: 4096
-    ThrottlingException: {}
-    listVehiclesMaxResults:
-      type: integer
-      minimum: 1
-      maximum: 100
     timestamp:
       type: string
       format: date-time
-    ValidationException: {}
-    vehicleSummaries:
-      type: array
-      items:
-        $ref: '#/components/schemas/VehicleSummary'
-    InternalServerException: {}
-    ListVehiclesResponse:
-      type: object
-      properties:
-        vehicleSummaries:
-          allOf:
-          - $ref: '#/components/schemas/vehicleSummaries'
-          - description: ' A list of vehicles and information about them. '
-        nextToken:
-          allOf:
-          - $ref: '#/components/schemas/nextToken'
-          - description: ' The token to retrieve the next set of results, or <code>null</code> if there are no more results. '
-    AccessDeniedException: {}
     VehicleSummary:
       type: object
       required:
@@ -280,14 +284,14 @@ components:
           - description: 'The time the vehicle was last updated in seconds since epoch (January 1, 1970 at midnight UTC time). '
       description: <p>Information about a vehicle.</p> <p>To return this information about vehicles in your account, you can use the API operation.</p>
   parameters:
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
+    X-Amz-Signature:
+      name: X-Amz-Signature
       in: header
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
       in: header
       schema:
         type: string
@@ -298,8 +302,14 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
@@ -310,14 +320,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
+    X-Amz-Credential:
+      name: X-Amz-Credential
       in: header
       schema:
         type: string

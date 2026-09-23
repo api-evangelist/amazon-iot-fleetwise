@@ -1,9 +1,9 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: '2021-06-17'
   x-release: v4
-  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.ListDecoderManifests #X Amz Target=IoTAutobahnControlPlane.ListDecoderManifests #X Amz Target=IoTAutobahnControlPlane.ListDecoderManifests API'
-  description: <p>Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale. With Amazon Web Services IoT FleetWise, you can standardize all of your vehicle data models, independent of the in-vehicle communication architecture, and define data collection rules to transfer only high-value data to the cloud. </p> <p>For more information, see <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/">What is Amazon Web Services IoT FleetWise?</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>
+  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.List…'
+  description: Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale.
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
     backgroundColor: '#FFFFFF'
@@ -24,6 +24,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/iotfleetwise-2021-06-17.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -125,7 +126,10 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: ListDecoderManifests
-      description: <p> Lists decoder manifests. </p> <note> <p>This API operation uses pagination. Specify the <code>nextToken</code> parameter in the request to return more results.</p> </note>
+      description: 'Lists decoder manifests.
+
+
+        This API operation uses pagination. Specify the nextToken parameter in the request to return more results.'
       responses:
         '200':
           description: Success
@@ -191,29 +195,22 @@ paths:
       - '#X Amz Target=IoTAutobahnControlPlane.ListDecoderManifests'
 components:
   schemas:
-    ManifestStatus:
+    nextToken:
       type: string
-      enum:
-      - ACTIVE
-      - DRAFT
-    string:
+      minLength: 1
+      maxLength: 4096
+    decoderManifestSummaries:
+      type: array
+      items:
+        $ref: '#/components/schemas/DecoderManifestSummary'
+    InternalServerException: {}
+    ValidationException: {}
+    maxResults:
+      type: integer
+      minimum: 1
+      maximum: 100
+    arn:
       type: string
-    ListDecoderManifestsRequest:
-      type: object
-      title: ListDecoderManifestsRequest
-      properties:
-        modelManifestArn:
-          allOf:
-          - $ref: '#/components/schemas/arn'
-          - description: ' The Amazon Resource Name (ARN) of a vehicle model (model manifest) associated with the decoder manifest. '
-        nextToken:
-          allOf:
-          - $ref: '#/components/schemas/nextToken'
-          - description: <p>A pagination token for the next set of results.</p> <p>If the results of a search are large, only a portion of the results are returned, and a <code>nextToken</code> pagination token is returned in the response. To retrieve the next set of results, reissue the search request and include the returned token. When all results have been returned, the response does not contain a pagination token value. </p>
-        maxResults:
-          allOf:
-          - $ref: '#/components/schemas/maxResults'
-          - description: ' The maximum number of items to return, between 1 and 100, inclusive. '
     ListDecoderManifestsResponse:
       type: object
       properties:
@@ -225,8 +222,23 @@ components:
           allOf:
           - $ref: '#/components/schemas/nextToken'
           - description: ' The token to retrieve the next set of results, or <code>null</code> if there are no more results. '
-    arn:
+    ThrottlingException: {}
+    description:
       type: string
+      pattern: '[^\u0000-\u001F\u007F]+'
+      minLength: 1
+      maxLength: 2048
+    AccessDeniedException: {}
+    string:
+      type: string
+    ManifestStatus:
+      type: string
+      enum:
+      - ACTIVE
+      - DRAFT
+    timestamp:
+      type: string
+      format: date-time
     DecoderManifestSummary:
       type: object
       required:
@@ -262,39 +274,31 @@ components:
           - $ref: '#/components/schemas/timestamp'
           - description: The time the decoder manifest was last updated in seconds since epoch (January 1, 1970 at midnight UTC time).
       description: Information about a created decoder manifest. You can use the API operation to return this information about multiple decoder manifests.
-    description:
-      type: string
-      pattern: '[^\u0000-\u001F\u007F]+'
-      minLength: 1
-      maxLength: 2048
-    decoderManifestSummaries:
-      type: array
-      items:
-        $ref: '#/components/schemas/DecoderManifestSummary'
-    nextToken:
-      type: string
-      minLength: 1
-      maxLength: 4096
-    ThrottlingException: {}
-    timestamp:
-      type: string
-      format: date-time
-    ValidationException: {}
-    InternalServerException: {}
-    maxResults:
-      type: integer
-      minimum: 1
-      maximum: 100
-    AccessDeniedException: {}
+    ListDecoderManifestsRequest:
+      type: object
+      title: ListDecoderManifestsRequest
+      properties:
+        modelManifestArn:
+          allOf:
+          - $ref: '#/components/schemas/arn'
+          - description: ' The Amazon Resource Name (ARN) of a vehicle model (model manifest) associated with the decoder manifest. '
+        nextToken:
+          allOf:
+          - $ref: '#/components/schemas/nextToken'
+          - description: <p>A pagination token for the next set of results.</p> <p>If the results of a search are large, only a portion of the results are returned, and a <code>nextToken</code> pagination token is returned in the response. To retrieve the next set of results, reissue the search request and include the returned token. When all results have been returned, the response does not contain a pagination token value. </p>
+        maxResults:
+          allOf:
+          - $ref: '#/components/schemas/maxResults'
+          - description: ' The maximum number of items to return, between 1 and 100, inclusive. '
   parameters:
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
+    X-Amz-Signature:
+      name: X-Amz-Signature
       in: header
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
       in: header
       schema:
         type: string
@@ -305,8 +309,14 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
@@ -317,14 +327,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
+    X-Amz-Credential:
+      name: X-Amz-Credential
       in: header
       schema:
         type: string

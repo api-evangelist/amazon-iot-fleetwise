@@ -1,9 +1,9 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: '2021-06-17'
   x-release: v4
-  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.GetRegisterAccountStatus #X Amz Target=IoTAutobahnControlPlane.GetRegisterAccountStatus #X Amz Target=IoTAutobahnControlPlane.GetRegisterAccountStatus API'
-  description: <p>Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale. With Amazon Web Services IoT FleetWise, you can standardize all of your vehicle data models, independent of the in-vehicle communication architecture, and define data collection rules to transfer only high-value data to the cloud. </p> <p>For more information, see <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/">What is Amazon Web Services IoT FleetWise?</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>
+  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.GetR…'
+  description: Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale.
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
     backgroundColor: '#FFFFFF'
@@ -24,6 +24,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/iotfleetwise-2021-06-17.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -125,7 +126,13 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: GetRegisterAccountStatus
-      description: <p> Retrieves information about the status of registering your Amazon Web Services account, IAM, and Amazon Timestream resources so that Amazon Web Services IoT FleetWise can transfer your vehicle data to the Amazon Web Services Cloud. </p> <p>For more information, including step-by-step procedures, see <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/setting-up.html">Setting up Amazon Web Services IoT FleetWise</a>. </p> <note> <p>This API operation doesn't require input parameters.</p> </note>
+      description: 'Retrieves information about the status of registering your Amazon Web Services account, IAM, and Amazon Timestream resources so that Amazon Web Services IoT FleetWise can transfer your vehicle data to the Amazon Web Services Cloud.
+
+
+        For more information, including step-by-step procedures, see Setting up Amazon Web Services IoT FleetWise.
+
+
+        This API operation doesn''t require input parameters.'
       responses:
         '200':
           description: Success
@@ -185,10 +192,6 @@ paths:
       - '#X Amz Target=IoTAutobahnControlPlane.GetRegisterAccountStatus'
 components:
   schemas:
-    arn:
-      type: string
-    customerAccountId:
-      type: string
     TimestreamRegistrationResponse:
       type: object
       required:
@@ -221,8 +224,16 @@ components:
           - $ref: '#/components/schemas/errorMessage'
           - description: A message associated with a registration error.
       description: Information about the registered Amazon Timestream resources or errors, if any.
-    errorMessage:
+    GetRegisterAccountStatusRequest:
+      type: object
+      title: GetRegisterAccountStatusRequest
+      properties: {}
+    InternalServerException: {}
+    TimestreamDatabaseName:
       type: string
+      pattern: '[a-zA-Z0-9_.-]+'
+      minLength: 3
+      maxLength: 255
     IamRegistrationResponse:
       type: object
       required:
@@ -242,26 +253,13 @@ components:
           - $ref: '#/components/schemas/errorMessage'
           - description: A message associated with a registration error.
       description: Information about registering an Identity and Access Management (IAM) resource so Amazon Web Services IoT FleetWise edge agent software can transfer your vehicle data to Amazon Timestream.
-    TimestreamTableName:
-      type: string
-      pattern: '[a-zA-Z0-9_.-]+'
-      minLength: 3
-      maxLength: 255
-    ResourceNotFoundException: {}
-    ThrottlingException: {}
     RegistrationStatus:
       type: string
       enum:
       - REGISTRATION_PENDING
       - REGISTRATION_SUCCESS
       - REGISTRATION_FAILURE
-    timestamp:
-      type: string
-      format: date-time
-    GetRegisterAccountStatusRequest:
-      type: object
-      title: GetRegisterAccountStatusRequest
-      properties: {}
+    ValidationException: {}
     GetRegisterAccountStatusResponse:
       type: object
       required:
@@ -295,23 +293,32 @@ components:
           allOf:
           - $ref: '#/components/schemas/timestamp'
           - description: ' The time this registration was last updated, in seconds since epoch (January 1, 1970 at midnight UTC time). '
-    ValidationException: {}
-    InternalServerException: {}
-    TimestreamDatabaseName:
+    arn:
+      type: string
+    errorMessage:
+      type: string
+    ThrottlingException: {}
+    ResourceNotFoundException: {}
+    customerAccountId:
+      type: string
+    TimestreamTableName:
       type: string
       pattern: '[a-zA-Z0-9_.-]+'
       minLength: 3
       maxLength: 255
     AccessDeniedException: {}
+    timestamp:
+      type: string
+      format: date-time
   parameters:
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
+    X-Amz-Signature:
+      name: X-Amz-Signature
       in: header
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
       in: header
       schema:
         type: string
@@ -322,8 +329,14 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
@@ -334,14 +347,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
+    X-Amz-Credential:
+      name: X-Amz-Credential
       in: header
       schema:
         type: string

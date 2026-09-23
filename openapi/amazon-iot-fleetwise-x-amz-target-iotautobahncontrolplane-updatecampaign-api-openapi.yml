@@ -1,9 +1,9 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: '2021-06-17'
   x-release: v4
-  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.AssociateVehicleFleet #X Amz Target=IoTAutobahnControlPlane.UpdateCampaign #X Amz Target=IoTAutobahnControlPlane.UpdateCampaign #X Amz Target=IoTAutobahnControlPlane.UpdateCampaign API'
-  description: <p>Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale. With Amazon Web Services IoT FleetWise, you can standardize all of your vehicle data models, independent of the in-vehicle communication architecture, and define data collection rules to transfer only high-value data to the cloud. </p> <p>For more information, see <a href="https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/">What is Amazon Web Services IoT FleetWise?</a> in the <i>Amazon Web Services IoT FleetWise Developer Guide</i>.</p>
+  title: 'AWS IoT FleetWise #X Amz Target=IoTAutobahnControlPlane.Upda…'
+  description: Amazon Web Services IoT FleetWise is a fully managed service that you can use to collect, model, and transfer vehicle data to the Amazon Web Services cloud at scale.
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
     backgroundColor: '#FFFFFF'
@@ -24,6 +24,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/iotfleetwise-2021-06-17.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -125,7 +126,7 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: UpdateCampaign
-      description: ' Updates a campaign. '
+      description: Updates a campaign.
       responses:
         '200':
           description: Success
@@ -191,6 +192,41 @@ paths:
       - '#X Amz Target=IoTAutobahnControlPlane.UpdateCampaign'
 components:
   schemas:
+    UpdateCampaignAction:
+      type: string
+      enum:
+      - APPROVE
+      - SUSPEND
+      - RESUME
+      - UPDATE
+    ConflictException: {}
+    InternalServerException: {}
+    ValidationException: {}
+    NodePath:
+      type: string
+      pattern: '[a-zA-Z0-9_.]+'
+      minLength: 1
+      maxLength: 150
+    campaignName:
+      type: string
+      pattern: '[a-zA-Z\d\-_:]+'
+      minLength: 1
+      maxLength: 100
+    CampaignStatus:
+      type: string
+      enum:
+      - CREATING
+      - WAITING_FOR_APPROVAL
+      - RUNNING
+      - SUSPENDED
+    arn:
+      type: string
+    DataExtraDimensionNodePathList:
+      type: array
+      items:
+        $ref: '#/components/schemas/NodePath'
+      minItems: 0
+      maxItems: 5
     UpdateCampaignResponse:
       type: object
       properties:
@@ -206,27 +242,14 @@ components:
           allOf:
           - $ref: '#/components/schemas/CampaignStatus'
           - description: <p>The state of a campaign. The status can be one of:</p> <ul> <li> <p> <code>CREATING</code> - Amazon Web Services IoT FleetWise is processing your request to create the campaign. </p> </li> <li> <p> <code>WAITING_FOR_APPROVAL</code> - After a campaign is created, it enters the <code>WAITING_FOR_APPROVAL</code> state. To allow Amazon Web Services IoT FleetWise to deploy the campaign to the target vehicle or fleet, use the API operation to approve the campaign. </p> </li> <li> <p> <code>RUNNING</code> - The campaign is active. </p> </li> <li> <p> <code>SUSPENDED</code> - The campaign is suspended. To resume the campaign, use the API operation. </p> </li> </ul>
-    ConflictException: {}
-    DataExtraDimensionNodePathList:
-      type: array
-      items:
-        $ref: '#/components/schemas/NodePath'
-      minItems: 0
-      maxItems: 5
-    arn:
-      type: string
+    ThrottlingException: {}
+    ResourceNotFoundException: {}
     description:
       type: string
       pattern: '[^\u0000-\u001F\u007F]+'
       minLength: 1
       maxLength: 2048
-    UpdateCampaignAction:
-      type: string
-      enum:
-      - APPROVE
-      - SUSPEND
-      - RESUME
-      - UPDATE
+    AccessDeniedException: {}
     UpdateCampaignRequest:
       type: object
       required:
@@ -250,37 +273,15 @@ components:
           allOf:
           - $ref: '#/components/schemas/UpdateCampaignAction'
           - description: <p> Specifies how to update a campaign. The action can be one of the following:</p> <ul> <li> <p> <code>APPROVE</code> - To approve delivering a data collection scheme to vehicles. </p> </li> <li> <p> <code>SUSPEND</code> - To suspend collecting signal data. The campaign is deleted from vehicles and all vehicles in the suspended campaign will stop sending data.</p> </li> <li> <p> <code>RESUME</code> - To reactivate the <code>SUSPEND</code> campaign. The campaign is redeployed to all vehicles and the vehicles will resume sending data.</p> </li> <li> <p> <code>UPDATE</code> - To update a campaign. </p> </li> </ul>
-    CampaignStatus:
-      type: string
-      enum:
-      - CREATING
-      - WAITING_FOR_APPROVAL
-      - RUNNING
-      - SUSPENDED
-    campaignName:
-      type: string
-      pattern: '[a-zA-Z\d\-_:]+'
-      minLength: 1
-      maxLength: 100
-    ResourceNotFoundException: {}
-    ThrottlingException: {}
-    NodePath:
-      type: string
-      pattern: '[a-zA-Z0-9_.]+'
-      minLength: 1
-      maxLength: 150
-    ValidationException: {}
-    InternalServerException: {}
-    AccessDeniedException: {}
   parameters:
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
+    X-Amz-Signature:
+      name: X-Amz-Signature
       in: header
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
       in: header
       schema:
         type: string
@@ -291,8 +292,14 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
@@ -303,14 +310,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
+    X-Amz-Credential:
+      name: X-Amz-Credential
       in: header
       schema:
         type: string
