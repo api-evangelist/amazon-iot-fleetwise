@@ -6,9 +6,7 @@
   "outputs": [
     "amazon-iot-fleetwise-aws-iot-fleetwise-api-openapi.yml"
   ],
-  "archived": [
-    "deleted 50 superseded output(s) from the previous generation"
-  ],
+  "archived": [],
   "errors": [],
   "warnings": [],
   "notes": [
@@ -65,59 +63,9 @@
     "amazon-iot-fleetwise-openapi-original.yml: tagged paths POST /#X-Amz-Target=IoTAutobahnControlPlane.UpdateSignalCatalog -> AWS IoT FleetWise",
     "amazon-iot-fleetwise-openapi-original.yml: tagged paths POST /#X-Amz-Target=IoTAutobahnControlPlane.UpdateVehicle -> AWS IoT FleetWise",
     "amazon-iot-fleetwise-openapi-original.yml: declared missing tag: AWS IoT FleetWise",
-    "superseded outputs removed: amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-associatevehiclefleet-api-openapi.yml, amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-batchcreatevehicle-api-openapi.yml, amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-batchupdatevehicle-api-openapi.yml, amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createcampaign-api-openapi.yml, amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createdecodermanifest-api-openapi.yml \u2026",
-    "apis.yml register: written (+1 apis, 1 total)"
+    "apis.yml register: already-registered"
   ],
   "skipped": [
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-associatevehiclefleet-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-batchcreatevehicle-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-batchupdatevehicle-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createcampaign-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createdecodermanifest-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createfleet-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createmodelmanifest-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createsignalcatalog-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createvehicle-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletecampaign-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletedecodermanifest-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletefleet-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletemodelmanifest-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletesignalcatalog-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletevehicle-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-disassociatevehiclefleet-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getcampaign-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getdecodermanifest-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getfleet-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getloggingoptions-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getmodelmanifest-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getregisteraccountstatus-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getsignalcatalog-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getvehicle-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getvehiclestatus-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-importdecodermanifest-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-importsignalcatalog-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listcampaigns-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifestnetworkinterfaces-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifests-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifestsignals-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listfleets-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listfleetsforvehicle-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listmodelmanifestnodes-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listmodelmanifests-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listsignalcatalognodes-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listsignalcatalogs-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listtagsforresource-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listvehicles-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listvehiclesinfleet-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-putloggingoptions-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-registeraccount-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-tagresource-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-untagresource-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatecampaign-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatedecodermanifest-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatefleet-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatemodelmanifest-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatesignalcatalog-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatevehicle-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+    "amazon-iot-fleetwise-aws-iot-fleetwise-api-openapi.yml: previously refined output, superseded by openapi/_original/"
   ]
 }
