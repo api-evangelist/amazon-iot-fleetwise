@@ -13,305 +13,305 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-associatevehiclefleet-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-associatevehiclefleet-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-associatevehiclefleet-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-associatevehiclefleet-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-batchcreatevehicle-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-batchcreatevehicle-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-batchcreatevehicle-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-batchcreatevehicle-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-batchupdatevehicle-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-batchupdatevehicle-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-batchupdatevehicle-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-batchupdatevehicle-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createcampaign-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createcampaign-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createcampaign-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createcampaign-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createdecodermanifest-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createdecodermanifest-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createdecodermanifest-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createdecodermanifest-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createfleet-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createfleet-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createfleet-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createfleet-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createmodelmanifest-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createmodelmanifest-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createmodelmanifest-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createmodelmanifest-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createsignalcatalog-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createsignalcatalog-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createsignalcatalog-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createsignalcatalog-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createvehicle-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createvehicle-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createvehicle-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createvehicle-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletecampaign-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletecampaign-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletecampaign-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletecampaign-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletedecodermanifest-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletedecodermanifest-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletedecodermanifest-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletedecodermanifest-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletefleet-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletefleet-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletefleet-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletefleet-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletemodelmanifest-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletemodelmanifest-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletemodelmanifest-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletemodelmanifest-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletesignalcatalog-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletesignalcatalog-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletesignalcatalog-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletesignalcatalog-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletevehicle-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletevehicle-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletevehicle-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletevehicle-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-disassociatevehiclefleet-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-disassociatevehiclefleet-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-disassociatevehiclefleet-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-disassociatevehiclefleet-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getcampaign-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getcampaign-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getcampaign-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getcampaign-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getdecodermanifest-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getdecodermanifest-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getdecodermanifest-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getdecodermanifest-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getfleet-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getfleet-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getfleet-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getfleet-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getloggingoptions-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getloggingoptions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getloggingoptions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getloggingoptions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getmodelmanifest-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getmodelmanifest-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getmodelmanifest-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getmodelmanifest-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getregisteraccountstatus-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getregisteraccountstatus-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getregisteraccountstatus-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getregisteraccountstatus-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getsignalcatalog-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getsignalcatalog-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getsignalcatalog-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getsignalcatalog-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getvehicle-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getvehicle-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getvehicle-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getvehicle-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getvehiclestatus-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getvehiclestatus-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getvehiclestatus-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getvehiclestatus-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-importdecodermanifest-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-importdecodermanifest-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-importdecodermanifest-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-importdecodermanifest-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-importsignalcatalog-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-importsignalcatalog-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-importsignalcatalog-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-importsignalcatalog-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listcampaigns-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listcampaigns-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listcampaigns-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listcampaigns-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifestnetworkinterfaces-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifestnetworkinterfaces-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifestnetworkinterfaces-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifestnetworkinterfaces-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifests-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifests-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifests-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifests-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifestsignals-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifestsignals-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifestsignals-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifestsignals-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listfleets-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listfleets-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listfleets-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listfleets-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listfleetsforvehicle-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listfleetsforvehicle-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listfleetsforvehicle-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listfleetsforvehicle-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listmodelmanifestnodes-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listmodelmanifestnodes-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listmodelmanifestnodes-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listmodelmanifestnodes-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listmodelmanifests-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listmodelmanifests-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listmodelmanifests-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listmodelmanifests-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listsignalcatalognodes-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listsignalcatalognodes-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listsignalcatalognodes-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listsignalcatalognodes-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listsignalcatalogs-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listsignalcatalogs-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listsignalcatalogs-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listsignalcatalogs-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listtagsforresource-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listtagsforresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listtagsforresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listtagsforresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listvehicles-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listvehicles-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listvehicles-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listvehicles-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listvehiclesinfleet-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listvehiclesinfleet-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listvehiclesinfleet-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listvehiclesinfleet-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-putloggingoptions-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-putloggingoptions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-putloggingoptions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-putloggingoptions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-registeraccount-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-registeraccount-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-registeraccount-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-registeraccount-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-tagresource-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-tagresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-tagresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-tagresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-untagresource-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-untagresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-untagresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-untagresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatecampaign-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatecampaign-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatecampaign-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatecampaign-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatedecodermanifest-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatedecodermanifest-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatedecodermanifest-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatedecodermanifest-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatefleet-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatefleet-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatefleet-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatefleet-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatemodelmanifest-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatemodelmanifest-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatemodelmanifest-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatemodelmanifest-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatesignalcatalog-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatesignalcatalog-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatesignalcatalog-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatesignalcatalog-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatevehicle-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatevehicle-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatevehicle-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatevehicle-api
+    method: unknown
+    evidence: no authorship recorded
   examples/iot-fleetwise-actuator-example.json:
     method: unknown
     evidence: no authorship recorded
@@ -2022,127 +2022,7 @@ artifacts:
   json-structure/iot-fleetwise-vehicles-structure.json:
     method: unknown
     evidence: no authorship recorded
-  kin/checks-2026-09-24T161608.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T125852.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T133943.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T143147.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T154045.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-26T215308.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T094438.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T103455.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T123021.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T132314.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T140727.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-28T221322.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-29T213958.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-29T230545.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-30T203505.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-30T220315.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-31T223420.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T063623.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T210448.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T222808.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-02T211804.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-02T224043.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-03T161828.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-03T174231.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T062714.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T212454.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T224856.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T055819.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T072335.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T144739.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T195450.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T211839.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T011047.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T211804.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T224210.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-07T200636.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-07T213054.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-08T214843.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-08T232836.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-10T204815.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-10T222408.yml:
+  kin/checks-2026-10-11T110117.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-12T062655.yml:
@@ -2226,313 +2106,181 @@ artifacts:
   kin/score-2026-09-24T161608.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-25T210408.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-25T232841.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-03T000835.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-03T024842.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-11T110117.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
   openapi/_original/amazon-iot-fleetwise-openapi-original.yml:
     method: harvested
     evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
       to the provider's source is unverified
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-associatevehiclefleet-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-batchcreatevehicle-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-batchupdatevehicle-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createcampaign-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createdecodermanifest-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createfleet-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createmodelmanifest-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createsignalcatalog-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createvehicle-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletecampaign-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletedecodermanifest-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletefleet-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletemodelmanifest-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletesignalcatalog-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletevehicle-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-disassociatevehiclefleet-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getcampaign-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getdecodermanifest-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getfleet-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getloggingoptions-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getmodelmanifest-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getregisteraccountstatus-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getsignalcatalog-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getvehicle-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getvehiclestatus-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-importdecodermanifest-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-importsignalcatalog-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listcampaigns-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifestnetworkinterfaces-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifests-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifestsignals-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listfleets-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listfleetsforvehicle-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listmodelmanifestnodes-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listmodelmanifests-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listsignalcatalognodes-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listsignalcatalogs-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listtagsforresource-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listvehicles-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listvehiclesinfleet-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-putloggingoptions-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-registeraccount-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-tagresource-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-untagresource-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatecampaign-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatedecodermanifest-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatefleet-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatemodelmanifest-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatesignalcatalog-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatevehicle-api-openapi.yml:
+  openapi/amazon-iot-fleetwise-aws-iot-fleetwise-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   plans/amazon-iot-fleetwise-plans-pricing.yml:
     method: generated
     evidence: declared in the artifact
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-associatevehiclefleet-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-associatevehiclefleet-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-batchcreatevehicle-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-batchcreatevehicle-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-batchupdatevehicle-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-batchupdatevehicle-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createcampaign-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createcampaign-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createdecodermanifest-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createdecodermanifest-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createfleet-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createfleet-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createmodelmanifest-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createmodelmanifest-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createsignalcatalog-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createsignalcatalog-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createvehicle-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-createvehicle-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletecampaign-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletecampaign-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletedecodermanifest-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletedecodermanifest-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletefleet-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletefleet-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletemodelmanifest-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletemodelmanifest-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletesignalcatalog-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletesignalcatalog-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletevehicle-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-deletevehicle-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-disassociatevehiclefleet-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-disassociatevehiclefleet-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getcampaign-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getcampaign-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getdecodermanifest-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getdecodermanifest-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getfleet-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getfleet-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getloggingoptions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getloggingoptions-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getmodelmanifest-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getmodelmanifest-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getregisteraccountstatus-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getregisteraccountstatus-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getsignalcatalog-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getsignalcatalog-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getvehicle-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getvehicle-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getvehiclestatus-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-getvehiclestatus-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-importdecodermanifest-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-importdecodermanifest-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-importsignalcatalog-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-importsignalcatalog-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listcampaigns-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listcampaigns-api
+    method: unknown
+    evidence: no authorship recorded
   ? postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifestnetworkinterfaces-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifestnetworkinterfaces-api
+  : method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifests-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifests-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifestsignals-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listdecodermanifestsignals-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listfleets-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listfleets-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listfleetsforvehicle-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listfleetsforvehicle-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listmodelmanifestnodes-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listmodelmanifestnodes-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listmodelmanifests-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listmodelmanifests-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listsignalcatalognodes-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listsignalcatalognodes-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listsignalcatalogs-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listsignalcatalogs-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listtagsforresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listtagsforresource-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listvehicles-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listvehicles-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listvehiclesinfleet-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-listvehiclesinfleet-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-putloggingoptions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-putloggingoptions-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-registeraccount-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-registeraccount-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-tagresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-tagresource-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-untagresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-untagresource-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatecampaign-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatecampaign-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatedecodermanifest-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatedecodermanifest-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatefleet-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatefleet-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatemodelmanifest-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatemodelmanifest-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatesignalcatalog-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatesignalcatalog-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatevehicle-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatevehicle-api
+    method: unknown
+    evidence: no authorship recorded
   rate-limits/amazon-iot-fleetwise-rate-limits.yml:
     method: generated
     evidence: declared in the artifact
