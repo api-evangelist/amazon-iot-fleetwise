@@ -5,12 +5,24 @@ artifacts:
   agentic-access/amazon-iot-fleetwise-agentic-access.yml:
     method: generated
     evidence: declared in the artifact
+  ai-preferences/amazon-iot-fleetwise-ai-preferences.yml:
+    method: harvested
+    evidence: declared in the artifact
   authentication/amazon-iot-fleetwise-authentication.yml:
     method: derived
     evidence: declared in the artifact
   capabilities/amazon-iot-fleetwise-capability-edges.yml:
     method: unknown
     evidence: no authorship recorded
+  certification/observations-2026-11-11.jsonl:
+    method: unknown
+    evidence: no authorship recorded
+  certification/status.yml:
+    method: unknown
+    evidence: no authorship recorded
+  cli/amazon-iot-fleetwise-cli.yml:
+    method: searched
+    evidence: declared in the artifact
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-associatevehiclefleet-api.opencollection.json:
     method: unknown
     evidence: no authorship recorded
@@ -311,6 +323,24 @@ artifacts:
   collections/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatevehicle-api.postman_collection.json:
     method: unknown
     evidence: no authorship recorded
+  conformance/amazon-iot-fleetwise-conformance.yml:
+    method: derived
+    evidence: declared in the artifact
+  conventions/amazon-iot-fleetwise-conventions.yml:
+    method: derived
+    evidence: declared in the artifact
+  data-model/amazon-iot-fleetwise-data-model.yml:
+    method: derived
+    evidence: declared in the artifact
+  eligibility/amazon-iot-fleetwise-eligibility.yml:
+    method: harvested
+    evidence: declared in the artifact
+  errors/amazon-iot-fleetwise-error-codes.yml:
+    method: searched
+    evidence: declared in the artifact
+  errors/amazon-iot-fleetwise-problem-types.yml:
+    method: derived
+    evidence: declared in the artifact
   examples/iot-fleetwise-actuator-example.json:
     method: unknown
     evidence: no authorship recorded
@@ -884,6 +914,9 @@ artifacts:
   front-door-ai/2026-09-17.yml:
     method: unknown
     evidence: no authorship recorded
+  hosts/amazon-iot-fleetwise-hosts.yml:
+    method: derived
+    evidence: declared in the artifact
   integrations/_index.yml:
     method: generated
     evidence: carries an API Evangelist house phrase
@@ -891,6 +924,54 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   json-ld/amazon-iot-fleetwise-context.jsonld:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-iot-fleetwise-create-campaign-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-iot-fleetwise-create-state-template-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-iot-fleetwise-create-state-template-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-iot-fleetwise-create-vehicle-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-iot-fleetwise-get-campaign-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-iot-fleetwise-get-encryption-configuration-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-iot-fleetwise-get-encryption-configuration-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-iot-fleetwise-get-state-template-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-iot-fleetwise-list-state-templates-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-iot-fleetwise-list-state-templates-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-iot-fleetwise-list-vehicles-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-iot-fleetwise-put-encryption-configuration-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-iot-fleetwise-put-encryption-configuration-response-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-iot-fleetwise-update-decoder-manifest-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-iot-fleetwise-update-state-template-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-iot-fleetwise-update-vehicle-request-schema.json:
     method: unknown
     evidence: no authorship recorded
   json-schema/iot-fleetwise-actuator-schema.json:
@@ -2030,7 +2111,7 @@ artifacts:
   kin/checks-2026-10-23T222754.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  kin/checks-2026-11-02T082323.yml:
+  kin/checks-2026-11-06T143934.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-23T000603.yml:
@@ -2099,10 +2180,21 @@ artifacts:
   kin/score-2026-11-02T082323.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  openapi/_original/amazon-iot-fleetwise-openapi-original.yml:
-    method: harvested
-    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
-      to the provider's source is unverified
+  kin/score-2026-11-06T143934.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  lifecycle/amazon-iot-fleetwise-lifecycle.yml:
+    method: searched
+    evidence: declared in the artifact
+  llms/amazon-iot-fleetwise-llms-provenance.yml:
+    method: unknown
+    evidence: no authorship recorded
+  llms/amazon-iot-fleetwise-llms.txt:
+    method: unknown
+    evidence: no authorship recorded
+  mcp/amazon-iot-fleetwise-mcp.yml:
+    method: derived
+    evidence: declared in the artifact
   openapi/amazon-iot-fleetwise-aws-iot-fleetwise-api-openapi.yml:
     method: unknown
     evidence: no authorship recorded
@@ -2112,6 +2204,12 @@ artifacts:
   openapi/amazon-iot-fleetwise-state-template-api-openapi.yml:
     method: unknown
     evidence: no authorship recorded
+  packages/amazon-iot-fleetwise-packages.yml:
+    method: searched
+    evidence: declared in the artifact
+  patterns/amazon-iot-fleetwise-patterns.yml:
+    method: derived
+    evidence: declared in the artifact
   plans/amazon-iot-fleetwise-plans-pricing.yml:
     method: searched
     evidence: declared in the artifact
@@ -2265,10 +2363,16 @@ artifacts:
   postman/amazon-iot-fleetwise-x-amz-target-iotautobahncontrolplane-updatevehicle-api.postman_collection.json:
     method: unknown
     evidence: no authorship recorded
+  privacy/amazon-iot-fleetwise-privacy-policy.yml:
+    method: harvested
+    evidence: declared in the artifact
   rate-limits/amazon-iot-fleetwise-rate-limits.yml:
-    method: generated
+    method: searched
     evidence: declared in the artifact
   rules/amazon-iot-fleetwise-jsonschema-spectral-rules.yml:
+    method: generated
+    evidence: declared in the artifact
+  rules/amazon-iot-fleetwise-rules.yml:
     method: generated
     evidence: declared in the artifact
   rules/amazon-iot-fleetwise-spectral-rules.yml:
@@ -2283,12 +2387,37 @@ artifacts:
   security/amazon-iot-fleetwise-vulnerability-disclosure.yml:
     method: searched
     evidence: declared in the artifact
+  skills/_index.yml:
+    method: generated
+    evidence: declared in the artifact
+  skills/amazon-iot-fleetwise-onboard-vehicle.md:
+    method: generated
+    evidence: declared in the artifact
   sla/amazon-iot-fleetwise-sla.yml:
     method: generated
     evidence: declared in the artifact
   smithy/iotfleetwise-2021-06-17.json:
+    method: harvested
+    evidence: byte-identical to https://raw.githubusercontent.com/aws/api-models-aws/3cd98287b471c106254abd89279cc87308d38bfd/models/iotfleetwise/service/2021-06-17/iotfleetwise-2021-06-17.json
+      (sha256 9f2e33b6a840, fetched 2026-11-11T21:11:03+00:00)
+  terms/amazon-iot-fleetwise-terms-of-service.yml:
+    method: harvested
+    evidence: declared in the artifact
+  vendors/amazon-iot-fleetwise-vendors.yml:
     method: unknown
     evidence: no authorship recorded
   vocabulary/amazon-iot-fleetwise-vocabulary.yaml:
+    method: unknown
+    evidence: no authorship recorded
+  vocabulary/amazon-iot-fleetwise-vocabulary.yml:
+    method: derived
+    evidence: declared in the artifact
+  well-known/amazon-iot-fleetwise-midway-auth-openid-configuration.json:
+    method: unknown
+    evidence: no authorship recorded
+  well-known/amazon-iot-fleetwise-security.txt:
+    method: unknown
+    evidence: no authorship recorded
+  well-known/amazon-iot-fleetwise-well-known.yml:
     method: unknown
     evidence: no authorship recorded
