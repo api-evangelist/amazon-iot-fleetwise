@@ -48,7 +48,7 @@ plans:
   period: month
   unit: million messages
 x-canonical:
-  generated: '2026-11-13'
+  generated: '2026-11-20'
   vocabulary: engine/economics/plans-canonical.yml
   models:
   - hybrid
